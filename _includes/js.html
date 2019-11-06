@@ -1,0 +1,21 @@
+<!-- jQuery Version 1.11.0 -->
+<script src="{{ "/js/jquery.js" | prepend: site.baseurl }}"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="{{ "/js/bootstrap.min.js" | prepend: site.baseurl }}"></script>
+
+<!-- Plugin JavaScript -->
+<script src="{{ "/js/jquery.easing.min.js" | prepend: site.baseurl }}"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="{{ "/js/grayscale.js" | prepend: site.baseurl }}"></script>
+
+<script>
+   mapboxgl.accessToken = 'pk.eyJ1IjoiYXlkaW5jYW4iLCJhIjoiY2p5ZnRqbTAyMGw2NTNtcG9ndXFpZGtwMCJ9.IV_B-8XbThCLp-2A6jmnjA';
+   var map = new mapboxgl.Map({
+      container: 'map',
+      style: 'mapbox://styles/aydincan/cjyfsqgzw07xu1cnxu3ulj01s'
+   });
+</script>
+
+<script src="https://kit.fontawesome.com/40b4c8332e.js"></script>

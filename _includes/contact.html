@@ -1,0 +1,20 @@
+    <!-- Contact Section -->
+    <section id="contact" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>Contact</h2>
+                
+                <p>Please address all queries to the GHGA helpdesk.</p> <hr> <p>For the latest updates on GHGA related news and service information subscribe to the GHGA newsletter.</p> <hr><p>For GHGA data submitters: Subscribe to the GHGA data submitter announcement list to receive the latest updates.</p>
+
+                <p><a href="mailto:{{ site.email }}">{{ site.email }}</a>
+                </p>
+                <ul class="list-inline banner-social-buttons">
+                    {% for network in site.social %}
+                    <li>
+                        <a href="{{ network.url }}" class="btn btn-default btn-lg"><i class="fab fa-{{ network.title }} fa-fw"></i> <span class="network-name">{{ network.title }}</span></a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </section>
