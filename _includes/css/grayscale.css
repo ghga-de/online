@@ -37,7 +37,7 @@ p {
 }
 
 dl,dt,dd {font-size:18px; line-height:1.5;}
-
+ol,li {font-size:18px; line-height:1.5;}
 }
 @media(min-width:767px) {
     p {
