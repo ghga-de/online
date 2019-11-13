@@ -3,8 +3,8 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
                 <h2>Contact</h2>
-                
-                <p>Please address all queries to the GHGA helpdesk.</p> <hr> <p>For the latest updates on GHGA related news and service information subscribe to the GHGA newsletter.</p> <hr><p>For GHGA data submitters: Subscribe to the GHGA data submitter announcement list to receive the latest updates.</p>
+
+                <p>???</p>
 
                 <p><a href="mailto:{{ site.email }}">{{ site.email }}</a>
                 </p>
@@ -12,9 +12,30 @@
                     {% for network in site.social %}
                     <li>
                         <a href="{{ network.url }}" class="btn btn-default btn-lg"><i class="fab fa-{{ network.title }} fa-fw"></i> <span class="network-name">{{ network.title }}</span></a>
+                        <a href="http://uni-tuebingen.de" class="btn btn-default btn-lg">University of Tübingen</a><br>
+                        <a href="https://www.medizin.uni-tuebingen.de/en/Homepage.html" class="btn btn-default btn-lg">Tübingen University Hospital</a>
                     </li>
                     {% endfor %}
                 </ul>
+
+                <h2>Legal Notice</h2>
+                <dl-horizontal>
+                  <dt>Adresse</dt>
+                  <dd>Eberhard Karls Universität Tübingen <br> Geschwister-Scholl-Platz <br> 72074 Tübingen <br><br>
+                  Die Universität Tübingen ist eine Körperschaft des öffentlichen Rechts.
+                  Sie wird durch den Rektor Prof. Dr. Bernd Engler
+                  (E-Mail: bernd. engler [at] uni-tuebingen.de) gesetzlich vertreten.</dd>
+                  <dt>Telefonzentrale</dt>
+                  <dd>++49 (0) 7071/29-0</dd>
+                  <dt>Fax Zentrale Verwaltung</dt>
+                  <dd>++49 (0) 7071/29-59 90</dd>
+                  <dt>Zentrale E-Mail-Adresse</dt>
+                  <dd>info [at] uni-tuebingen.de</dd>
+                  <dt>Internet-Adresse</dt>
+                  <dd>http://www.uni-tuebingen.de</dd>
+                  <dt>Umsatzsteuer-Identifikationsnummer</dt>
+                  <dd>gemaess §27a Umsatzsteuergesetz: DE812383453</dd>
+
             </div>
         </div>
     </section>
