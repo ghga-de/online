@@ -36,9 +36,7 @@ p {
     line-height: 1.5;
 }
 
-dl {display:grid;grid-template-columns:max-content auto;font-size:18px; line-height:1.5;}
-dt {grid-column-start:1;font-size:18px; line-height:1.5;}
-dd {grid-column-start:2;font-size:18px; line-height:1.5;}
+dl,dt,dd {font-size:18px; line-height:1.5;}
 
 }
 @media(min-width:767px) {
