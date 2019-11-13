@@ -37,7 +37,7 @@ p {
 }
 
 dl,dt,dd {font-size:18px; line-height:1.5;}
-ol,li {font-size:18px; line-height:1.5;}
+ul,ol,li {font-size:18px; line-height:1.5;}
 tr,th {font-size:18px;}
 
 
@@ -263,7 +263,8 @@ a:focus {
     width: 100%;
     padding: 50px 0;
     color: #000;
-    background: url(/online/img/logos/all_logos_ghga.jpg) no-repeat center center scroll;
+    /*!
+    background: url(/online/img/logos/all_logos_ghga.jpg) no-repeat center center scroll;*/
     background-color: {{ site.color.000 }};
     -webkit-background-size: cover;
     moz-background-size: cover;
