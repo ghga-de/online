@@ -199,7 +199,7 @@ a:focus {
 .btn-circle:hover,
 .btn-circle:focus {
     outline: 0;
-    color: #A9A9A9;
+    color: #000;
     background: rgba(255,255,255,.1);
 }
 
@@ -306,7 +306,7 @@ a:focus {
 .btn-default {
     border: 1px solid {{ site.color.links }};
     color: {{ site.color.links }};
-    background-color: #000;
+    background-color: #A9A9A9;
 }
 
 .btn-default:hover,
