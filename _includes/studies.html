@@ -1,0 +1,38 @@
+    <!-- Data Section -->
+    <section id="studies" class="content-section text-center">
+        <div class="container">
+            <div class="col-lg-8 col-lg-offset-2">
+
+                <h2>German EGA Studies</h2>
+
+                <p>
+                    We intend to optimize the procedures and processes involved with the deposition and access to
+                    human datasets. These procedures should be simplified from a technical and organisational
+                    perspective while ensuring full compliance to data protection and safety standards.
+                </p>
+
+                <p>
+                    To this aim a diverse and distributed data infrastructure, involving major data generators and
+                    build using scalable cloud technologies, will have to be integrated and exposed to researcher
+                    via a simple data access portal. Additionally, the communication with data access committees
+                    and the technical details of regulating distributed data access need to be streamlined.
+                </p>
+
+                <table class="table" style="table-layout:fixed" width="100%">
+                    <caption>As of January 28th, 2020, there are {{ site.data.german_studies.size }} EGA studies referring to
+                        data access committees with a German email-address.</caption>
+                    <tr>
+                        <th width="75%">Title</th>
+                        <th>EGA Study ID</th>
+                    </tr>
+                    {% for study in site.data.german_studies %}
+                    <tr>
+                        <td>{{ study.title }}</td>
+                        <td><a href="https://ega-archive.org/studies/{{ study.egaStableId }}" target="_blank">{{ study.egaStableId }}</a></td>
+                    </tr>
+                    {% endfor %}
+                </table>
+
+            </div>
+        </div>
+    </section>

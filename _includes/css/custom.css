@@ -1,0 +1,8 @@
+table {
+  caption-side: top;
+}
+
+caption {
+	padding-top: 1em;
+	margin-top: 1em;
+}
