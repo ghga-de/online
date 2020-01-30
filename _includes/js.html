@@ -21,12 +21,13 @@
 
 <script type="text/javascript">
     <!--
-    function toggleVisibility(id, display) {
+    function toggleVisibility(id, displayValue) {
         var e = document.getElementById(id);
-        if (e.style.display != 'none')
-            e.style.display = 'none';
-        else
-            e.style.display = display;
+        if (e.style.display != 'none') {
+            e.style.display = 'none'
+        } else {
+            e.style.display = displayValue;
+        }
     }
     //-->
 </script>

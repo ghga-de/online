@@ -31,15 +31,41 @@
                     <tr>
                         <td>{{ study.title }}</td>
                         <td><a href="https://ega-archive.org/studies/{{ study.egaStableId }}" target="_blank">{{ study.egaStableId }}</a></td>
-                        <td><a href="#" onclick="toggleVisibility('{{ study.egaStableId }}', 'table-row');">...</a></td>
+                        <td><a class="DescriptionToggle" targetId="description-{{ study.egaStableId }}" state="closed"><i class="fa fa-plus-square-o"></i></a></td>
                     </tr>
-                    <tr id="{{ study.egaStableId }}" style="display:none;">
+                    <tr id="description-{{ study.egaStableId }}" style="display:none;">
                         <td colspan="3">
                             {{ study.description }}
                         </td>
                     </tr>
                     {% endfor %}
+
                 </table>
+
+                <script>
+                    function mapOverHTMLElements(htmlCollectionOf, fun) {
+                        for (let eidx = 0; eidx < htmlCollectionOf.length; ++eidx) {
+                            fun(htmlCollectionOf[eidx])
+                        }
+                    }
+
+                    function descriptionToggleListener(ev) {
+                        const clickTarget = ev.currentTarget;
+                        toggleVisibility(clickTarget.getAttribute("targetId"), 'table-row');
+                        if (clickTarget.state === "closed") {
+                            clickTarget.state = "opened";
+                            clickTarget.innerHTML = "<i class=\"fa fa-minus-square-o\"></i><span />"
+                        } else {
+                            clickTarget.state = "closed";
+                            clickTarget.innerHTML = "<i class=\"fa fa-plus-square-o\"></i><span />"
+                        }
+                    }
+
+                    mapOverHTMLElements(document.getElementsByClassName("DescriptionToggle"), function (elem) {
+                        elem.addEventListener("click", descriptionToggleListener)
+                    });
+
+                </script>
 
             </div>
         </div>
