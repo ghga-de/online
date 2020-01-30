@@ -33,8 +33,9 @@
                         <td><a href="https://ega-archive.org/studies/{{ study.egaStableId }}" target="_blank">{{ study.egaStableId }}</a></td>
                         <td><a class="DescriptionToggle" targetId="description-{{ study.egaStableId }}" state="closed"><i class="fa fa-plus-square-o"></i></a></td>
                     </tr>
+                    <!-- The initial state of the DescriptionToggle should be set to "closed" (because of display:none).-->
                     <tr id="description-{{ study.egaStableId }}" style="display:none;">
-                        <td colspan="3">
+                        <td colspan="3" class="description">
                             {{ study.description }}
                         </td>
                     </tr>
@@ -43,22 +44,24 @@
                 </table>
 
                 <script>
+                    // Register the listener for all toggle fields in the table.
                     function mapOverHTMLElements(htmlCollectionOf, fun) {
                         for (let eidx = 0; eidx < htmlCollectionOf.length; ++eidx) {
                             fun(htmlCollectionOf[eidx])
                         }
                     }
 
+                    // The actual listener.
                     function descriptionToggleListener(ev) {
                         const clickTarget = ev.currentTarget;
-                        toggleVisibility(clickTarget.getAttribute("targetId"), 'table-row');
                         if (clickTarget.state === "closed") {
                             clickTarget.state = "opened";
-                            clickTarget.innerHTML = "<i class=\"fa fa-minus-square-o\"></i><span />"
+                            clickTarget.innerHTML = "<i class=\"fa fa-plus-square-o\"></i>"
                         } else {
                             clickTarget.state = "closed";
-                            clickTarget.innerHTML = "<i class=\"fa fa-plus-square-o\"></i><span />"
+                            clickTarget.innerHTML = "<i class=\"fa fa-minus-square-o\"></i>"
                         }
+                        toggleVisibility(clickTarget.getAttribute("targetId"), 'table-row');
                     }
 
                     mapOverHTMLElements(document.getElementsByClassName("DescriptionToggle"), function (elem) {
