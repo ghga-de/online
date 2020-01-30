@@ -18,18 +18,6 @@
                     and the technical details of regulating distributed data access need to be streamlined.
                 </p>
 
-                <script type="text/javascript">
-                    <!--
-                    function toggleVisibility(id) {
-                        var e = document.getElementById(id);
-                        if (e.style.display != 'none')
-                            e.style.display = 'none';
-                        else
-                            e.style.display = 'table-row';
-                    }
-                    //-->
-                </script>
-
                 <table class="table" style="table-layout:fixed" width="100%">
                     <caption>As of January 28th, 2020, there are {{ site.data.german_studies.size }} EGA studies referring to
                         data access committees with a German email-address.</caption>
@@ -43,7 +31,7 @@
                     <tr>
                         <td>{{ study.title }}</td>
                         <td><a href="https://ega-archive.org/studies/{{ study.egaStableId }}" target="_blank">{{ study.egaStableId }}</a></td>
-                        <td><a href="#" onclick="toggleVisibility('{{ study.egaStableId }}');">...</a></td>
+                        <td><a href="#" onclick="toggleVisibility('{{ study.egaStableId }}', 'table-row');">...</a></td>
                     </tr>
                     <tr id="{{ study.egaStableId }}" style="display:none;">
                         <td colspan="3">
