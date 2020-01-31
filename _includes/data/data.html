@@ -19,15 +19,15 @@
                 </p>
 
                 <table class="table" style="table-layout:fixed" width="100%">
-                    <caption>As of January 28th, 2020, there are {{ site.data.german_studies.size }} EGA studies referring to
-                        data access committees with a German email-address.</caption>
+                    <caption>As of January 28th, 2020, there are {{ site.data.studies.size }} EGA studies referring to
+                        data access committees located in Tübingen and Heidelberg.</caption>
                     <tr>
                         <th width="65%">Title</th>
                         <th width="20%">EGA Study ID</th>
                         <th width="15%">Description</th>
                     </tr>
 
-                    {% for study in site.data.german_studies %}
+                    {% for study in site.data.studies %}
                     <tr>
                         <td>{{ study.title }}</td>
                         <td><a href="https://ega-archive.org/studies/{{ study.egaStableId }}" target="_blank">{{ study.egaStableId }}</a></td>
