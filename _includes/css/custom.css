@@ -2,11 +2,13 @@ table {
   caption-side: top;
 }
 
-caption {
-	padding-top: 1em;
-	margin-top: 1em;
+.StudyCell {
+  vertical-align: top;
+  align-content: center;
 }
 
-.description {
-	font-size: smaller
+.StudyDescriptionCell {
+  /* font-size: smaller; */
+  color: gray;
+  padding-bottom: 1em;
 }
