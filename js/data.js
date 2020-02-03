@@ -10,10 +10,10 @@ function descriptionToggleListener(ev) {
     const clickTarget = ev.currentTarget;
     if (clickTarget.state === "closed") {
         clickTarget.state = "opened";
-        clickTarget.innerHTML = "<i class=\"fa fa-minus-square-o\"></i>"
+        clickTarget.innerHTML = "<i class=\"fa fa-plus-square-o\"></i>"
     } else {
         clickTarget.state = "closed";
-        clickTarget.innerHTML = "<i class=\"fa fa-plus-square-o\"></i>"
+        clickTarget.innerHTML = "<i class=\"fa fa-minus-square-o\"></i>"
     }
     toggleVisibility(clickTarget.getAttribute("targetId"), 'table-row');
 }
