@@ -55,6 +55,7 @@ function m_studyId(idx, study) {
   return idx == 0
     ? m("td", {
           rowspan: study.datasets.length,
+          role: "cell",
           class: "StudyCell"
         }, m_ega("studies", study.egaStableId))
     : null;
@@ -62,6 +63,7 @@ function m_studyId(idx, study) {
 
 function m_dataset(idx, study) {
   return m("td", {
+      role: "cell",
       class: "StudyCell"
   }, m_ega("datasets", study.datasets[idx]))
 }
@@ -70,6 +72,7 @@ function m_dac(idx, study, datasetDacMap) {
   let dsId = study.datasets[idx];
   let dacId = datasetDacMap[dsId];
   return m("td", {
+      role: "cell",
      class: "StudyCell"
   }, m_ega("dac", dacId));
 }
@@ -78,6 +81,7 @@ function m_toggle(idx, study) {
   return idx == 0
     ? m("td", {
           rowspan: study.datasets.length,
+          role: "cell",
           class: "StudyCell"
         }, m("a", {
                   class: "DescriptionToggle",
@@ -90,7 +94,7 @@ function m_toggle(idx, study) {
 
 function m_tableRowWithDescription(study, datasetDacMap) {
    return range(0, study.datasets.length).map((idx) => {
-       return m("tr", [
+       return m("tr", { role: "row" },  [
             m_toggle(idx, study),
             m_title(idx, study),
             m_studyId(idx, study),
@@ -100,13 +104,16 @@ function m_tableRowWithDescription(study, datasetDacMap) {
   }).concat([
        <!-- The initial state of the DescriptionToggle should be set to "closed" (because of display:none). -->
        m("tr", {
-          id: "description-" + study.egaStableId,
-          class: "StudyDescriptionRow",
-          style: "display:none"
+           role: "row",
+           id: "description-" + study.egaStableId,
+           class: "StudyDescriptionRow",
+           style: "display:none"
        }, [ m("td"), m("td", {
-         colspan: 4,
-         class: "StudyDescriptionCell"
-       }, study.description) ])
+                colspan: 4,
+                role: "cell",
+                class: "StudyDescriptionCell"
+            }, study.description)
+       ])
   ]);
 }
 
@@ -121,11 +128,11 @@ function studyTable(studies, datasets, dacs) {
             m("caption", "As of January 28th, 2020, there are " + studies.size + " EGA studies referring to data access committees located in Tübingen and Heidelberg."),
                 m("thead", { role: "rowgroup" },
                     m("tr", [
-                        m("th", {width: "2%"}, ""),
-                        m("th", {width: "42%"}, "Study Title"),
-                        m("th", {width: "17%", align: "center"}, "Study ID"),
-                        m("th", {width: "17%", align: "center"}, "Dataset"),
-                        m("th", {width: "17%", align: "center"}, "DAC")
+                        m("th", { row: "columnheader", width: "2%"}, ""),
+                        m("th", { row: "columnheader", width: "42%"}, "Study Title"),
+                        m("th", { row: "columnheader", width: "17%", align: "center"}, "Study ID"),
+                        m("th", { row: "columnheader", width: "17%", align: "center"}, "Dataset"),
+                        m("th", { row: "columnheader", width: "17%", align: "center"}, "DAC")
                     ])
                 ),
                 m("tbody", { role: "rowgroup" },
