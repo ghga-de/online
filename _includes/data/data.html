@@ -18,51 +18,17 @@
                     and the technical details of regulating distributed data access need to be streamlined.
                 </p>
 
-                <table class="table" style="table-layout:fixed" width="100%">
-                    <caption>As of January 28th, 2020, there are {{ site.data.studies.size }} EGA studies referring to
-                        data access committees located in Tübingen and Heidelberg.</caption>
-                    <tr>
-                        <th width="65%">Title</th>
-                        <th width="20%">EGA Study ID</th>
-                        <th width="15%">Description</th>
-                    </tr>
+                <div class="StudiesTable"></div>
 
-                    {% for study in site.data.studies %}
-                    <tr>
-                        <td>{{ study.title }}</td>
-                        <td><a href="https://ega-archive.org/studies/{{ study.egaStableId }}" target="_blank">{{ study.egaStableId }}</a></td>
-                        <td><a class="DescriptionToggle" targetId="description-{{ study.egaStableId }}" state="closed"><i class="fa fa-plus-square-o"></i></a></td>
-                    </tr>
-                    <!-- The initial state of the DescriptionToggle should be set to "closed" (because of display:none).-->
-                    <tr id="description-{{ study.egaStableId }}" style="display:none;">
-                        <td colspan="3" class="description">
-                            {{ study.description }}
-                        </td>
-                    </tr>
-                    {% endfor %}
+                <script src="{{ "/js/mithril.js" | prepend: site.baseurl }}"></script>
+                <script src="{{ site.url }}/js/data.js"></script>
+                <script>                  
+                    let studies = retrieveData("{{ site.url }}/assets/data/studies.json");
+                    let datasets = retrieveData("{{ site.url }}/assets/data/datasets.json");
+                    let dacs = retrieveData("{{ site.url }}/assets/data/dacs.json");
 
-                </table>
-
-                <script>
-                    // Register the listener for all toggle fields in the table.
-                    function mapOverHTMLElements(htmlCollectionOf, fun) {
-                        for (let eidx = 0; eidx < htmlCollectionOf.length; ++eidx) {
-                            fun(htmlCollectionOf[eidx])
-                        }
-                    }
-
-                    // The actual listener.
-                    function descriptionToggleListener(ev) {
-                        const clickTarget = ev.currentTarget;
-                        if (clickTarget.state === "closed") {
-                            clickTarget.state = "opened";
-                            clickTarget.innerHTML = "<i class=\"fa fa-plus-square-o\"></i>"
-                        } else {
-                            clickTarget.state = "closed";
-                            clickTarget.innerHTML = "<i class=\"fa fa-minus-square-o\"></i>"
-                        }
-                        toggleVisibility(clickTarget.getAttribute("targetId"), 'table-row');
-                    }
+                    m.render(document.getElementsByClassName("StudiesTable")[0],
+                             studyTable(studies, datasets, dacs));
 
                     mapOverHTMLElements(document.getElementsByClassName("DescriptionToggle"), function (elem) {
                         elem.addEventListener("click", descriptionToggleListener)

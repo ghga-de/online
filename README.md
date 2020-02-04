@@ -7,12 +7,6 @@ The site uses Jekyll. To test the website locally, follow the instructions in th
 If you have `gem` installed you can do 
 
 ```bash
-gem install jekyll
-```
-
-Note that before you can run `jekyll serve` you additionally need to install the Jekyll theme:
-
-```bash
 gem install jekyll-theme-slate
 ```
  
