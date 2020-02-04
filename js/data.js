@@ -46,7 +46,6 @@ function m_title(idx, study) {
     ? m("td", {
           rowspan: study.datasets.length,
           class: "StudyCell",
-          style: "padding-bottom:1em"
         }, study.title)
     : null;
 }
@@ -78,7 +77,7 @@ function m_toggle(idx, study) {
   return idx == 0
     ? m("td", {
           rowspan: study.datasets.length,
-          class: "StudyCell"
+          // class: "StudyCell"
         }, m("a", {
                   class: "DescriptionToggle",
                   targetId: "description-" + study.egaStableId,
@@ -122,11 +121,11 @@ function studyTable(studies, datasets, dacs) {
             m("caption", "As of January 28th, 2020, there are " + studies.size + " EGA studies referring to data access committees located in Tübingen and Heidelberg."),
                 m("thead",
                     m("tr", [
-                        m("th", { width: "2%"}, ""),
-                        m("th", { width: "42%"}, "Study Title"),
-                        m("th", { width: "17%", align: "center"}, "Study ID"),
-                        m("th", { width: "17%", align: "center"}, "Dataset"),
-                        m("th", { width: "17%", align: "center"}, "DAC")
+                        m("th", { width: "3%"}, ""),
+                        m("th", "Study Title"),
+                        m("th", { width: "20%", align: "center"}, "Study ID"),
+                        m("th", { width: "20%", align: "center"}, "Dataset"),
+                        m("th", { width: "20%", align: "center"}, "DAC")
                     ])
                 ),
                 m("tbody",

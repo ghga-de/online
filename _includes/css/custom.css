@@ -9,6 +9,8 @@ table {
 .StudyCell {
   vertical-align: top;
   align-content: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .StudyDescriptionCell {
