@@ -37,7 +37,8 @@ function range(first, excluding) {
 function m_ega(type, id) {
   return m("a", {
       href: "https://ega-archive.org/" + type + "/" + id,
-      target: "_blank"
+      target: "_blank",
+      title: id
   }, id);
 }
 
