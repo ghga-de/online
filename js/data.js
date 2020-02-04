@@ -117,7 +117,6 @@ function studyTable(studies, datasets, dacs) {
       console.log("Not exactly one DAC for dataset " + ds.egaStableId + ": " + ds.dacs);
     datasetDacMap[ds.egaStableId] = ds.dacs[0];
   });
-  console.log(datasetDacMap);
   return m("table", {class: "table", style: "table-layout:fixed", width: "100%"}, [
             m("caption", "As of January 28th, 2020, there are " + studies.size + " EGA studies referring to data access committees located in Tübingen and Heidelberg."),
             m("tr", [
@@ -127,6 +126,5 @@ function studyTable(studies, datasets, dacs) {
                 m("th", {width: "17%", align: "center"}, "Dataset"),
                 m("th", {width: "17%", align: "center"}, "DAC")
             ])
-          ].concat(studies.flatMap((study) =>
-            m_tableRowWithDescription(study, datasetDacMap))));
+          ].concat(studies.reduce((acc, study) => acc.concat(m_tableRowWithDescription(study, datasetDacMap)), [])));
 }
