@@ -24,7 +24,7 @@
 
                 <div class="StudiesTable"></div>
 
-                <script src="{{ "/js/mithril.js" | prepend: site.baseurl }}"></script>
+                <script src="{{ "/js/mithril.js" | prepend: site.url }}"></script>
                 <script src="{{ site.url }}/js/data.js"></script>
                 <script>                  
                     let studies = retrieveData("{{ site.url }}/assets/data/studies.json");
