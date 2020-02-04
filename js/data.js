@@ -119,12 +119,17 @@ function studyTable(studies, datasets, dacs) {
   });
   return m("table", {class: "table", style: "table-layout:fixed", width: "100%"}, [
             m("caption", "As of January 28th, 2020, there are " + studies.size + " EGA studies referring to data access committees located in Tübingen and Heidelberg."),
-            m("tr", [
-                m("th", {width: "2%"}, ""),
-                m("th", {width: "42%"}, "Study Title"),
-                m("th", {width: "17%", align: "center"}, "Study ID"),
-                m("th", {width: "17%", align: "center"}, "Dataset"),
-                m("th", {width: "17%", align: "center"}, "DAC")
-            ])
-          ].concat(studies.reduce((acc, study) => acc.concat(m_tableRowWithDescription(study, datasetDacMap)), [])));
+                m("thead", { role: "rowgroup" },
+                    m("tr", [
+                        m("th", {width: "2%"}, ""),
+                        m("th", {width: "42%"}, "Study Title"),
+                        m("th", {width: "17%", align: "center"}, "Study ID"),
+                        m("th", {width: "17%", align: "center"}, "Dataset"),
+                        m("th", {width: "17%", align: "center"}, "DAC")
+                    ])
+                ),
+                m("tbody", { role: "rowgroup" },
+                    studies.reduce((acc, study) => acc.concat(m_tableRowWithDescription(study, datasetDacMap)), [])
+                )
+        ]);
 }
