@@ -1,0 +1,61 @@
+    <!-- Data Section -->
+	<script type="text/javascript">
+		function test() {
+			alert("Hi");
+		}
+    </script>
+    <section id="data-access" class="content-section text-center">
+        <div class="container">
+       		<div class="col-lg-11 col-lg-offset-0">
+
+		        <h2>Request Access</h2>
+		        <form name="accessForm" action="" method="POST">
+		        	<div class="form-group">
+		        		<label for="applicationDate">Date:</label>
+		        		<input type="date" name="applicationDate" class="form-control" id="applicationDate">
+		        	</div>
+		        	<div class="form-group">
+		        		<label for="applicant">Applicant:</label>
+			        	<input type="textfield" name="applicant" class="form-control" id="applicant" placeholder="Dr. rer. nat. Benjamin Button">
+			        </div>
+			       	<div class="form-group">
+			       		<label for="applicantPosition">Position of the Applicant:</label>
+			        	<input type="textfield" name="applicantPosition" class="form-control" id="applicantPosition" placeholder="Head of the core facility for age-related research.">
+			        </div>
+			        <div class="form-group">
+			        	<label for="principalInvestigator">Principal Investigator (PI):</label>
+			        	<input type="textfield" name="principalInvestigator" class="form-control" id="principalInvestigator" placeholder="Mr. Gateau">
+			        </div>
+			        <div class="form-group">
+			        	<label for="institution">Institution:</label>
+			        	<input type="textfield" name="institution" class="form-control" id="institution" placeholder="University of New Orleans">
+			        </div>
+			        <div class="form-group">
+			        	<label for="datasets">Dataset(s):</label>
+			        	<input type="textfield" name="datasets", class="form-control" id="datasets" placeholder="EGAD00000000001,EGAD00000000002">
+			        </div>
+			        <div class="form-group">
+			        	<label for="projectOutline">Outline your planned project on the selected data:</label>
+			        	<textarea rows="4" name="projectOutline" class="form-control" id="projectOutline"></textarea>
+			        </div>
+			        <div class="form-group">
+			        	<label for="hypothesis">Hypothesis/Rationale for the project:</label>
+			        	<textarea rows="2" name="hypothesis" class="form-control" id="hypothesis"></textarea>
+			        </div>
+			        <div class="form-group">
+			        	<label for="ethicalVoteInPlace">Is there an ethical vote in place to use next generation sequencing data?
+			        	</label>
+			        	<div class="input-group">
+			        		<input type="radio" id="ethicalNo" name="ethicalVoteRadio" checked>
+			        		<label class="custom-control-label" for="ethicalNo">No</label>
+			        	</div>
+			        	<div class="input-group">
+			        		<input type="radio" id="ethicalYes" name="ethicalVoteRadio">
+			        		<label class="custom-control-label" for="ethicalYes">Yes</label>
+			        	</div>
+			        </div>
+		        	<input type="button" name="sendButton" value="Send Mail" class="btn btn-default" onclick="test()">
+		        </form>
+	    	</div>
+        </div>
+    </section>
