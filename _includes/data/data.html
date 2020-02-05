@@ -38,6 +38,29 @@
                         elem.addEventListener("click", descriptionToggleListener)
                     });
 
+                    let selectedDatasets = {};
+
+                    // Toggle checkbox state. Selected datasets can then simply get retrieved as keys of those
+                    mapOverHTMLElements(document.getElementsByClassName("DatasetCheckbox"), function (elem) {
+                        let eventSource = elem.id;
+                        elem.addEventListener("click", function (ev) {
+                            if (undefined === selectedDatasets[eventSource] || false === selectedDatasets[eventSource]) {
+                                selectedDatasets[eventSource] = true
+                            } else {
+                                selectedDatasets[eventSource] = false
+                            }
+                        });
+                    });
+
+                    function getSelectedDatasets() {
+                        let result = [];
+                        Object.keys(selectedDatasets).forEach((key) => {
+                           if (selectedDatasets[key] === true)
+                               result.push(key);
+                        });
+                        return result;
+                    }
+                    
                 </script>
 
             </div>

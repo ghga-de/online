@@ -43,7 +43,7 @@ function m_ega(type, id) {
 }
 
 function m_title(idx, study) {
-    return idx == 0
+    return idx === 0
         ? m("td", {
             rowspan: study.datasets.length
         }, study.title)
@@ -51,7 +51,7 @@ function m_title(idx, study) {
 }
 
 function m_studyId(idx, study) {
-    return idx == 0
+    return idx === 0
         ? m("td", {
             rowspan: study.datasets.length,
             class: "StudyCell"
@@ -60,13 +60,15 @@ function m_studyId(idx, study) {
 }
 
 function m_dataset(idx, study) {
+    let dsId = study.datasets[idx];
     return m("td", {
         class: "StudyCell"
-    }, m("div", { class: "StudyCell", style: "white-space:nowrap" }, [
-        m("input", { type: "checkbox", name: "datasets", value: study.datasets[idx] }),
-        " ",
-        m_ega("datasets", study.datasets[idx])
-    ]))
+    }, m("div", { class: "checkbox", style: "white-space:nowrap" }, [
+        m("input", { type: "checkbox", class: "DatasetCheckbox", id: "checkbox-" + dsId }),
+        m("label", { for: "checkbox-" + dsId },
+            m_ega("datasets", dsId)
+        )
+    ]));
 }
 
 function m_dac(idx, study, datasetDacMap) {
@@ -78,7 +80,7 @@ function m_dac(idx, study, datasetDacMap) {
 }
 
 function m_toggle(idx, study) {
-    return idx == 0
+    return idx === 0
         ? m("td", {
             rowspan: study.datasets.length,
             // class: "StudyCell"
@@ -121,20 +123,19 @@ function studyTable(studies, datasets, dacs) {
             console.log("Not exactly one DAC for dataset " + ds.egaStableId + ": " + ds.dacs);
         datasetDacMap[ds.egaStableId] = ds.dacs[0];
     });
-    return m("form",
-        m("table", {class: "table", style: "table-layout:fixed", width: "100%"}, [
-            m("caption", "As of January 28th, 2020, there are " + studies.size + " EGA studies referring to data access committees located in Tübingen and Heidelberg."),
-            m("thead",
-                m("tr", [
-                    m("th", { width: "3%"}, ""),
-                    m("th", "Study Title"),
-                    m("th", { width: "22%", align: "center"}, "Study ID"),
-                    m("th", { width: "22%", align: "center"}, "Dataset"),
-                    m("th", { width: "22%", align: "center"}, "DAC")
-                ])
-            ),
-            m("tbody",
-                studies.reduce((acc, study) => acc.concat(m_tableRowWithDescription(study, datasetDacMap)), [])
-            )
-        ]));
+    return m("table", {class: "table", style: "table-layout:fixed", width: "100%"}, [
+        m("caption", "As of January 28th, 2020, there are " + studies.size + " EGA studies referring to data access committees located in Tübingen and Heidelberg."),
+        m("thead",
+            m("tr", [
+                m("th", { width: "3%"}, ""),
+                m("th", "Study Title"),
+                m("th", { width: "22%", align: "center"}, "Study ID"),
+                m("th", { width: "22%", align: "center"}, "Dataset"),
+                m("th", { width: "22%", align: "center"}, "DAC")
+            ])
+        ),
+        m("tbody",
+            studies.reduce((acc, study) => acc.concat(m_tableRowWithDescription(study, datasetDacMap)), [])
+        )
+    ]);
 }
