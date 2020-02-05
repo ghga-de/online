@@ -77,7 +77,6 @@ function m_toggle(idx, study) {
     return idx == 0
         ? m("td", {
             rowspan: study.datasets.length,
-            // class: "StudyCell"
         }, m("a", {
                 class: "DescriptionToggle",
                 targetId: "description-" + study.egaStableId,
