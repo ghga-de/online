@@ -76,14 +76,13 @@ function m_dac(idx, study, datasetDacMap) {
     let dacId = datasetDacMap[dsId];
     return m("td", {
         class: "StudyCell"
-    }, m_ega("dac", dacId));
+    }, m_ega("dacs", dacId));
 }
 
 function m_toggle(idx, study) {
     return idx === 0
         ? m("td", {
             rowspan: study.datasets.length,
-            // class: "StudyCell"
         }, m("a", {
                 class: "DescriptionToggle",
                 targetId: "description-" + study.egaStableId,
@@ -95,7 +94,7 @@ function m_toggle(idx, study) {
 
 function m_tableRowWithDescription(study, datasetDacMap) {
     return range(0, study.datasets.length).map((idx) => {
-        return m("tr",  [
+        return m("tr", [
             m_toggle(idx, study),
             m_title(idx, study),
             m_studyId(idx, study),
@@ -117,10 +116,10 @@ function m_tableRowWithDescription(study, datasetDacMap) {
 }
 
 function studyTable(studies, datasets, dacs) {
-    let datasetDacMap = {}
+    let datasetDacMap = {};
     datasets.forEach((ds, i) => {
-        if (ds.dacs.length != 1)
-            console.log("Not exactly one DAC for dataset " + ds.egaStableId + ": " + ds.dacs);
+        if (ds.dacs.length !== 1)
+            console.warn("Not exactly one DAC for dataset " + ds.egaStableId + ": " + ds.dacs);
         datasetDacMap[ds.egaStableId] = ds.dacs[0];
     });
     return m("table", {class: "table", style: "table-layout:fixed", width: "100%"}, [
