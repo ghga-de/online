@@ -70,7 +70,7 @@ function m_dac(idx, study, datasetDacMap) {
     let dacId = datasetDacMap[dsId];
     return m("td", {
         class: "StudyCell"
-    }, m_ega("dac", dacId));
+    }, m_ega("dacs", dacId));
 }
 
 function m_toggle(idx, study) {
