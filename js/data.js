@@ -63,10 +63,10 @@ function m_dataset(idx, study) {
     let dsId = study.datasets[idx];
     return m("td", {
         class: "IdentifierCell"
-    }, m("div", { class: "DatasetCheckbox" }, [
-        m("input", { type: "checkbox", id: "checkbox-" + dsId }),
+    }, m("div", { class: "DatasetCheckboxDiv" }, [
+        m("input", { type: "checkbox", class: "DatasetCheckbox", id: "checkbox-" + dsId }),
         " ",
-        m("label", { class: "DatasetCheckbox", for: "checkbox-" + dsId },
+        m("label", { class: "DatasetCheckboxLabel", for: "checkbox-" + dsId },
             m_ega("datasets", dsId)
         )
     ]));

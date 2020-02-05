@@ -1,9 +1,4 @@
     <!-- Data Section -->
-	<script type="text/javascript">
-		function test() {
-			alert("Hi");
-		}
-    </script>
     <section id="data-access" class="content-section text-center">
         <div class="container">
        		<div class="col-lg-11 col-lg-offset-0">
@@ -54,8 +49,50 @@
 			        		<label class="custom-control-label" for="ethicalYes">Yes</label>
 			        	</div>
 			        </div>
-		        	<input type="button" name="sendButton" value="Send Mail" class="btn btn-default" onclick="test()">
+
+					<input type="button" name="sendButton" value="Send Mail" class="btn btn-default" onclick="test()">
 		        </form>
 	    	</div>
         </div>
-    </section>
+
+		<script>
+			/* Take an array of objects with egaStableId field and return a dictionary with each element
+               as value and its egaStableId as key. */
+			function byEgaStableId(data) {
+				let result = {};
+				data.forEach((d) => {
+					if (result[d.egaStableId] !== undefined)
+						console.error("Data '" + d.egaStableId + "' is not unique! Overwriting!");
+					result[d.egaStableId] = d;
+				});
+				return result;
+			}
+
+			/* Return a list of DACs, with a datasets field containing the full dataset information. */
+			function getSelectedDatasetsByDacs(selectedDatasetIds, datasets, dacs) {
+				let datasetsById = byEgaStableId(datasets);
+				// We make a clone because the structure will be returned.
+				let dacsById = _.cloneDeep(byEgaStableId(dacs));
+
+				function addDataset(dac, dataset) {
+					if (dac.datasets === undefined)
+						dac.datasets = [];
+					dac.datasets.push(dataset);
+					return dac;
+				}
+
+				selectedDatasetIds.forEach((selectedDsId) => {
+					let selectedDataset = datasetsById[selectedDsId];
+					if (selectedDataset.dacs.length !== 1)
+						console.error("Dataset '" + selectedDsId + "' has not exactly one DAC. Using first one!");
+					let dacId = selectedDataset.dacs[0];
+
+					addDataset(dacsById[dacId], selectedDataset);
+				});
+
+				return _.filter((dac) => dac.datasets !== undefined)(dacsById);
+			}
+
+		</script>
+
+	</section>

@@ -19,7 +19,7 @@ table {
   padding-bottom: 1em;
 }
 
-.DatasetCheckbox {
+.DatasetCheckbox, .DatasetCheckboxLabel, .DatasetCheckboxDiv {
   vertical-align:top;
   padding-left:0px;
   min-height: 0px;
