@@ -45,8 +45,7 @@ function m_ega(type, id) {
 function m_title(idx, study) {
     return idx == 0
         ? m("td", {
-            rowspan: study.datasets.length,
-            class: "StudyCell",
+            rowspan: study.datasets.length
         }, study.title)
         : null;
 }
