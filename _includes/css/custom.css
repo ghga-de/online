@@ -9,8 +9,6 @@ table {
 .IdentifierCell {
   vertical-align: top;
   text-align: right;
-  overflow: hidden;
-  text-overflow: ellipsis;
   direction:rtl;
 }
 
@@ -19,7 +17,7 @@ table {
   padding-bottom: 1em;
 }
 
-.DatasetCheckbox, .DatasetCheckboxLabel, .DatasetCheckboxDiv {
+.DatasetCheckbox, .DatasetCheckboxDiv {
   vertical-align:top;
   padding-left:0px;
   min-height: 0px;
@@ -27,6 +25,18 @@ table {
   margin-bottom: 0;
   position: relative;
   font-weight: inherit;
-  display:inline-block;
   white-space: nowrap;
+}
+
+.EllipsisText {
+  vertical-align:top;
+  padding-left:20px;
+  min-height: 0px;
+  margin-top: 0;
+  margin-bottom: 0;
+  position: relative;
+  font-weight: inherit;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }

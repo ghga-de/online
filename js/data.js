@@ -55,7 +55,7 @@ function m_studyId(idx, study) {
         ? m("td", {
             rowspan: study.datasets.length,
             class: "IdentifierCell"
-        }, m_ega("studies", study.egaStableId))
+        }, m("div", { class: "EllipsisText" }, m_ega("studies", study.egaStableId)))
         : null;
 }
 
@@ -66,7 +66,7 @@ function m_dataset(idx, study) {
     }, m("div", { class: "DatasetCheckboxDiv" }, [
         m("input", { type: "checkbox", class: "DatasetCheckbox", id: "checkbox-" + dsId }),
         " ",
-        m("label", { class: "DatasetCheckboxLabel", for: "checkbox-" + dsId },
+        m("label", { class: "EllipsisText", for: "checkbox-" + dsId },
             m_ega("datasets", dsId)
         )
     ]));
@@ -77,7 +77,7 @@ function m_dac(idx, study, datasetDacMap) {
     let dacId = datasetDacMap[dsId];
     return m("td", {
         class: "IdentifierCell"
-    }, m_ega("dacs", dacId));
+    }, m("div", { class: "EllipsisText" }, m_ega("dacs", dacId)));
 }
 
 function m_toggle(idx, study) {
