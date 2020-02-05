@@ -1,10 +1,16 @@
     <!-- Data Section -->
-    <section id="data-access" class="content-section text-center">
         <div class="container">
        		<div class="col-lg-11 col-lg-offset-0">
 
 		        <h2>Request Access</h2>
 		        <form name="accessForm" action="" method="POST">
+
+              <div>
+                You have selected datasets from the following data access committees:
+
+                <div class="DacTable"></div>
+              </div>
+
 		        	<div class="form-group">
 		        		<label for="applicationDate">Date:</label>
 		        		<input type="date" name="applicationDate" class="form-control" id="applicationDate">
@@ -50,9 +56,21 @@
 			        	</div>
 			        </div>
 
-					<input type="button" name="sendButton" value="Send Mail" class="btn btn-default" onclick="test()">
+    					<input type="button" name="sendButton" value="Send Mail" class="btn btn-default" onclick="test()">
 		        </form>
 	    	</div>
-        </div>
+      </div>
+
+      <script type="text/javascript">
+        let dacTable = new DacTable(studyTable);
+
+        let dacView = {
+          view: () => {
+            return dacTable.m_dacTable();
+          }
+        }
+
+        m.mount(document.getElementsByClassName("DacTable")[0], dacView);
+      </script>
 
 	</section>

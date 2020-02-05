@@ -22,6 +22,14 @@ let support = {
             result.push(i);
         }
         return result;
+    },
+
+    m_ega: (type, id) => {
+        return m("a", {
+            href: "https://ega-archive.org/" + type + "/" + id,
+            target: "_blank",
+            title: id
+        }, id);
     }
 
 };
@@ -109,14 +117,6 @@ class StudyTable {
         toggleVisibility(clickTarget.getAttribute("targetId"), 'table-row');
     }
 
-    m_ega(type, id) {
-        return m("a", {
-            href: "https://ega-archive.org/" + type + "/" + id,
-            target: "_blank",
-            title: id
-        }, id);
-    }
-
     m_title(idx, study) {
         return idx === 0
             ? m("td", {
@@ -130,7 +130,7 @@ class StudyTable {
             ? m("td", {
                 rowspan: study.datasets.length,
                 class: "IdentifierCell"
-            }, m("div", {class: "EllipsisText"}, this.m_ega("studies", study.egaStableId)))
+            }, m("div", {class: "EllipsisText"}, support.m_ega("studies", study.egaStableId)))
             : null;
     }
 
@@ -160,7 +160,7 @@ class StudyTable {
             }),
             " ",
             m("label", {class: "EllipsisText", for: "checkbox-" + dsId},
-                this.m_ega("datasets", dsId)
+                support.m_ega("datasets", dsId)
             )
         ]));
     }
@@ -170,7 +170,7 @@ class StudyTable {
         let dacId = datasetDacMap[dsId];
         return m("td", {
             class: "IdentifierCell"
-        }, m("div", {class: "EllipsisText"}, this.m_ega("dacs", dacId)));
+        }, m("div", {class: "EllipsisText"}, support.m_ega("dacs", dacId)));
     }
 
     m_toggle(idx, study) {
@@ -225,9 +225,9 @@ class StudyTable {
                 m("tr", [
                     m("th", {width: "3%"}, ""),
                     m("th", "Study Title"),
-                    m("th", {width: "22%", align: "right"}, "Study ID"),
-                    m("th", {width: "22%", align: "right"}, "Dataset"),
-                    m("th", {width: "22%", align: "right"}, "DAC")
+                    m("th", {width: "22%", style: "text-align:right"}, "Study ID"),
+                    m("th", {width: "22%", style: "text-align:right"}, "Dataset"),
+                    m("th", {width: "22%", style: "text-align:right"}, "DAC")
                 ])
             ),
             m("tbody",
@@ -239,21 +239,67 @@ class StudyTable {
 };
 
 
-class selectionTable {
+class DacTable {
 
-    constructor() {
-
+    constructor(studyTable) {
+      this.studyTable = studyTable;
     }
 
-    m_selectionTable(data) {
-        let dacsNdata = selectionTable.getSelectedDatasetsByDacs(
-            selectionTable.getSelectedDatasetIds(),
-            data.datasets,
-            data.dacs);
-        return m("table", [
-            m("thead", m("tr", m("th", "DAC"))),
+    m_contact(contact) {
+      return m("div", [
+        contact.contactName,
+        ", ",
+        contact.organisation,
+        " ",
+        "(", contact.email, ")"
+      ]);
+    }
+
+    m_dacInfo(dac) {
+      let mainContact;
+      if (dac.contacts.length === 0) {
+        console.error("No contact found for DAC '" + dac.egaStableId + "'");
+        mainContact = {
+          contactName: "unknown",
+          organisation: "unknown",
+          email: "unknown"
+        };
+      } else {
+        mainContact = _.filter((contact) => contact.mainContact === true)(dac.contacts);
+        if (mainContact === undefined) {
+          console.warning("No main-contact found for DAC '" + dac.egaStableId + "'")
+          mainContact = dac.contacts[0];
+        }
+      }
+      console.log(mainContact);
+      return m("div", [
+        m("div", [
+          dac.title,
+          " ",
+          "(", support.m_ega("dacs", dac.egaStableId), ")"
+        ]),
+        m("div", this.m_contact(mainContact))
+      ]);
+    }
+
+    m_datasets(datasets) {
+      return datasets.map((ds) => m("div", {
+        class: "EllipsisText"
+      }, support.m_ega("datasets", ds.egaStableId)));
+    }
+
+    m_dacTable(data) {
+        let dacsNdata = this.studyTable.getSelectedDatasetsByDacs();
+        return m("table", {class: "table", style: "table-layout:fixed", width: "100%"}, [
+            m("thead", m("tr", [
+              m("th", { width: "75%"}, "Data Access Committee"),
+              m("th", { width: "25%", style: "text-align:right"}, "Datasets")
+            ])),
             m("tbody", dacsNdata.map((dac) => {
-                return m("tr", m("td", "hallo"));
+              return m("tr", [
+                m("td", this.m_dacInfo(dac)),
+                m("td", { class: "IdentifierCell" }, this.m_datasets(dac.datasets))
+              ]);
             }))]);
     }
 
