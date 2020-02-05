@@ -54,22 +54,29 @@ function m_studyId(idx, study) {
     return idx === 0
         ? m("td", {
             rowspan: study.datasets.length,
-            class: "StudyCell"
+            class: "IdentifierCell"
         }, m_ega("studies", study.egaStableId))
         : null;
 }
 
 function m_dataset(idx, study) {
+    let dsId = study.datasets[idx];
     return m("td", {
-        class: "StudyCell"
-    }, m_ega("datasets", study.datasets[idx]))
+        class: "IdentifierCell"
+    }, m("div", { class: "DatasetCheckbox" }, [
+        m("input", { type: "checkbox", id: "checkbox-" + dsId }),
+        " ",
+        m("label", { class: "DatasetCheckbox", for: "checkbox-" + dsId },
+            m_ega("datasets", dsId)
+        )
+    ]));
 }
 
 function m_dac(idx, study, datasetDacMap) {
     let dsId = study.datasets[idx];
     let dacId = datasetDacMap[dsId];
     return m("td", {
-        class: "StudyCell"
+        class: "IdentifierCell"
     }, m_ega("dacs", dacId));
 }
 
@@ -122,9 +129,9 @@ function studyTable(studies, datasets, dacs) {
             m("tr", [
                 m("th", { width: "3%"}, ""),
                 m("th", "Study Title"),
-                m("th", { width: "20%", align: "center"}, "Study ID"),
-                m("th", { width: "20%", align: "center"}, "Dataset"),
-                m("th", { width: "20%", align: "center"}, "DAC")
+                m("th", { width: "22%", align: "center"}, "Study ID"),
+                m("th", { width: "22%", align: "center"}, "Dataset"),
+                m("th", { width: "22%", align: "center"}, "DAC")
             ])
         ),
         m("tbody",

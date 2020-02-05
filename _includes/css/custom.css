@@ -6,7 +6,7 @@ table {
   caption-side: top;
 }
 
-.StudyCell {
+.IdentifierCell {
   vertical-align: top;
   text-align: right;
   overflow: hidden;
@@ -15,7 +15,18 @@ table {
 }
 
 .StudyDescriptionCell {
-  /* font-size: smaller; */
   color: gray;
   padding-bottom: 1em;
+}
+
+.DatasetCheckbox {
+  vertical-align:top;
+  padding-left:0px;
+  min-height: 0px;
+  margin-top: 0;
+  margin-bottom: 0;
+  position: relative;
+  font-weight: inherit;
+  display:inline-block;
+  white-space: nowrap;
 }
