@@ -29,11 +29,20 @@
                 <script src="{{ "/js/data.js" | prepend: site.url }}"></script>
                 <script type="text/javascript">
 
+                        // Data retrieval will be substituted by DB requests, as soon as necessary.
                         const data = {
                             studies: support.retrieveData("{{ site.url }}/assets/data/studies.json"),
                             datasets: support.retrieveData("{{ site.url }}/assets/data/datasets.json"),
                             dacs: support.retrieveData("{{ site.url }}/assets/data/dacs.json")
                         };
+
+                        let studyTable = new StudyTable(data.dacs, data.studies, data.datasets);
+
+                        let studyTableView = {
+                            view: () => {
+                                return studyTable.m_studyTable();
+                            }
+                        }
 
                         m.mount(document.getElementsByClassName("StudiesTable")[0], studyTableView);
 
@@ -43,8 +52,5 @@
 
 
                 </script>
-
-
             </div>
         </div>
-    </section>
