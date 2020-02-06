@@ -19,7 +19,9 @@
                 </p>
 
                 <p>
-                    If you are interested in obtaining access to a specific dataset from the table below you can submit an <a href="#data-access">access request email.</a>
+                    If you are interested in obtaining access to a specific dataset from the table below you can
+                    submit an <a href="#data-access">access request email.</a> Please indicate the datasets you
+                    are interested in by selecting them from the following table.
                 </p>
 
                 <div class="StudiesTable"></div>
@@ -31,9 +33,9 @@
 
                         // Data retrieval will be substituted by DB requests, as soon as necessary.
                         const data = {
-                            studies: support.retrieveData("{{ site.url }}/assets/data/studies.json"),
-                            datasets: support.retrieveData("{{ site.url }}/assets/data/datasets.json"),
-                            dacs: support.retrieveData("{{ site.url }}/assets/data/dacs.json")
+                            studies: Support.retrieveData("{{ site.url }}/assets/data/studies.json"),
+                            datasets: Support.retrieveData("{{ site.url }}/assets/data/datasets.json"),
+                            dacs: Support.retrieveData("{{ site.url }}/assets/data/dacs.json")
                         };
 
                         let studyTable = new StudyTable(data.dacs, data.studies, data.datasets);
