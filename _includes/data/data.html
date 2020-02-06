@@ -24,45 +24,33 @@
 
                 <div class="StudiesTable"></div>
 
+                <script src="{{ "/js/lodash@4(lodash.min.js+lodash.fp.min.js).js" | prepend: site.url }}"></script>
                 <script src="{{ "/js/mithril.js" | prepend: site.url }}"></script>
-                <script src="{{ site.url }}/js/data.js"></script>
-                <script>                  
-                    let studies = retrieveData("{{ site.url }}/assets/data/studies.json");
-                    let datasets = retrieveData("{{ site.url }}/assets/data/datasets.json");
-                    let dacs = retrieveData("{{ site.url }}/assets/data/dacs.json");
+                <script src="{{ "/js/data.js" | prepend: site.url }}"></script>
+                <script type="text/javascript">
 
-                    m.render(document.getElementsByClassName("StudiesTable")[0],
-                             studyTable(studies, datasets, dacs));
+                        // Data retrieval will be substituted by DB requests, as soon as necessary.
+                        const data = {
+                            studies: support.retrieveData("{{ site.url }}/assets/data/studies.json"),
+                            datasets: support.retrieveData("{{ site.url }}/assets/data/datasets.json"),
+                            dacs: support.retrieveData("{{ site.url }}/assets/data/dacs.json")
+                        };
 
-                    mapOverHTMLElements(document.getElementsByClassName("DescriptionToggle"), function (elem) {
-                        elem.addEventListener("click", descriptionToggleListener)
-                    });
+                        let studyTable = new StudyTable(data.dacs, data.studies, data.datasets);
 
-                    let selectedDatasets = {};
-
-                    // Toggle checkbox state. Selected datasets can then simply get retrieved as keys of those
-                    mapOverHTMLElements(document.getElementsByClassName("DatasetCheckbox"), function (elem) {
-                        let eventSource = elem.id;
-                        elem.addEventListener("click", function (ev) {
-                            if (undefined === selectedDatasets[eventSource] || false === selectedDatasets[eventSource]) {
-                                selectedDatasets[eventSource] = true
-                            } else {
-                                selectedDatasets[eventSource] = false
+                        let studyTableView = {
+                            view: () => {
+                                return studyTable.m_studyTable();
                             }
-                        });
-                    });
+                        }
 
-                    function getSelectedDatasets() {
-                        let result = [];
-                        Object.keys(selectedDatasets).forEach((key) => {
-                           if (selectedDatasets[key] === true)
-                               result.push(key);
-                        });
-                        return result;
-                    }
+                        m.mount(document.getElementsByClassName("StudiesTable")[0], studyTableView);
+
+                        // /* Insert a table of the selected datasets and DACs. Note that the m.mount() takes care to
+                        //    automatically update the DOM upon data changes! */
+                        // m.mount(document.getElementById("SelectionTable"), selectionTableView);
+
 
                 </script>
-
             </div>
         </div>
-    </section>
