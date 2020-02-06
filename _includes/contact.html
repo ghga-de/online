@@ -1,43 +1,64 @@
-    <!-- Contact Section -->
-    <section id="contact" class="container content-section text-center">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2>Contact</h2>
+        <!-- Contact Section -->
+        <section id="contact" class="container content-section text-center">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h2>Contact</h2>
 
-                <p>Dr. Oliver Stegle DKFZ Heidelberg, Prof. Dr. Oliver Kohlbacher Universität Tübingen
-                  <br>
-                  <a href="mailto:{{ site.email }}">{{ site.email }}</a>
-                </p>
-                <ul class="list-inline banner-social-buttons">
-                    {% for network in site.social %}
-                    <li>
-                        <a href="{{ network.url }}" class="btn btn-default btn-lg"><i class="fab fa-{{ network.title }} fa-fw"></i> <span class="network-name">{{ network.title }}</span></a>
-                        <!-- <a href="http://uni-tuebingen.de" class="btn btn-default btn-lg">University of Tübingen</a><br>
-                        <a href="https://www.medizin.uni-tuebingen.de/en/Homepage.html" class="btn btn-default btn-lg">Tübingen University Hospital</a>-->
-                    </li>
-                    {% endfor %}
-                </ul>
+                    <p>
+                        Dr. Oliver Stegle (DKFZ Heidelberg), Prof. Dr. Oliver Kohlbacher (Universität Tübingen)<br>
+                        <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+                    </p>
+                    <ul class="list-inline banner-social-buttons">
+                        {% for network in site.social %}
+                        <li>
+                            <a href="{{ network.url }}" class="btn btn-default btn-lg">
+                                <i class="fab fa-{{ network.title }} fa-fw"></i>
+                                <span class="network-name">{{ network.title }}</span>
+                            </a>
+                        </li>
+                        {% endfor %}
+                    </ul>
 
-                <h2>Legal Notice</h2>
-                <p>Informationspflicht laut § 5 TMG.<br>
-                  GHGA gGmbH <br>
-                  Im Neuenheimer Feld 280 <br>
-                  69120 Heidelberg <br>
-                  Deutschland <br>
-                  <br>
-                  UID-Nummer: DE12345678 <br>
-                  Wirtschafts-ID: DE123456789 <br>
-                  <br>
-                  Tel.: 01234/56789 <br>
-                  Fax: 01234/56789-0 <br>
-                  E-Mail: contact@ghga.de <br>
-                  <br>
-                  Geschäftsführer <br>
-                  Dr. Oliver Stegle, Prof. Dr. Oliver Kohlbacher
-                  <br>
-                  <br>
-                  By using the GHGA Website, you consent to our <a href="documents/PrivacyPolicy.pdf"> Privacy Policy</a></p>
+                    <h2>Legal Notice</h2>
+                    <p>
+                        Informationspflicht laut § 5 TMG.<br><br>
 
+                        <h3>Address</h3>
+                        <p>
+                        Deutsches Krebsforschungszentrum<br>
+                        Im Neuenheimer Feld 280<br>
+                        69120 Heidelberg<br>
+                        Telefon: +49 (0)6221 420<br>
+                        Telefax: +49 (0)6221 422995<br>
+                        </p>
+                        <p>
+                        UID-Nummer: DE 143293537 <br>
+                        </p>
+
+                        <p>
+                        Telefon: +49 (0)6221 420<br>
+                        Telefax: +49 (0)6221 422995<br>
+                        </p>
+
+                        <h3>Persons authorised to represent</h3>
+                        <p>
+                        Chairman and Scientific Director: Prof. Dr. Michael Baumann<br>
+
+                        Administrative Director: Ursula Weyrich<br>
+
+                        (address like above)
+                        </p>
+
+                        <h3>Project Leads</h3>
+                        <p>
+                            Projekt Leads<br>
+                            Dr. Oliver Stegle, Prof. Dr. Oliver Kohlbacher<br>
+                            <br>
+                        </p>
+
+                        <h3>Disclaimer</h3>
+                        By using the GHGA Website, you consent to our <a href="https://www.dkfz.de/de/datenschutzerklaerung.html?m=1541343170" target="_blank">Privacy Policy</a>
+                    </p>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
