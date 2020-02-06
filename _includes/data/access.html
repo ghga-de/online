@@ -61,16 +61,16 @@
 	    	</div>
       </div>
 
-      <script type="text/javascript">
-        let dacTable = new DacTable(studyTable);
+	<script type="text/javascript">
+		let dacTable = new DacTable(studyTable);
 
-        let dacView = {
-          view: () => {
-            return dacTable.m_dacTable();
-          }
-        }
+		let dacView = {
+			view: () => {
+				return dacTable.m_dacTable();
+			}
+		}
 
-        m.mount(document.getElementsByClassName("DacTable")[0], dacView);
-      </script>
+		m.mount(document.getElementsByClassName("DacTable")[0], dacView);
+	</script>
 
 	</section>
