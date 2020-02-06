@@ -1,36 +1,36 @@
     <!-- Data Section -->
 <script type="text/javascript">
-		function sendMail( subject, body, cc='', bcc='') {
-			// ATTENTION! This mail address might be scraped from the page for spam.
-			let recepientMail = "temp@robot-mail.com"; //getnada dot com
+	function sendMail( subject, body, cc='', bcc='') {
+		// ATTENTION! This mail address might be scraped from the page for spam.
+		let recepientMail = "temp@robot-mail.com"; //getnada dot com
 
-			let mailLink = "mailto:" + recepientMail +
-								"?cc=" + cc + 
-								"&bcc=" + bcc + 
-								"&subject=" + subject +
-								"&body=" + body;
-			let encodedMailLink = encodeURI(mailLink);
-			window.open(encodedMailLink, "_blank");
-		}
+		let mailLink = "mailto:" + recepientMail +
+							"?cc=" + cc + 
+							"&bcc=" + bcc + 
+							"&subject=" + subject +
+							"&body=" + body;
+		let encodedMailLink = encodeURI(mailLink);
+		window.open(encodedMailLink, "_blank");
+	}
 
-		function requestAccess(accessForm) {
-			
-			let cc = '';
-			let bcc = '';
-			let subject = '';
-			let body = '';
+	function requestAccess(accessForm) {
+		
+		let cc = '';
+		let bcc = '';
+		let subject = '';
+		let body = '';
 
-			let formElements = accessForm.elements;
+		let formElements = accessForm.elements;
 
-			let submitDate = Date.now(), 
-				applicant = formElements.namedItem('applicant').value,
-				applicantPosition = formElements.namedItem('applicantPosition').value,
-				principalInvestigator = formElements.namedItem('principalInvestigator').value,
-				institution = formElements.namedItem('institution').value,
-				datasets = formElements.namedItem('datasets').value,
-				projectOutline = formElements.namedItem('projectOutline').value,
-				hypothesis = formElements.namedItem('hypothesis').value,
-				ethicalVote = formElements.namedItem('ethicalYes').checked;
+		let submitDate = Date.now(), 
+			applicant = formElements.namedItem('applicant').value,
+			applicantPosition = formElements.namedItem('applicantPosition').value,
+			principalInvestigator = formElements.namedItem('principalInvestigator').value,
+			institution = formElements.namedItem('institution').value,
+			datasets = formElements.namedItem('datasets').value,
+			projectOutline = formElements.namedItem('projectOutline').value,
+			hypothesis = formElements.namedItem('hypothesis').value,
+			ethicalVote = formElements.namedItem('ethicalYes').checked;
 
 			body = `To Whom it May Concern,
 
@@ -47,8 +47,8 @@ ${applicant}`
 
 			subject = `Access Request on ${datasets}`;
 
-			sendMail(subject, body);
-		}
+		sendMail(subject, body);
+	}
 
 		
     </script>
@@ -59,7 +59,7 @@ ${applicant}`
                 You have selected datasets from the following data access committees:
 
                 <div class="DacTable"></div>
-              </div
+              </div>
 
 		        <h2>Request Access</h2>
 		        <form name="accessForm" onsubmit="requestAccess(this);return false;" method="POST">
