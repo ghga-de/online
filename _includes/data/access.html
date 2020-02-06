@@ -1,8 +1,33 @@
     <!-- Data Section -->
 	<script type="text/javascript">
-		function test() {
-			alert("Hi");
+		function sendMail( subject, body, cc='', bcc='') {
+			// ATTENTION! This mail address might be scraped from the page for spam.
+			let recepientMail = "temp@robot-mail.com"; //getnada dot com
+
+			let mailLink = "mailto:" + recepientMail +
+								"?cc=" + cc + 
+								"&bcc=" + bcc + 
+								"&subject=" + subject +
+								"&body=" + body;
+			let encodedMailLink = encodeURI(mailLink);
+			window.open(encodedMailLink, "_blank");
 		}
+
+		function requestAccess(accessForm) {
+			
+			let cc = '';
+			let bcc = '';
+			let subject = '';
+			let body = '';
+
+			let formElements = accessForm.elements;
+
+			sendMail('Testmail', 'I just want to test this äöüß.');
+
+			
+		}
+
+		
     </script>
     <section id="data-access" class="content-section text-center">
         <div class="container">
@@ -54,7 +79,7 @@
 			        		<label class="custom-control-label" for="ethicalYes">Yes</label>
 			        	</div>
 			        </div>
-		        	<input type="button" name="sendButton" value="Send Mail" class="btn btn-default" onclick="test()">
+		        	<input type="button" name="sendButton" value="Send Mail" class="btn btn-default" onclick="requestAccess(this.form)">
 		        </form>
 	    	</div>
         </div>
