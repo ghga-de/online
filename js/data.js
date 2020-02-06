@@ -242,64 +242,68 @@ class StudyTable {
 class DacTable {
 
     constructor(studyTable) {
-      this.studyTable = studyTable;
+        this.studyTable = studyTable;
     }
 
     m_contact(contact) {
-      return m("div", [
-        contact.contactName,
-        ", ",
-        contact.organisation,
-        " ",
-        "(", contact.email, ")"
-      ]);
+        return m("div", [
+            contact.contactName,
+            ", ",
+            contact.organisation,
+            " ",
+            "(", contact.email, ")"
+        ]);
     }
 
     m_dacInfo(dac) {
-      let mainContact;
-      if (dac.contacts.length === 0) {
-        console.error("No contact found for DAC '" + dac.egaStableId + "'");
-        mainContact = {
-          contactName: "unknown",
-          organisation: "unknown",
-          email: "unknown"
-        };
-      } else {
-        mainContact = _.filter((contact) => contact.mainContact === true)(dac.contacts);
-        if (mainContact === undefined) {
-          console.warning("No main-contact found for DAC '" + dac.egaStableId + "'")
-          mainContact = dac.contacts[0];
+        let mainContact;
+        if (dac.contacts.length === 0) {
+            console.error("No contact found for DAC '" + dac.egaStableId + "'");
+            mainContact = {
+                contactName: "unknown",
+                organisation: "unknown",
+                email: "unknown"
+            };
+        } else {
+            let mainContacts = _.filter((contact) => contact.mainContact === true)(dac.contacts);
+            if (mainContacts.length === 0) {
+                console.warn("No main-contact found for DAC '" + dac.egaStableId + "'");
+                mainContact = dac.contacts[0];
+            } else if (mainContacts.length > 1) {
+                console.warn("More than one main contact for DAC '" + dac.egaStableId + "'. Using the first one.");
+                mainContact = mainContacts[0];
+            } else {
+                mainContact = mainContacts[0];
+            }
         }
-      }
-      console.log(mainContact);
-      return m("div", [
-        m("div", [
-          dac.title,
-          " ",
-          "(", support.m_ega("dacs", dac.egaStableId), ")"
-        ]),
-        m("div", this.m_contact(mainContact))
-      ]);
+        return m("div", [
+            m("div", [
+                dac.title,
+                " ",
+                "(", support.m_ega("dacs", dac.egaStableId), ")"
+            ]),
+            m("div", this.m_contact(mainContact))
+        ]);
     }
 
     m_datasets(datasets) {
-      return datasets.map((ds) => m("div", {
-        class: "EllipsisText"
-      }, support.m_ega("datasets", ds.egaStableId)));
+        return datasets.map((ds) => m("div", {
+            class: "EllipsisText"
+        }, support.m_ega("datasets", ds.egaStableId)));
     }
 
     m_dacTable(data) {
         let dacsNdata = this.studyTable.getSelectedDatasetsByDacs();
         return m("table", {class: "table", style: "table-layout:fixed", width: "100%"}, [
             m("thead", m("tr", [
-              m("th", { width: "75%"}, "Data Access Committee"),
-              m("th", { width: "25%", style: "text-align:right"}, "Datasets")
+                m("th", { width: "75%"}, "Data Access Committee"),
+                m("th", { width: "25%", style: "text-align:right"}, "Datasets")
             ])),
             m("tbody", dacsNdata.map((dac) => {
-              return m("tr", [
-                m("td", this.m_dacInfo(dac)),
-                m("td", { class: "IdentifierCell" }, this.m_datasets(dac.datasets))
-              ]);
+                return m("tr", [
+                    m("td", this.m_dacInfo(dac)),
+                    m("td", { class: "IdentifierCell" }, this.m_datasets(dac.datasets))
+                ]);
             }))]);
     }
 
