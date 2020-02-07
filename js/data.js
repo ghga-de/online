@@ -130,7 +130,10 @@ class StudyTable {
             ? m("td", {
                 rowspan: study.datasets.length,
                 class: "IdentifierCell"
-            }, m("div", {class: "EllipsisText"}, Support.m_ega("studies", study.egaStableId)))
+            }, m("div", {
+                class: "EllipsisText",
+                id: study.egaStableId
+            }, Support.m_ega("studies", study.egaStableId)))
             : null;
     }
 
@@ -159,8 +162,11 @@ class StudyTable {
                 onclick: this.updateDatasetSelectionAction(elementId)
             }),
             " ",
-            m("label", {class: "EllipsisText", for: "checkbox-" + dsId},
-                Support.m_ega("datasets", dsId)
+            m("label", {
+                class: "EllipsisText",
+                for: "checkbox-" + dsId,
+                id: dsId
+            }, Support.m_ega("datasets", dsId)
             )
         ]));
     }
@@ -170,7 +176,7 @@ class StudyTable {
         let dacId = datasetDacMap[dsId];
         return m("td", {
             class: "IdentifierCell"
-        }, m("div", {class: "EllipsisText"}, Support.m_ega("dacs", dacId)));
+        }, m("div", { class: "EllipsisText" }, Support.m_ega("dacs", dacId)));
     }
 
     m_toggle(idx, study) {
