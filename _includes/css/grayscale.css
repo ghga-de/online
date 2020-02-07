@@ -341,8 +341,26 @@ footer p {
     margin: 0;
 }
 
+::-moz-selection {
+    text-shadow: none;
+    background: rgba(100,100,100,.2);
+}
+
+::selection {
+    text-shadow: none;
+    background: rgba(100,100,100,.2);
+}
+
+img::selection {
+    background: 0 0;
+}
+
+img::-moz-selection {
+    background: 0 0;
+}
+
 body {
-    webkit-tap-highlight-color: rgba(255,255,255,.2);
+    webkit-tap-highlight-color: rgba(100,100,100,.2);
 }
 
 hr {
