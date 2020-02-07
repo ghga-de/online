@@ -6,7 +6,7 @@ description: "The German Human Genome-Phenome Archive"
 
 # Color settings (hex-codes without the leading hash-tag)
 color:
-  primary-dark: '#00000f'
+  primary-dark:  '#00000f'
   primary-light: '#ffffff'
   links: '#2979ff'
 
