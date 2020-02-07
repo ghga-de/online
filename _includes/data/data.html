@@ -19,7 +19,7 @@
                 </p>
 
                 <p>
-                    If you are interested in obtaining access to a specific dataset from the table below you can select datasets and <b><a href="#data-access">request access here</a></b>.
+                    If you are interested in obtaining access to a specific dataset from the table below you can select datasets from the table and <b><a href="#data-access">request access here</a></b>.
                 </p>
 
                 <div class="StudiesTable"></div>
@@ -31,9 +31,9 @@
 
                         // Data retrieval will be substituted by DB requests, as soon as necessary.
                         const data = {
-                            studies: support.retrieveData("{{ site.url }}/assets/data/studies.json"),
-                            datasets: support.retrieveData("{{ site.url }}/assets/data/datasets.json"),
-                            dacs: support.retrieveData("{{ site.url }}/assets/data/dacs.json")
+                            studies: Support.retrieveData("{{ site.url }}/assets/data/studies.json"),
+                            datasets: Support.retrieveData("{{ site.url }}/assets/data/datasets.json"),
+                            dacs: Support.retrieveData("{{ site.url }}/assets/data/dacs.json")
                         };
 
                         let studyTable = new StudyTable(data.dacs, data.studies, data.datasets);
@@ -54,3 +54,4 @@
                 </script>
             </div>
         </div>
+    </section>

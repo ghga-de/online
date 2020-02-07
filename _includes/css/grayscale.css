@@ -145,7 +145,7 @@ a:focus {
     padding: 100px 0;
     text-align: left;
     color: #000;
-    background: url(/img/intro-bg.jpg) no-repeat bottom center scroll;
+    background: url(/img/intro-bg-nogradient.jpg) no-repeat bottom center scroll;
     -background-color: {{ site.color.primary-light }};
     -webkit-background-size: cover;
     moz-background-size: cover;
@@ -339,26 +339,6 @@ footer {
 
 footer p {
     margin: 0;
-}
-
-::-moz-selection {
-    text-shadow: none;
-    background: #fcfcfc;
-    background: rgba(255,255,255,.2);
-}
-
-::selection {
-    text-shadow: none;
-    background: #fcfcfc;
-    background: rgba(255,255,255,.2);
-}
-
-img::selection {
-    background: 0 0;
-}
-
-img::-moz-selection {
-    background: 0 0;
 }
 
 body {

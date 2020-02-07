@@ -1,30 +1,30 @@
 
-let support = {
+class Support {
 
     // Register the listener for all toggle fields in the table.
-    mapOverHTMLElements: (htmlCollectionOf, fun) => {
+    static mapOverHTMLElements(htmlCollectionOf, fun) {
         for (let eidx = 0; eidx < htmlCollectionOf.length; ++eidx) {
             fun(htmlCollectionOf[eidx])
         }
-    },
+    }
 
-    retrieveData: (url) => {
+    static retrieveData(url) {
         // For now ignore this is a synchronous remote request.
         let req = new XMLHttpRequest();
         req.open("GET", url, false);
         req.send(null);
         return JSON.parse(req.response);
-    },
+    }
 
-    range: (first, excluding) => {
+    static range(first, excluding) {
         let result = [];
         for(let i = first; i < excluding; ++i) {
             result.push(i);
         }
         return result;
-    },
+    }
 
-    m_ega: (type, id) => {
+    static m_ega(type, id) {
         return m("a", {
             href: "https://ega-archive.org/" + type + "/" + id,
             target: "_blank",
@@ -32,7 +32,7 @@ let support = {
         }, id);
     }
 
-};
+}
 
 class StudyTable {
 
@@ -130,7 +130,10 @@ class StudyTable {
             ? m("td", {
                 rowspan: study.datasets.length,
                 class: "IdentifierCell"
-            }, m("div", {class: "EllipsisText"}, support.m_ega("studies", study.egaStableId)))
+            }, m("div", {
+                class: "EllipsisText",
+                id: study.egaStableId
+            }, Support.m_ega("studies", study.egaStableId)))
             : null;
     }
 
@@ -159,8 +162,11 @@ class StudyTable {
                 onclick: this.updateDatasetSelectionAction(elementId)
             }),
             " ",
-            m("label", {class: "EllipsisText", for: "checkbox-" + dsId},
-                support.m_ega("datasets", dsId)
+            m("label", {
+                class: "EllipsisText",
+                for: "checkbox-" + dsId,
+                id: dsId
+            }, Support.m_ega("datasets", dsId)
             )
         ]));
     }
@@ -170,7 +176,7 @@ class StudyTable {
         let dacId = datasetDacMap[dsId];
         return m("td", {
             class: "IdentifierCell"
-        }, m("div", {class: "EllipsisText"}, support.m_ega("dacs", dacId)));
+        }, m("div", { class: "EllipsisText" }, Support.m_ega("dacs", dacId)));
     }
 
     m_toggle(idx, study) {
@@ -188,7 +194,7 @@ class StudyTable {
     }
 
     m_tableRowWithDescription(study, datasetDacMap) {
-        return support.range(0, study.datasets.length).map((idx) => {
+        return Support.range(0, study.datasets.length).map((idx) => {
             return m("tr", [
                 this.m_toggle(idx, study),
                 this.m_title(idx, study),
@@ -219,7 +225,7 @@ class StudyTable {
         });
 
         return m("table", {class: "table", style: "table-layout:fixed", width: "100%"}, [
-            m("caption", "As of January 28th, 2020, there are " + this.studies.size +
+            m("caption", "As of January 28th, 2020, there are " + this.studies.length +
                          " EGA studies referring to data access committees located in Tübingen and Heidelberg."),
             m("thead",
                 m("tr", [
@@ -236,7 +242,7 @@ class StudyTable {
         ]);
     }
 
-};
+}
 
 
 class DacTable {
@@ -280,7 +286,7 @@ class DacTable {
             m("div", [
                 dac.title,
                 " ",
-                "(", support.m_ega("dacs", dac.egaStableId), ")"
+                "(", Support.m_ega("dacs", dac.egaStableId), ")"
             ]),
             m("div", this.m_contact(mainContact))
         ]);
@@ -289,7 +295,7 @@ class DacTable {
     m_datasets(datasets) {
         return datasets.map((ds) => m("div", {
             class: "EllipsisText"
-        }, support.m_ega("datasets", ds.egaStableId)));
+        }, Support.m_ega("datasets", ds.egaStableId)));
     }
 
     m_dacTable(data) {
@@ -307,4 +313,4 @@ class DacTable {
             }))]);
     }
 
-};
+}
