@@ -6,17 +6,17 @@ description: "The German Human Genome-Phenome Archive"
 
 # Color settings (hex-codes without the leading hash-tag)
 color:
-  primary-dark: '#00000f'
+  primary-dark:  '#00000f'
   primary-light: '#ffffff'
   links: '#2979ff'
 
 # Footer settings
-footer: http://ghga.de
+footer: http://ghga.dkfz.de
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
   - title: github
-    url: https://github.com/ghga
+    url: https://github.com/DKFZ-ODCF/GHGA-online
 
 # Build settings
 markdown: kramdown
