@@ -219,7 +219,7 @@ class StudyTable {
         });
 
         return m("table", {class: "table", style: "table-layout:fixed", width: "100%"}, [
-            m("caption", "As of January 28th, 2020, there are " + this.studies.size +
+            m("caption", "As of January 28th, 2020, there are " + this.studies.length +
                          " EGA studies referring to data access committees located in Tübingen and Heidelberg."),
             m("thead",
                 m("tr", [
