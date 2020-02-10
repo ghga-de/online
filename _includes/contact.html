@@ -9,21 +9,21 @@
                         Prof. Dr. Oliver Kohlbacher (Universität Tübingen)<br>
 
                         <script src="{{ "/js/lodash@4(lodash.min.js+lodash.fp.min.js).js" | prepend: site.url }}"></script>
-                        <script src="{{ "/js/data.js" | prepend: site.url }}"></script>
-                        <script type="text/javascript">
-                            function sendContactEmail(encodedAddress) {
-                                // Note: The offset here needs to be the opposite of what was used to create the encoded
-                                //       email in the _config.yaml.
-                                window.location.href = 'mailto:' + Support.offsetString(encodedAddress, -1);
-                            }
-                        </script>
+                        <script src="{{ "/js/emailutils.js" | prepend: site.url }}"></script>
                         <noscript>
                             <em>
                                 Email address protected by JavaScript.<BR>
                                 Please enable JavaScript to contact me.
                             </em>
                         </noscript>
-                        <div onclick="sendContactEmail('{{ site.email }}')" style="color:mediumblue">Email</div>
+                        <div>
+                            <button id="sendContactButton" onclick="sendContactEmail('{{ site.email }}')" class="btn btn-primary btn-lg" style="text-transform:lowercase;">
+                                
+                            </button> 
+                            <script type="text/javascript">
+                                document.getElementById('sendContactButton').innerHTML = formatEmailForDisplay('{{ site.email }}');
+                            </script>  
+                        </div>
 
                     </p>
                     <ul class="list-inline banner-social-buttons">
