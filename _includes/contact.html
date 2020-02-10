@@ -7,7 +7,24 @@
                     <p>
                         Dr. Oliver Stegle (DKFZ Heidelberg)<br>
                         Prof. Dr. Oliver Kohlbacher (Universität Tübingen)<br>
-                        <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+
+                        <script src="{{ "/js/lodash@4(lodash.min.js+lodash.fp.min.js).js" | prepend: site.url }}"></script>
+                        <script src="{{ "/js/data.js" | prepend: site.url }}"></script>
+                        <script type="text/javascript">
+                            function sendContactEmail(encodedAddress) {
+                                // Note: The offset here needs to be the opposite of what was used to create the encoded
+                                //       email in the _config.yaml.
+                                window.location.href = 'mailto:' + Support.offsetString(encodedAddress, -1);
+                            }
+                        </script>
+                        <noscript>
+                            <em>
+                                Email address protected by JavaScript.<BR>
+                                Please enable JavaScript to contact me.
+                            </em>
+                        </noscript>
+                        <div onclick="sendContactEmail('{{ site.email }}')" style="color:mediumblue">Email</div>
+
                     </p>
                     <ul class="list-inline banner-social-buttons">
                         {% for network in site.social %}

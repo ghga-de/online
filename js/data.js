@@ -32,6 +32,19 @@ class Support {
         }, id);
     }
 
+    /** Take a string with each character offset by a specific number in the ASCII table and return a string,
+     *  with each character offset by the `offset` value. Should be used for obfuscating the email. E.g.
+     *
+     *  Support.offsetString("your@email.de", 1) -> "zpvsAfnbjm/ef"
+     *
+     *  Support.offsetString("zpvsAfnbjm/ef", -1) -> "your@email.de"
+     *
+     *  */
+    static offsetString(string, offset=-1) {
+        let charOffset = (o) => (c) => String.fromCharCode(c.charCodeAt(0) + o);
+        return _.map(charOffset(offset))(string).flat().join("");
+    }
+
 }
 
 class StudyTable {
