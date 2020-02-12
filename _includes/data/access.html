@@ -47,7 +47,7 @@ ${applicant}`
 	            <div>
 	            	You have selected datasets from the following data access committees:
 
-	            	<div class="DacTable"></div>
+	            	<div id="DacTable"></div>
 	            </div>
 		        <form name="accessForm" onsubmit="requestAccess(this);return false;" method="POST">
 		        	<div class="form-group hidden">
@@ -107,7 +107,7 @@ ${applicant}`
 				}
 			}
 
-			m.mount(document.getElementsByClassName("DacTable")[0], dacView);
+			m.mount(document.getElementById("DacTable"), dacView);
 		</script>
 		<script type="text/javascript" src="{{ "/js/emailutils.js" | prepend: site.url }}"></script>
 	</section>
