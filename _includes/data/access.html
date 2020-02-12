@@ -1,5 +1,74 @@
-<!-- Data Access Section -->
-<script type="text/javascript">
+	<!-- Data Access Section -->
+<section id="data-access" class="content-section text-center">
+	<div class="container">
+		<div class="col-lg-11 col-lg-offset-0">
+			<h2>Request Access</h2>
+			<div>
+				You have selected datasets from the following data access committees:
+
+				<div id="DacTable"></div>
+			</div>
+			<form name="accessForm" onsubmit="requestAccess(this);return false;" method="POST">
+				<div class="form-group hidden">
+					<label for="applicationDate">Date:</label>
+					<input type="date" name="applicationDate" class="form-control" id="applicationDate">
+				</div>
+				<div class="form-group">
+					<label for="applicant">Applicant:</label>
+					<input type="textfield" name="applicant" class="form-control" id="applicant" placeholder="Dr. rer. nat. Benjamin Button" required="true">
+				</div>
+				<div class="form-group">
+					<label for="applicantPosition">Position of the Applicant:</label>
+					<input type="textfield" name="applicantPosition" class="form-control" id="applicantPosition" placeholder="Head of the core facility for age-related research." required=true>
+				</div>
+				<div class="form-group">
+					<label for="principalInvestigator">Principal Investigator (PI):</label>
+					<input type="textfield" name="principalInvestigator" class="form-control" id="principalInvestigator" placeholder="Mr. Gateau" required=true>
+				</div>
+				<div class="form-group">
+					<label for="institution">Institution:</label>
+					<input type="textfield" name="institution" class="form-control" id="institution" placeholder="University of New Orleans" required=true>
+				</div>
+				<div class="form-group">
+					<label for="datasets">Dataset(s):</label>
+					<input type="textfield" name="datasets", class="form-control" id="datasets" placeholder="EGAD00000000001,EGAD00000000002" required=true>
+				</div>
+				<div class="form-group">
+					<label for="projectOutline">Outline your planned project on the selected data:</label>
+					<textarea rows="4" name="projectOutline" class="form-control" id="projectOutline" required=true></textarea>
+				</div>
+				<div class="form-group">
+					<label for="hypothesis">Hypothesis/Rationale for the project:</label>
+					<textarea rows="2" name="hypothesis" class="form-control" id="hypothesis" required=true></textarea>
+				</div>
+				<div class="form-group">
+					<label for="ethicalVoteInPlace">Is there an ethical vote in place to use next generation sequencing data?
+					</label>
+					<div class="input-group">
+						<input type="radio" id="ethicalNo" name="ethicalVoteRadio" checked>
+						<label class="custom-control-label" for="ethicalNo">No</label>
+					</div>
+					<div class="input-group">
+						<input type="radio" id="ethicalYes" name="ethicalVoteRadio">
+						<label class="custom-control-label" for="ethicalYes">Yes</label>
+					</div>
+				</div>
+				<input type="submit" name="sendButton" value="Send Mail" class="btn btn-default">
+			</form>
+		</div>
+	</div>
+	<script type="text/javascript">
+		let dacTable = new DacTable(studyTable);
+
+		let dacView = {
+			view: () => {
+				return dacTable.m_dacTable();
+			}
+		}
+
+		m.mount(document.getElementById("DacTable"), dacView);
+	</script>
+	<script type="text/javascript">
 	function requestAccess(accessForm) {
 		
 		let cc = '';
@@ -19,7 +88,7 @@
 		let	hypothesis = formElements.namedItem('hypothesis').value;
 		let	ethicalVote = formElements.namedItem('ethicalYes').checked;
 
-			body = `To Whom it May Concern,
+		body = `To Whom it May Concern,
 
 I am ${applicant} and I work as ${applicantPosition} at ${institution}.
 The principal investigator is ${principalInvestigator}.
@@ -33,81 +102,9 @@ ${hypothesis}
 
 Many Thanks,
 ${applicant}`
-
-			subject = `Access Request on ${datasets}`;
-
+		subject = `Access Request on ${datasets}`;
 		sendMail(subject, body);
 	}		
 	</script>
-	
-    <section id="data-access" class="content-section text-center">
-        <div class="container">
-       		<div class="col-lg-11 col-lg-offset-0">
-		        <h2>Request Access</h2>
-	            <div>
-	            	You have selected datasets from the following data access committees:
-
-	            	<div id="DacTable"></div>
-	            </div>
-		        <form name="accessForm" onsubmit="requestAccess(this);return false;" method="POST">
-		        	<div class="form-group hidden">
-		        		<label for="applicationDate">Date:</label>
-		        		<input type="date" name="applicationDate" class="form-control" id="applicationDate">
-		        	</div>
-		        	<div class="form-group">
-		        		<label for="applicant">Applicant:</label>
-			        	<input type="textfield" name="applicant" class="form-control" id="applicant" placeholder="Dr. rer. nat. Benjamin Button" required="true">
-			        </div>
-			       	<div class="form-group">
-			       		<label for="applicantPosition">Position of the Applicant:</label>
-			        	<input type="textfield" name="applicantPosition" class="form-control" id="applicantPosition" placeholder="Head of the core facility for age-related research." required=true>
-			        </div>
-			        <div class="form-group">
-			        	<label for="principalInvestigator">Principal Investigator (PI):</label>
-			        	<input type="textfield" name="principalInvestigator" class="form-control" id="principalInvestigator" placeholder="Mr. Gateau" required=true>
-			        </div>
-			        <div class="form-group">
-			        	<label for="institution">Institution:</label>
-			        	<input type="textfield" name="institution" class="form-control" id="institution" placeholder="University of New Orleans" required=true>
-			        </div>
-			        <div class="form-group">
-			        	<label for="datasets">Dataset(s):</label>
-			        	<input type="textfield" name="datasets", class="form-control" id="datasets" placeholder="EGAD00000000001,EGAD00000000002" required=true>
-			        </div>
-			        <div class="form-group">
-			        	<label for="projectOutline">Outline your planned project on the selected data:</label>
-			        	<textarea rows="4" name="projectOutline" class="form-control" id="projectOutline" required=true></textarea>
-			        </div>
-			        <div class="form-group">
-			        	<label for="hypothesis">Hypothesis/Rationale for the project:</label>
-			        	<textarea rows="2" name="hypothesis" class="form-control" id="hypothesis" required=true></textarea>
-			        </div>
-			        <div class="form-group">
-			        	<label for="ethicalVoteInPlace">Is there an ethical vote in place to use next generation sequencing data?
-			        	</label>
-			        	<div class="input-group">
-			        		<input type="radio" id="ethicalNo" name="ethicalVoteRadio" checked>
-			        		<label class="custom-control-label" for="ethicalNo">No</label>
-			        	</div>
-			        	<div class="input-group">
-			        		<input type="radio" id="ethicalYes" name="ethicalVoteRadio">
-			        		<label class="custom-control-label" for="ethicalYes">Yes</label>
-			        	</div>
-			        </div>
-		        	<input type="submit" name="sendButton" value="Send Mail" class="btn btn-default">
-		        </form>
-	    	</div>
-      	</div>
-		<script type="text/javascript">
-			let dacTable = new DacTable(studyTable);
-
-			let dacView = {
-				view: () => {
-					return dacTable.m_dacTable();
-				}
-			}
-
-			m.mount(document.getElementById("DacTable"), dacView);
-		</script>
-		<script type="text/javascript" src="{{ "/js/emailutils.js" | prepend: site.url }}"></script>
-	</section>
+	<script type="text/javascript" src="{{ "/js/emailutils.js" | prepend: site.url }}"></script>
+</section>
