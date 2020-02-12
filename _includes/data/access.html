@@ -8,7 +8,7 @@
 
 				<div id="DacTable"></div>
 			</div>
-			<form name="accessForm" onsubmit="requestAccess(this);return false;" method="POST">
+			<form name="accessForm" id="accessForm" onsubmit="requestAccess(this);return false;" method="POST">
 				<div class="form-group hidden">
 					<label for="applicationDate">Date:</label>
 					<input type="date" name="applicationDate" class="form-control" id="applicationDate">
@@ -68,14 +68,18 @@
 
 		m.mount(document.getElementById("DacTable"), dacView);
 	</script>
+	<script type="text/javascript" src="{{ "/js/emailutils.js" | prepend: site.url }}"></script>
 	<script type="text/javascript">
+
 	function requestAccess(accessForm) {
 		
+		let encodedRecepientMail = '{{ site.email-data }}';
 		let cc = '';
 		let bcc = '';
 		let subject = '';
 		let body = '';
-
+		let attachmentHeader = 'Please do not alter anything below.\n-- ';
+		let attachment = '';
 		let formElements = accessForm.elements;
 
 		let submitDate = Date.now(); 
@@ -101,10 +105,19 @@ I want to test the following hypothesis:
 ${hypothesis}
 
 Many Thanks,
-${applicant}`
+${applicant}
+
+
+
+
+${attachmentHeader}
+${attachment}`
 		subject = `Access Request on ${datasets}`;
-		sendMail(subject, body);
-	}		
+		try {
+			sendEmail(encodedRecepientMail, subject, body);
+		} catch(error) {
+			alert('An unexpected error occurred.');
+		}
+	}
 	</script>
-	<script type="text/javascript" src="{{ "/js/emailutils.js" | prepend: site.url }}"></script>
 </section>

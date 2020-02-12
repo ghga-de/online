@@ -11,23 +11,16 @@ function offsetString(string, offset = -1) {
     return _.map(charOffset(offset))(string).flat().join("");
 }
 
-function sendMail(subject, body, cc = '', bcc = '') {
-    // ATTENTION! This mail address might be scraped from the page for spam.
-    let recepientMail = "temp@robot-mail.com"; //getnada dot com
-
-    let mailLink = "mailto:" + recepientMail +
+function sendEmail(encodedAddress, subject = '', body = '', cc = '', bcc = '') {  
+    // Note: The offset here needs to be the opposite of what was used to create the encoded
+    //       email in the _config.yaml.
+    let mailLink = "mailto:" + offsetString(encodedAddress, -1) +
         "?cc=" + cc +
         "&bcc=" + bcc +
         "&subject=" + subject +
         "&body=" + body;
-    let encodedMailLink = encodeURI(mailLink);
-    window.open(encodedMailLink, "_blank");
-}
-
-function sendContactEmail(encodedAddress) {
-    // Note: The offset here needs to be the opposite of what was used to create the encoded
-    //       email in the _config.yaml.
-    window.open('mailto:' + offsetString(encodedAddress, -1));
+    let uriEncodedMailLink = encodeURI(mailLink);
+    window.open(uriEncodedMailLink, "_blank");
 }
 
 function formatEmailForDisplay(encodedAddress) {
