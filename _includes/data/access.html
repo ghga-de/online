@@ -1,18 +1,5 @@
-    <!-- Data Section -->
+<!-- Data Access Section -->
 <script type="text/javascript">
-	function sendMail( subject, body, cc='', bcc='') {
-		// ATTENTION! This mail address might be scraped from the page for spam.
-		let recepientMail = "temp@robot-mail.com"; //getnada dot com
-
-		let mailLink = "mailto:" + recepientMail +
-							"?cc=" + cc + 
-							"&bcc=" + bcc + 
-							"&subject=" + subject +
-							"&body=" + body;
-		let encodedMailLink = encodeURI(mailLink);
-		window.open(encodedMailLink, "_blank");
-	}
-
 	function requestAccess(accessForm) {
 		
 		let cc = '';
@@ -50,10 +37,9 @@ ${applicant}`
 			subject = `Access Request on ${datasets}`;
 
 		sendMail(subject, body);
-	}
-
-		
-    </script>
+	}		
+	</script>
+	
     <section id="data-access" class="content-section text-center">
         <div class="container">
        		<div class="col-lg-11 col-lg-offset-0">
@@ -112,7 +98,6 @@ ${applicant}`
 		        </form>
 	    	</div>
       	</div>
-
 		<script type="text/javascript">
 			let dacTable = new DacTable(studyTable);
 
@@ -124,5 +109,5 @@ ${applicant}`
 
 			m.mount(document.getElementsByClassName("DacTable")[0], dacView);
 		</script>
-
+		<script type="text/javascript" src="{{ "/js/emailutils.js" | prepend: site.url }}"></script>
 	</section>
