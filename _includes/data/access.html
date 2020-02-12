@@ -71,8 +71,7 @@
 	<script type="text/javascript" src="{{ "/js/emailutils.js" | prepend: site.url }}"></script>
 	<script type="text/javascript">
 
-	function requestAccess(accessForm) {
-		
+	function requestAccess(accessForm, data = studyTable.getSelectedDatasetsByDacs()) {		
 		let encodedRecepientMail = '{{ site.email-data }}';
 		let cc = '';
 		let bcc = '';
@@ -91,6 +90,9 @@
 		let	projectOutline = formElements.namedItem('projectOutline').value;
 		let	hypothesis = formElements.namedItem('hypothesis').value;
 		let	ethicalVote = formElements.namedItem('ethicalYes').checked;
+
+		attachment = JSON.stringify(data);
+
 
 		body = `To Whom it May Concern,
 
