@@ -6,7 +6,7 @@
  *  Support.offsetString("zpvsAfnbjm/ef", -1) -> "your@email.de"
  *
  *  */
-function offsetString(string, offset=-1) {
+function offsetString(string, offset = -1) {
     let charOffset = (o) => (c) => String.fromCharCode(c.charCodeAt(0) + o);
     return _.map(charOffset(offset))(string).flat().join("");
 }
