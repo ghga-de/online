@@ -8,6 +8,7 @@ If you have `gem` installed you can do
 
 ```bash
 gem install jekyll-theme-slate
+gem install jekyll-feed
 ```
  
 ## Licence
@@ -20,3 +21,4 @@ The repository includes the following libraries:
   * [MithrilJS](https://github.com/MithrilJS/mithril.js) (MIT)
   * [Lodash](https://github.com/lodash/lodash) (MIT)
   * [jQuery](https://github.com/jquery/jquery) (MIT)
+
