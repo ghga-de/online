@@ -6,15 +6,21 @@
  *  Support.offsetString("zpvsAfnbjm/ef", -1) -> "your@email.de"
  *
  *  */
-function offsetString(string, offset=-1) {
+function offsetString(string, offset = -1) {
     let charOffset = (o) => (c) => String.fromCharCode(c.charCodeAt(0) + o);
     return _.map(charOffset(offset))(string).flat().join("");
 }
 
-function sendContactEmail(encodedAddress) {
+function sendEmail(encodedAddress, subject = '', body = '', cc = '', bcc = '') {  
     // Note: The offset here needs to be the opposite of what was used to create the encoded
     //       email in the _config.yaml.
-    window.open('mailto:' + offsetString(encodedAddress, -1));
+    let mailLink = "mailto:" + offsetString(encodedAddress, -1) +
+        "?cc=" + cc +
+        "&bcc=" + bcc +
+        "&subject=" + subject +
+        "&body=" + body;
+    let uriEncodedMailLink = encodeURI(mailLink);
+    window.open(uriEncodedMailLink, "_blank");
 }
 
 function formatEmailForDisplay(encodedAddress) {
