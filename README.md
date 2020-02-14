@@ -8,7 +8,6 @@ If you have `gem` installed you can do
 
 ```bash
 gem install jekyll-theme-slate
-gem install jekyll-feed
 ```
  
 ## Licence
