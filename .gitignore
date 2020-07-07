@@ -2,4 +2,5 @@
 _site
 .idea
 .sass-cache
-
+.bundle
+Gemfile.lock
