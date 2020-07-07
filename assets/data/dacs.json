@@ -1,0 +1,331 @@
+[
+  {
+    "alias": "ena-DAC-NEUROMICS-06-02-2014-23:56:38:036-41",
+    "centerName": "Neuromics",
+    "contacts": [
+      {
+        "contactName": "Birte Zurek",
+        "email": "birte.zurek@med.uni-tuebingen.de",
+        "mainContact": false,
+        "organisation": "University of Tuebingen Institute of Medical Genetics and Applied Genomics",
+        "phoneNumber": "+4970712972285"
+      }
+    ],
+    "creationTime": "2014-02-06T22:21.000Z",
+    "egaStableId": "EGAC00001000165",
+    "published": true,
+    "released": "RELEASED",
+    "title": "Neuromics Data Access Committee",
+    "url": "NA"
+  },
+  {
+    "alias": "ena-DAC-DKFZ-IBIOS-30-07-2014-08:33:05:360-399",
+    "centerName": "DKFZ-IBIOS",
+    "contacts": [
+      {
+        "contactName": "DKTK DAC",
+        "email": "daco-dkfz-b06x@dkfz-heidelberg.de",
+        "mainContact": true,
+        "organisation": "German Cancer Research Center (DKFZ)",
+        "phoneNumber": null
+      }
+    ],
+    "creationTime": "2014-07-30T06:16.000Z",
+    "egaStableId": "EGAC00001000217",
+    "published": true,
+    "released": "RELEASED",
+    "title": "Data Access Committee for German Consortium for Translational Cancer Research (DKTK)",
+    "url": "not provided"
+  },
+  {
+    "alias": "ena-DAC-DKFZ-IBIOS-31-07-2014-15:32:43:877-13",
+    "centerName": "DKFZ-IBIOS",
+    "contacts": [
+      {
+        "contactName": "DACO B060x",
+        "email": "daco-dkfz-b06x@dkfz-heidelberg.de",
+        "mainContact": true,
+        "organisation": "German Cancer Research Center (DKFZ)",
+        "phoneNumber": null
+      }
+    ],
+    "creationTime": "2014-07-31T13:54.000Z",
+    "egaStableId": "EGAC00001000219",
+    "published": true,
+    "released": "RELEASED",
+    "title": "Data Access Committee of divisions B060 and B062, German Cancer Research Center (DKFZ)",
+    "url": "not provided"
+  },
+  {
+    "alias": "ena-DAC-TUSCO-27-02-2015-13:57:59:212-261",
+    "centerName": "TUSCO",
+    "contacts": [
+      {
+        "contactName": "Matthias Schwab",
+        "email": "matthias.schwab@ikp-stuttgart.de",
+        "mainContact": true,
+        "organisation": "Dr Margarete Fischer-Bosch-Institute of Clinical Pharmacology, Stuttgart, Germany",
+        "phoneNumber": null
+      },
+      {
+        "contactName": "Elke Schäffeler",
+        "email": "elke.schaeffeler@ikp-stuttgart.de",
+        "mainContact": false,
+        "organisation": "Dr Margarete Fischer-Bosch-Institute of Clinical Pharmacology, Stuttgart, Germany",
+        "phoneNumber": null
+      },
+      {
+        "contactName": "Jens Bedke",
+        "email": "jens.bedke@med.uni-tuebingen.de",
+        "mainContact": false,
+        "organisation": "Department of Urology, University Hospital Tuebingen, Tuebingen, Germany",
+        "phoneNumber": null
+      },
+      {
+        "contactName": "Florian Büttner",
+        "email": "florian.buettner@ikp-stuttgart.de",
+        "mainContact": false,
+        "organisation": "Dr Margarete Fischer-Bosch-Institute of Clinical Pharmacology, Stuttgart, Germany",
+        "phoneNumber": null
+      },
+      {
+        "contactName": "Stefan Winter",
+        "email": "stefan.winter@ikp-stuttgart.de",
+        "mainContact": false,
+        "organisation": "Dr Margarete Fischer-Bosch-Institute of Clinical Pharmacology, Stuttgart, Germany",
+        "phoneNumber": null
+      },
+      {
+        "contactName": "Arnulf Stenzl",
+        "email": "arnulf.stenzl@med.uni-tuebingen.de",
+        "mainContact": false,
+        "organisation": "Department of Urology, University Hospital Tuebingen, Tuebingen, Germany",
+        "phoneNumber": null
+      }
+    ],
+    "creationTime": "2015-02-27T12:20.000Z",
+    "egaStableId": "EGAC00001000317",
+    "published": true,
+    "released": "RELEASED",
+    "title": "DAC for Tuebingen-Stuttgart cohort",
+    "url": "http://www.ikp-stuttgart.de/content/language1/html/15179.asp"
+  },
+  {
+    "alias": "ena-DAC-DKFZ-IBIOS-01-06-2015-11:13:45:832-184",
+    "centerName": "DKFZ-IBIOS",
+    "contacts": [
+      {
+        "contactName": "Dr. Matthias Schlesner",
+        "email": "m.schlesner@dkfz-heidelberg.de",
+        "mainContact": true,
+        "organisation": "German Cancer Research Center (DKFZ)",
+        "phoneNumber": null
+      }
+    ],
+    "creationTime": "2015-06-01T09:58.000Z",
+    "egaStableId": "EGAC00001000346",
+    "published": true,
+    "released": "RELEASED",
+    "title": "Bioinformatics of Data Analysis (B240)",
+    "url": "not provided"
+  },
+  {
+    "alias": "ena-DAC-DKFZ-IBIOS-28-08-2015-10:49:04:108-238",
+    "centerName": "DKFZ-IBIOS",
+    "contacts": [
+      {
+        "contactName": "Omics &amp; Datamanagment Core Facility",
+        "email": "odcf-service@dkfz-heidelberg.de",
+        "mainContact": true,
+        "organisation": "German Cancer Research Center (DKFZ)",
+        "phoneNumber": null
+      }
+    ],
+    "creationTime": "2015-08-28T08:15.000Z",
+    "egaStableId": "EGAC00001000381",
+    "published": true,
+    "released": "RELEASED",
+    "title": "MMML associated cell line data",
+    "url": "not provided"
+  },
+  {
+    "alias": "ena-DAC-DKFZ-HIPO-17-03-2016-10:18:52:050-451",
+    "centerName": "DKFZ-HIPO",
+    "contacts": [
+      {
+        "contactName": "Katja Beck",
+        "email": "hipo_daco@dkfz-heidelberg.de",
+        "mainContact": false,
+        "organisation": "German Cancer Research Center (DKFZ)",
+        "phoneNumber": null
+      }
+    ],
+    "creationTime": "2016-03-17T09:54.000Z",
+    "egaStableId": "EGAC00001000452",
+    "published": true,
+    "released": "RELEASED",
+    "title": "DKFZ-HIPO Data Access Committee of Heidelberg Center for Personalized Oncology",
+    "url": "not provided"
+  },
+  {
+    "alias": "ena-DAC-MUO-19-04-2016-11:21:22:457-63",
+    "centerName": "MUO",
+    "contacts": [
+      {
+        "contactName": "Stefan Duensing",
+        "email": "stefan.duensing@med.uni-heidelberg.de",
+        "mainContact": true,
+        "organisation": "University of Heidelberg",
+        "phoneNumber": "+496221566255"
+      }
+    ],
+    "creationTime": "2016-04-19T09:24.000Z",
+    "egaStableId": "EGAC00001000470",
+    "published": true,
+    "released": "RELEASED",
+    "title": "University of Heidelberg_MUO",
+    "url": "not provided"
+  },
+  {
+    "alias": "68a8c5d2-7f64-4d4c-974b-365370badf61",
+    "centerName": "CRG",
+    "contacts": [
+      {
+        "contactName": "Stephan Ossowski",
+        "email": "stephan.ossowski@med.uni-tuebingen.de",
+        "mainContact": true,
+        "organisation": "Institute of Medical Genetics and Applied Genomics - Universität Klinikum Tübingen ",
+        "phoneNumber": "070712972323"
+      }
+    ],
+    "creationTime": "2018-05-25T12:31.000Z",
+    "egaStableId": "EGAC00001000916",
+    "published": true,
+    "released": "RELEASED",
+    "title": "ABB DAC",
+    "url": "NA"
+  },
+  {
+    "alias": "4000883f-cae0-4390-941f-bd84577b4af2",
+    "centerName": "EGAB00000001489",
+    "contacts": [
+      {
+        "contactName": "Boutros, Prof. Dr. Michael",
+        "email": "m.boutros@dkfz-heidelberg.de",
+        "mainContact": false,
+        "organisation": "Deutsches Krebsforschungszentrum DKFZ",
+        "phoneNumber": "00496221421951"
+      },
+      {
+        "contactName": "Ebert, Prof. Dr. Matthias",
+        "email": "matthias.ebert@medma.uni-heidelberg.de",
+        "mainContact": false,
+        "organisation": "Universitätsmedizin Mannheim",
+        "phoneNumber": "00496213833284"
+      },
+      {
+        "contactName": "Betge, Dr. Johannes",
+        "email": "j.betge@dkfz-heidelberg.de",
+        "mainContact": true,
+        "organisation": "Deutsches Krebsforschungszentrum DKFZ",
+        "phoneNumber": "00496221421957"
+      }
+    ],
+    "creationTime": "2018-08-27T10:03.000Z",
+    "egaStableId": "EGAC00001000998",
+    "published": true,
+    "released": "RELEASED",
+    "title": "Colorectal Cancer Organoids Data Access Committee",
+    "url": "not provided"
+  },
+  {
+    "alias": "07d65c87-c5ac-4321-a66c-1544bf6e9c0f",
+    "centerName": "EGAB00000001518",
+    "contacts": [
+      {
+        "contactName": "Paulina Richter-Pechanska",
+        "email": "paulina.richter-pechanska@med.uni-heidelberg.de",
+        "mainContact": true,
+        "organisation": "University Hospital in Heidelberg, Germany",
+        "phoneNumber": "+496221564579"
+      }
+    ],
+    "creationTime": "2018-10-04T11:07.000Z",
+    "egaStableId": "EGAC00001001033",
+    "published": true,
+    "released": "RELEASED",
+    "title": "T-ALL research group at the University Hospital in Heidelberg, Germany",
+    "url": "not provided"
+  },
+  {
+    "alias": "ena-DAC-EMBL-06-12-2018-01:42:26:025-259",
+    "centerName": "EGAB00000001577",
+    "contacts": [
+      {
+        "contactName": "Andreas Kulozik",
+        "email": "andreas.kulozik@med.uni-heidelberg.de",
+        "mainContact": false,
+        "organisation": "University of Heidelberg",
+        "phoneNumber": "+496221564500"
+      },
+      {
+        "contactName": "Jan Korbel",
+        "email": "korbel@embl.de",
+        "mainContact": true,
+        "organisation": "European Molecular Biology Laboratory (EMBL)",
+        "phoneNumber": "+4962213878822"
+      }
+    ],
+    "creationTime": "2018-12-06T00:29.000Z",
+    "egaStableId": "EGAC00001001091",
+    "published": true,
+    "released": "RELEASED",
+    "title": "EMBL genome biology research group for structural variation (Strand-seq application)",
+    "url": "not provided"
+  },
+  {
+    "alias": "a314bf37-8fd7-42f6-acfc-1926343abc38",
+    "centerName": "EGAB00000001581",
+    "contacts": [
+      {
+        "contactName": "Matthias Ebert",
+        "email": "matthias.ebert@medma.uni-heidelberg.de",
+        "mainContact": false,
+        "organisation": "Heidelberg University",
+        "phoneNumber": "+496213833284"
+      },
+      {
+        "contactName": "Michael Boutros",
+        "email": "m.boutros@dkfz.de",
+        "mainContact": true,
+        "organisation": "German Cancer Research Center (DKFZ)",
+        "phoneNumber": "+496221421950"
+      }
+    ],
+    "creationTime": "2019-01-15T10:23.000Z",
+    "egaStableId": "EGAC00001001113",
+    "published": true,
+    "released": "RELEASED",
+    "title": "Mannheim Liquid Biopsy Unit, Heidelberg University &amp; DKFZ",
+    "url": "NA"
+  },
+  {
+    "alias": "e7608108-a7eb-4475-b60c-974b916fb8fb",
+    "centerName": "EGAB00000001768",
+    "contacts": [
+      {
+        "contactName": "Eva Kathrin Roth",
+        "email": "eva.roth@med.uni-heidelberg.de",
+        "mainContact": true,
+        "organisation": "Department of Pediatric Oncology, Hematology and Immunology and Hopp Children’s Cancer Center at the NCT Heidelberg (KiTZ), University of Heidelberg, Heidelberg, Germany ",
+        "phoneNumber": "+4962215636967"
+      }
+    ],
+    "creationTime": "2019-10-01T06:03.000Z",
+    "egaStableId": "EGAC00001001337",
+    "published": true,
+    "released": "RELEASED",
+    "title": "Osteosarcoma Study HD Data Access Commitee",
+    "url": "NA"
+  }
+]

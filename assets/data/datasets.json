@@ -1,0 +1,2180 @@
+[
+  {
+    "accessType": "CONTROLLED",
+    "alias": "DATA_SET_Coverage_bias_sensitivity_of_variant_calling_for_4_WG_seq_tech",
+    "attributes": [],
+    "availableInBeacon": false,
+    "centerName": "DKFZ-IBIOS",
+    "creationTime": "2012-05-08T06:34.000Z",
+    "dacs": [
+      "EGAC00001000219"
+    ],
+    "datasetLinks": [],
+    "datasetTypes": [
+      "sample"
+    ],
+    "description": "DATA_SET_Coverage_bias_sensitivity_of_variant_calling_for_4_WG_seq_tech",
+    "egaStableId": "EGAD00001000174",
+    "files": null,
+    "numSamples": 4,
+    "policyStableId": "EGAP00001000221",
+    "published": true,
+    "released": "RELEASED",
+    "releasedDate": "2015-05-26T22:00.000Z",
+    "technology": [
+      "AB SOLiD 4 System",
+      "Complete Genomics",
+      "Illumina HiSeq 2000",
+      "unspecified"
+    ],
+    "title": "DATA_SET_Coverage_bias_sensitivity_of_variant_calling_for_4_WG_seq_tech"
+  },
+  {
+    "accessType": "CONTROLLED",
+    "alias": "DATA_SET_marlboro-EEP-2013-03-15",
+    "attributes": [],
+    "availableInBeacon": false,
+    "centerName": "DKFZ-IBIOS",
+    "creationTime": "2013-03-27T14:53.000Z",
+    "dacs": [
+      "EGAC00001000452"
+    ],
+    "datasetLinks": [],
+    "datasetTypes": [
+      "Methylation profiling by high-throughput sequencing"
+    ],
+    "description": "WGBS data of whole blood samples from smoking and non-smoking mothers and their children at gestation/birth and follow-up years.",
+    "egaStableId": "EGAD00001000366",
+    "files": null,
+    "numSamples": 52,
+    "policyStableId": "EGAP00001000441",
+    "published": true,
+    "released": "RELEASED",
+    "releasedDate": "2016-07-04T22:00.000Z",
+    "technology": [
+      "Illumina HiSeq 2000"
+    ],
+    "title": "Whole genome bisufite sequencing for smoking and non-smoking mother-child pairs"
+  },
+  {
+    "accessType": "CONTROLLED",
+    "alias": "ena-DATASET-DKFZ-IBIOS-17-07-2014-15:54:18:121-70",
+    "attributes": [],
+    "availableInBeacon": false,
+    "centerName": "DKFZ-IBIOS",
+    "creationTime": "2014-07-17T13:34.000Z",
+    "dacs": [
+      "EGAC00001000452"
+    ],
+    "datasetLinks": [],
+    "datasetTypes": [
+      "Exome sequencing"
+    ],
+    "description": "In order to elucidate whether newly acquired genetic alterations during serial transplantation of patient derived primary pancreatic cancer cultures contribute to the observed clonal dynamics in vivo, all coding genes of two patient derived primary cultures and derived genetically marked serial xenografts (1°/2°/3°) were sequenced.",
+    "egaStableId": "EGAD00001000884",
+    "files": null,
+    "numSamples": 10,
+    "policyStableId": "EGAP00001000441",
+    "published": true,
+    "released": "RELEASED",
+    "releasedDate": "2016-03-28T22:00.000Z",
+    "technology": [
+      "Illumina HiSeq 2000"
+    ],
+    "title": "Exome sequencing of serially transplanted genetically marked IC-enriched primary PDAC cultures."
+  },
+  {
+    "accessType": "CONTROLLED",
+    "alias": "ena-DATASET-DKFZ-IBIOS-01-08-2014-08:47:40:399-28",
+    "attributes": [],
+    "availableInBeacon": false,
+    "centerName": "DKFZ-IBIOS",
+    "creationTime": "2014-08-01T06:01.000Z",
+    "dacs": [
+      "EGAC00001000219"
+    ],
+    "datasetLinks": [],
+    "datasetTypes": [
+      "Exome sequencing"
+    ],
+    "description": "Exome sequencing of sporadic schwannomatosis patients",
+    "egaStableId": "EGAD00001000963",
+    "files": null,
+    "numSamples": 16,
+    "policyStableId": "EGAP00001000221",
+    "published": true,
+    "released": "RELEASED",
+    "releasedDate": "2015-05-26T22:00.000Z",
+    "technology": [],
+    "title": "Schwannomatosis WES data"
+  },
+  {
+    "accessType": "CONTROLLED",
+    "alias": "ena-DATASET-DKFZ-IBIOS-01-08-2014-08:50:46:817-29",
+    "attributes": [],
+    "availableInBeacon": false,
+    "centerName": "DKFZ-IBIOS",
+    "creationTime": "2014-08-01T06:55.000Z",
+    "dacs": [
+      "EGAC00001000219"
+    ],
+    "datasetLinks": [],
+    "datasetTypes": [
+      "Whole genome sequencing"
+    ],
+    "description": "Low-coverage whole genome sequencing of sporadic schwannomatosis patients",
+    "egaStableId": "EGAD00001000964",
+    "files": null,
+    "numSamples": 16,
+    "policyStableId": "EGAP00001000221",
+    "published": true,
+    "released": "RELEASED",
+    "releasedDate": "2015-05-26T22:00.000Z",
+    "technology": [],
+    "title": "Schwannomatosis lcWGS data"
+  },
+  {
+    "accessType": "CONTROLLED",
+    "alias": "ena-DATASET-DKFZ-IBIOS-01-08-2014-15:53:49:885-84",
+    "attributes": [],
+    "availableInBeacon": false,
+    "centerName": "DKFZ-IBIOS",
+    "creationTime": "2014-08-01T13:59.000Z",
+    "dacs": [
+      "EGAC00001000217"
+    ],
+    "datasetLinks": [],
+    "datasetTypes": [
+      "Methylation profiling by high-throughput sequencing"
+    ],
+    "description": "Whole genome bisulfite sequencing data for 6 ependymomas plus 3 fetal controls (f1, f2, f4) and 3 adult controls (a2, a3, a4). See Mack, Witt et al. Nature 506(7489):445-50, 2014 (PMID: 24553142).",
+    "egaStableId": "EGAD00001000966",
+    "files": null,
+    "numSamples": 14,
+    "policyStableId": "EGAP00001000220",
+    "published": true,
+    "released": "RELEASED",
+    "releasedDate": "2015-05-26T22:00.000Z",
+    "technology": [
+      "Illumina HiSeq 2000"
+    ],
+    "title": "WGBS data for ependymomas and normal controls (fetal and adult)"
+  },
+  {
+    "accessType": "CONTROLLED",
+    "alias": "ena-DATASET-DKFZ-IBIOS-28-08-2014-13:48:51:420-1011",
+    "attributes": [],
+    "availableInBeacon": false,
+    "centerName": "DKFZ-IBIOS",
+    "creationTime": "2014-08-28T11:02.000Z",
+    "dacs": [
+      "EGAC00001000452"
+    ],
+    "datasetLinks": [],
+    "datasetTypes": [
+      "Whole genome sequencing"
+    ],
+    "description": "HIPO blastemal Wilms (nephroblastoma) characterisation of tumor driving events caused by differential SIX1 binding of the SIX1 Q177R mutatns",
+    "egaStableId": "EGAD00001000992",
+    "files": null,
+    "numSamples": 3,
+    "policyStableId": "EGAP00001000441",
+    "published": true,
+    "released": "RELEASED",
+    "releasedDate": "2016-03-28T22:00.000Z",
+    "technology": [
+      "Illumina HiSeq 2500"
+    ],
+    "title": "HIPO blastemal Wilms (nephroblastoma) CHIP sequencing samples"
+  },
+  {
+    "accessType": "CONTROLLED",
+    "alias": "ena-DATASET-DKFZ-IBIOS-28-08-2014-14:05:04:574-1012",
+    "attributes": [],
+    "availableInBeacon": false,
+    "centerName": "DKFZ-IBIOS",
+    "creationTime": "2014-08-28T12:15.000Z",
+    "dacs": [
+      "EGAC00001000452"
+    ],
+    "datasetLinks": [],
+    "datasetTypes": [
+      "Transcriptome profiling by high-throughput sequencing"
+    ],
+    "description": "HIPO blastemal Wilms (nephroblastoma) characterisation of tumor driving gene expression events",
+    "egaStableId": "EGAD00001000993",
+    "files": null,
+    "numSamples": 40,
+    "policyStableId": "EGAP00001000441",
+    "published": true,
+    "released": "RELEASED",
+    "releasedDate": "2016-03-28T22:00.000Z",
+    "technology": [
+      "Illumina HiSeq 2000"
+    ],
+    "title": "HIPO blastemal Wilms (nephroblastoma) RNA sequencing samples"
+  },
+  {
+    "accessType": "CONTROLLED",
+    "alias": "ena-DATASET-DKFZ-IBIOS-28-08-2014-14:11:35:869-1013",
+    "attributes": [],
+    "availableInBeacon": false,
+    "centerName": "DKFZ-IBIOS",
+    "creationTime": "2014-08-28T12:46.000Z",
+    "dacs": [
+      "EGAC00001000452"
+    ],
+    "datasetLinks": [],
+    "datasetTypes": [
+      "Whole genome sequencing"
+    ],
+    "description": "HIPO blastemal Wilms (nephroblastoma) characterisation of tumor driving chromosomal aberrations",
+    "egaStableId": "EGAD00001000994",
+    "files": null,
+    "numSamples": 56,
+    "policyStableId": "EGAP00001000441",
+    "published": true,
+    "released": "RELEASED",
+    "releasedDate": "2016-03-28T22:00.000Z",
+    "technology": [
+      "Illumina HiSeq 2000",
+      "Illumina HiSeq 2500"
+    ],
+    "title": "HIPO blastemal Wilms (nephroblastoma) WGS sequencing samples"
+  },
+  {
+    "accessType": "CONTROLLED",
+    "alias": "ena-DATASET-DKFZ-IBIOS-28-08-2014-14:27:15:311-1014",
+    "attributes": [],
+    "availableInBeacon": false,
+    "centerName": "DKFZ-IBIOS",
+    "creationTime": "2014-08-28T12:27.000Z",
+    "dacs": [
+      "EGAC00001000452"
+    ],
+    "datasetLinks": [],
+    "datasetTypes": [
+      "Exome sequencing"
+    ],
+    "description": "HIPO blastemal Wilms (nephroblastoma) characterisation of tumor driving DNA alterations",
+    "egaStableId": "EGAD00001000995",
+    "files": null,
+    "numSamples": 112,
+    "policyStableId": "EGAP00001000441",
+    "published": true,
+    "released": "RELEASED",
+    "releasedDate": "2016-03-28T22:00.000Z",
+    "technology": [
+      "Illumina HiSeq 2000"
+    ],
+    "title": "HIPO blastemal Wilms (nephroblastoma) exome sequencing samples"
+  },
+  {
+    "accessType": "CONTROLLED",
+    "alias": "ena-DATASET-DKFZ-IBIOS-29-08-2014-08:27:40:831-1015",
+    "attributes": [],
+    "availableInBeacon": false,
+    "centerName": "DKFZ-IBIOS",
+    "creationTime": "2014-08-29T06:50.000Z",
+    "dacs": [
+      "EGAC00001000452"
+    ],
+    "datasetLinks": [],
+    "datasetTypes": [
+      "Exome sequencing"
+    ],
+    "description": "Whole-exome sequencing of a chronic lymphocytic leukemia (CLL) developed during vemurafenib treatment of a patient with malignant melanoma. Peripheral blood mononuclear cells were separated by Ficoll gradient centrifugation. DNA was extracted from highly purified (&gt;97%) CD19+CD5+ cells obtained from the patient while being under BRAF inhibition versus CD14+ germline control cells (&gt;90% purity). No alterations that could be linked to aberrant RAS activity or paradoxical RAF/MEK/ERK signaling could be identified in the CLL, which shows characteristic copy number alterations.",
+    "egaStableId": "EGAD00001000997",
+    "files": null,
+    "numSamples": 2,
+    "policyStableId": "EGAP00001000441",
+    "published": true,
+    "released": "RELEASED",
+    "releasedDate": "2016-03-28T22:00.000Z",
+    "technology": [
+      "Illumina HiSeq 2500"
+    ],
+    "title": "Chronic lymphocytic leukemia driven by paradoxical ERK activation during BRAF inhibitor treatment"
+  },
+  {
+    "accessType": "CONTROLLED",
+    "alias": "ena-DATASET-DKFZ-IBIOS-28-05-2015-11:13:32:451-82",
+    "attributes": [],
+    "availableInBeacon": false,
+    "centerName": "DKFZ-IBIOS",
+    "creationTime": "2015-05-28T09:43.000Z",
+    "dacs": [
+      "EGAC00001000452"
+    ],
+    "datasetLinks": [],
+    "datasetTypes": [
+      "sample"
+    ],
+    "description": "Mutations that activate the RAF-MEK-ERK signaling pathway, in particular BRAFV600E, occur in many cancers, and mutant BRAF-selective inhibitors have clinical activity in these diseases. Activating BRAF alleles are usually considered to be mutually exclusive with mutant RAS, whereas inactivating mutations in the D594F595G596 motif of the BRAF activation segment can coexist with oncogenic RAS and cooperate via paradoxical MEK/ERK activation. We determined the functional consequences of a largely uncharacterized BRAF mutation, F595L, which was detected along with an HRASQ61R allele by clinical exome sequencing in a patient with histiocytic sarcoma and also occurs in epithelial cancers, melanoma, and neuroblastoma, and investigated its interaction with mutant RAS. We demonstrate that, unlike previously described DFG motif mutants, BRAFF595L is a gain-of-function variant with intermediate activity towards MEK that does not act paradoxically, but nevertheless cooperates with mutant RAS to promote oncogenic signaling. Of immediate clinical relevance, BRAFF595L shows divergent responses to different mutant BRAF-selective inhibitors, whereas signaling driven by BRAFF595L with and without mutant RAS is efficiently blocked by pan-RAF and MEK inhibitors. Mutation data from primary patient samples and cell lines show that BRAFF595L, as well as other BRAF mutations with intermediate activity, frequently coincide with mutant RAS in a broad spectrum of cancers. These data define a novel class of activating BRAF mutations that cooperate with oncogenic RAS in a non-paradoxical fashion to achieve an optimal level of MEK-ERK signaling, extend the spectrum of patients with systemic histiocytic disorders and other malignancies who are candidates for therapeutic blockade of the RAF-MEK-ERK pathway, and underscore the value of comprehensive genetic profiling for understanding the signaling requirements of individual cancers.",
+    "egaStableId": "EGAD00001001384",
+    "files": null,
+    "numSamples": 2,
+    "policyStableId": "EGAP00001000441",
+    "published": true,
+    "released": "RELEASED",
+    "releasedDate": "2016-03-28T22:00.000Z",
+    "technology": [
+      "Illumina HiSeq 2500"
+    ],
+    "title": "Cooperative activity of BRAF F595L and mutant HRAS in histiocytic sarcoma provides new insights into oncogenic BRAF signaling"
+  },
+  {
+    "accessType": "CONTROLLED",
+    "alias": "ena-DATASET-DKFZ-IBIOS-01-06-2015-13:43:18:542-193",
+    "attributes": [],
+    "availableInBeacon": false,
+    "centerName": "DKFZ-IBIOS",
+    "creationTime": "2015-06-01T11:33.000Z",
+    "dacs": [
+      "EGAC00001000346"
+    ],
+    "datasetLinks": [],
+    "datasetTypes": [
+      "Whole genome sequencing"
+    ],
+    "description": "Whole Genome Sequencing of Huh7 cell lines",
+    "egaStableId": "EGAD00001001386",
+    "files": null,
+    "numSamples": 2,
+    "policyStableId": "EGAP00001000335",
+    "published": true,
+    "released": "RELEASED",
+    "releasedDate": "2016-07-26T22:00.000Z",
+    "technology": [
+      "Illumina HiSeq 2000",
+      "Illumina HiSeq 2500"
+    ],
+    "title": "WGS Huh7 cell lines"
+  },
+  {
+    "accessType": "CONTROLLED",
+    "alias": "ena-DATASET-DKFZ-IBIOS-21-07-2015-14:09:30:309-81",
+    "attributes": [],
+    "availableInBeacon": false,
+    "centerName": "DKFZ-IBIOS",
+    "creationTime": "2015-07-21T12:53.000Z",
+    "dacs": [
+      "EGAC00001000452"
+    ],
+    "datasetLinks": [],
+    "datasetTypes": [
+      "Whole genome sequencing",
+      "Transcriptome profiling by high-throughput sequencing",
+      "Methylation profiling by high-throughput sequencing"
+    ],
+    "description": "Atypical teratoid/rhabdoid tumor (ATRT) is one of the most common brain tumors in infants and young children. Although the prognosis of ATRT patients is poor, some patients respond very well to current treatments, suggesting inter-tumor molecular heterogeneity. To investigate this further, we genetically and epigenetically analyzed a large cohort of ATRTs (n = 170). Three distinct molecular subgroups of ATRTs, associated with differences in demographics, tumor location and type of SMARCB1 alterations, were identified using DNA-methylation or gene expression analyses. Whole genome DNA- and RNA-sequencing found no other recurrent mutations explaining the differences between subgroups. However, whole genome bisulfite-sequencing and H3K27Ac ChIP-sequencing of primary tumors revealed clear differences in methylation patterns and enhancer landscapes, leading to the identification of subgroup-specific regulatory networks.",
+    "egaStableId": "EGAD00001001444",
+    "files": null,
+    "numSamples": 55,
+    "policyStableId": "EGAP00001000441",
+    "published": true,
+    "released": "RELEASED",
+    "releasedDate": "2016-03-28T22:00.000Z",
+    "technology": [
+      "Illumina HiSeq 2000",
+      "Illumina HiSeq 2500"
+    ],
+    "title": "Atypical teratoid/rhabdoid tumors (ATRT) are comprised of three epigenetic subgroups with distinct enhancer landscapes"
+  },
+  {
+    "accessType": "CONTROLLED",
+    "alias": "ena-DATASET-DKFZ-IBIOS-17-08-2015-09:13:01:216-19",
+    "attributes": [],
+    "availableInBeacon": false,
+    "centerName": "DKFZ-IBIOS",
+    "creationTime": "2015-08-17T07:17.000Z",
+    "dacs": [
+      "EGAC00001000381"
+    ],
+    "datasetLinks": [],
+    "datasetTypes": [
+      "Transcriptome profiling by high-throughput sequencing"
+    ],
+    "description": "PAR-CLIP was performed on the Argonaute-2 protein (AGO2) in four lymphoma cell lines:NamalwaRajiSU-DHL-4SU-DHL-6",
+    "egaStableId": "EGAD00001001468",
+    "files": null,
+    "numSamples": 4,
+    "policyStableId": "EGAP00001000369",
+    "published": true,
+    "released": "RELEASED",
+    "releasedDate": "2016-10-12T22:00.000Z",
+    "technology": [
+      "Illumina HiSeq 2500"
+    ],
+    "title": "Four lymphoma cell lines (AGO2-PAR-CLIP)"
+  },
+  {
+    "accessType": "CONTROLLED",
+    "alias": "ena-DATASET-DKFZ-IBIOS-28-08-2015-09:49:06:632-229",
+    "attributes": [],
+    "availableInBeacon": false,
+    "centerName": "DKFZ-IBIOS",
+    "creationTime": "2015-08-28T07:20.000Z",
+    "dacs": [
+      "EGAC00001000381"
+    ],
+    "datasetLinks": [],
+    "datasetTypes": [
+      "sample"
+    ],
+    "description": "RNA-sequencing data from teh hT-RPE-MycER cell line after MYC activation and after MINCR knock-down in conditions of MYC ON or OFF",
+    "egaStableId": "EGAD00001001598",
+    "files": null,
+    "numSamples": 18,
+    "policyStableId": "EGAP00001000369",
+    "published": true,
+    "released": "RELEASED",
+    "releasedDate": "2015-09-07T22:00.000Z",
+    "technology": [
+      "Illumina HiSeq 2500"
+    ],
+    "title": "MYC and MINCR-regulated lncRNAs in hT-RPE-MycER cells"
+  },
+  {
+    "accessType": "CONTROLLED",
+    "alias": "ena-DATASET-DKFZ-IBIOS-16-09-2015-13:05:30:578-414",
+    "attributes": [],
+    "availableInBeacon": false,
+    "centerName": "DKFZ-IBIOS",
+    "creationTime": "2015-09-16T11:46.000Z",
+    "dacs": [
+      "EGAC00001000381"
+    ],
+    "datasetLinks": [],
+    "datasetTypes": [
+      "Transcriptome profiling by high-throughput sequencing"
+    ],
+    "description": "After overexpression and knockdown of both described novel miRs nmiR-1 and nmiR-2 in BL cell lines (SU-DHL4 for nmiR-1 and Raji for nmiR-2), we performed regular RNA-Seq (including Mock controls for all cell lines) to identify their direct and indirect downstream mRNA targets.",
+    "egaStableId": "EGAD00001001612",
+    "files": null,
+    "numSamples": 16,
+    "policyStableId": "EGAP00001000369",
+    "published": true,
+    "released": "RELEASED",
+    "releasedDate": "2016-10-12T22:00.000Z",
+    "technology": [
+      "Illumina HiSeq 2500"
+    ],
+    "title": "RNA-Seq of novel miR (nmiR-1 and nmiR-2) overexpression and knockdown in BL"
+  },
+  {
+    "accessType": "CONTROLLED",
+    "alias": "ena-DATASET-DKFZ-IBIOS-12-04-2016-13:32:15:134-286",
+    "attributes": [],
+    "availableInBeacon": false,
+    "centerName": "DKFZ-IBIOS",
+    "creationTime": "2016-04-12T13:46.000Z",
+    "dacs": [
+      "EGAC00001000452"
+    ],
+    "datasetLinks": [],
+    "datasetTypes": [
+      "Transcriptome profiling by high-throughput sequencing"
+    ],
+    "description": "RNA sequencing data of whole blood samples from smoking and non-smoking mothers and their children at gestation/birth and follow-up years.",
+    "egaStableId": "EGAD00001002011",
+    "files": null,
+    "numSamples": 64,
+    "policyStableId": "EGAP00001000441",
+    "published": true,
+    "released": "RELEASED",
+    "releasedDate": "2016-04-19T22:00.000Z",
+    "technology": [],
+    "title": "RNA sequencing data of child-mother pairs, maternal smoking."
+  },
+  {
+    "accessType": "CONTROLLED",
+    "alias": "ena-DATASET-DKFZ-IBIOS-12-04-2016-13:35:10:904-287",
+    "attributes": [],
+    "availableInBeacon": false,
+    "centerName": "DKFZ-IBIOS",
+    "creationTime": "2016-04-12T13:46.000Z",
+    "dacs": [
+      "EGAC00001000452"
+    ],
+    "datasetLinks": [],
+    "datasetTypes": [
+      "sample"
+    ],
+    "description": "ChIPseq data of whole blood samples from smoking and non-smoking mothers and their children at gestation/birth and follow-up years.",
+    "egaStableId": "EGAD00001002012",
+    "files": null,
+    "numSamples": 16,
+    "policyStableId": "EGAP00001000441",
+    "published": true,
+    "released": "RELEASED",
+    "releasedDate": "2016-04-19T22:00.000Z",
+    "technology": [],
+    "title": "ChIPseq data of child-mother pairs, maternal smoking."
+  },
+  {
+    "accessType": "CONTROLLED",
+    "alias": "ena-DATASET-DKFZ-HIPO-22-04-2016-18:03:44:927-11",
+    "attributes": [],
+    "availableInBeacon": false,
+    "centerName": "DKFZ-HIPO",
+    "creationTime": "2016-04-22T16:03.000Z",
+    "dacs": [
+      "EGAC00001000452"
+    ],
+    "datasetLinks": [],
+    "datasetTypes": [
+      "Exome sequencing"
+    ],
+    "description": "Whole exome sequencing from matched tumor-control samples of 121 primary lymphoma samples. Sequencing was performed on Illumina HiSeq2000. The dataset contains FASTQ files.",
+    "egaStableId": "EGAD00001002055",
+    "files": null,
+    "numSamples": 242,
+    "policyStableId": "EGAP00001000441",
+    "published": true,
+    "released": "RELEASED",
+    "releasedDate": "2016-05-01T22:00.000Z",
+    "technology": [
+      "Illumina HiSeq 2000"
+    ],
+    "title": "H005 WES CLL"
+  },
+  {
+    "accessType": "CONTROLLED",
+    "alias": "ena-DATASET-DKFZ-HIPO-22-04-2016-18:09:52:421-12",
+    "attributes": [],
+    "availableInBeacon": false,
+    "centerName": "DKFZ-HIPO",
+    "creationTime": "2016-04-22T16:58.000Z",
+    "dacs": [
+      "EGAC00001000452"
+    ],
+    "datasetLinks": [],
+    "datasetTypes": [
+      "Transcriptome profiling by high-throughput sequencing"
+    ],
+    "description": "Paired-end RNA sequencing using total RNA from 136 primary lymphoma samples. Sequencing was performed on the Illumina HiSeq2000 with 300bp insert size. The dataset contains FASTQ files.",
+    "egaStableId": "EGAD00001002056",
+    "files": null,
+    "numSamples": 136,
+    "policyStableId": "EGAP00001000441",
+    "published": true,
+    "released": "RELEASED",
+    "releasedDate": "2016-05-01T22:00.000Z",
+    "technology": [
+      "Illumina HiSeq 2000"
+    ],
+    "title": "H005 RNA-seq CLL"
+  },
+  {
+    "accessType": "CONTROLLED",
+    "alias": "ena-DATASET-MUO-27-04-2016-12:33:45:301-16",
+    "attributes": [],
+    "availableInBeacon": false,
+    "centerName": "MUO",
+    "creationTime": "2016-04-27T13:47.000Z",
+    "dacs": [
+      "EGAC00001000470"
+    ],
+    "datasetLinks": [],
+    "datasetTypes": [
+      "Exome sequencing"
+    ],
+    "description": "Renal cell carcinoma (RCC) is a genomically heterogeneous tumor. In the present project, the question whether intratumoral heterogeneity follows a zonal pattern indicating spatial niches was addressed. Whole exome sequencing of 16 paired samples from tumor periphery and center revealed a number of region-specific functional SNVs and Indels. Therefore, RCCs are not composed of evenly admixed tumor cells but show topological differences in their clonal composition.",
+    "egaStableId": "EGAD00001002067",
+    "files": null,
+    "numSamples": 16,
+    "policyStableId": "EGAP00001000456",
+    "published": true,
+    "released": "RELEASED",
+    "releasedDate": "2016-08-22T22:00.000Z",
+    "technology": [
+      "Illumina HiSeq 2500"
+    ],
+    "title": "Analysis of tumor periphery and center-specific mutations in renal cell carcinoma"
+  },
+  {
+    "accessType": "CONTROLLED",
+    "alias": "ena-DATASET-DKFZ-IBIOS-18-05-2016-08:44:36:254-32",
+    "attributes": [],
+    "availableInBeacon": false,
+    "centerName": "DKFZ-IBIOS",
+    "creationTime": "2016-05-18T11:03.000Z",
+    "dacs": [
+      "EGAC00001000452"
+    ],
+    "datasetLinks": [],
+    "datasetTypes": [
+      "sample"
+    ],
+    "description": "ChIPseq data of Atypical teratoid/rhabdoid tumors (ATRT)",
+    "egaStableId": "EGAD00001002135",
+    "files": null,
+    "numSamples": 15,
+    "policyStableId": "EGAP00001000441",
+    "published": true,
+    "released": "RELEASED",
+    "releasedDate": "2016-06-21T22:00.000Z",
+    "technology": [
+      "Illumina HiSeq 2000",
+      "Illumina HiSeq 2500"
+    ],
+    "title": "ChIPseq data of Atypical teratoid/rhabdoid tumors (ATRT)"
+  },
+  {
+    "accessType": "CONTROLLED",
+    "alias": "ena-DATASET-DKFZ-IBIOS-18-05-2016-08:48:45:674-33",
+    "attributes": [],
+    "availableInBeacon": false,
+    "centerName": "DKFZ-IBIOS",
+    "creationTime": "2016-05-18T11:03.000Z",
+    "dacs": [
+      "EGAC00001000452"
+    ],
+    "datasetLinks": [],
+    "datasetTypes": [
+      "Transcriptome profiling by high-throughput sequencing"
+    ],
+    "description": "RNA sequencing data of Atypical teratoid/rhabdoid tumors (ATRT)",
+    "egaStableId": "EGAD00001002136",
+    "files": null,
+    "numSamples": 25,
+    "policyStableId": "EGAP00001000441",
+    "published": true,
+    "released": "RELEASED",
+    "releasedDate": "2016-06-21T22:00.000Z",
+    "technology": [
+      "Illumina HiSeq 2000"
+    ],
+    "title": "RNA sequencing data of Atypical teratoid/rhabdoid tumors (ATRT)"
+  },
+  {
+    "accessType": "CONTROLLED",
+    "alias": "ena-DATASET-DKFZ-IBIOS-18-05-2016-08:53:46:927-34",
+    "attributes": [],
+    "availableInBeacon": false,
+    "centerName": "DKFZ-IBIOS",
+    "creationTime": "2016-05-18T11:03.000Z",
+    "dacs": [
+      "EGAC00001000452"
+    ],
+    "datasetLinks": [],
+    "datasetTypes": [
+      "Methylation profiling by high-throughput sequencing"
+    ],
+    "description": "WGBS data of Atypical teratoid/rhabdoid tumors (ATRT)",
+    "egaStableId": "EGAD00001002137",
+    "files": null,
+    "numSamples": 15,
+    "policyStableId": "EGAP00001000441",
+    "published": true,
+    "released": "RELEASED",
+    "releasedDate": "2016-06-21T22:00.000Z",
+    "technology": [
+      "Illumina HiSeq 2000",
+      "Illumina HiSeq 2500"
+    ],
+    "title": "WGBS data of Atypical teratoid/rhabdoid tumors (ATRT)"
+  },
+  {
+    "accessType": "CONTROLLED",
+    "alias": "ena-DATASET-DKFZ-IBIOS-18-05-2016-08:57:29:419-35",
+    "attributes": [],
+    "availableInBeacon": false,
+    "centerName": "DKFZ-IBIOS",
+    "creationTime": "2016-05-18T11:02.000Z",
+    "dacs": [
+      "EGAC00001000452"
+    ],
+    "datasetLinks": [],
+    "datasetTypes": [
+      "Whole genome sequencing"
+    ],
+    "description": "WGS data of Atypical teratoid/rhabdoid tumors (ATRT)",
+    "egaStableId": "EGAD00001002138",
+    "files": null,
+    "numSamples": 36,
+    "policyStableId": "EGAP00001000441",
+    "published": true,
+    "released": "RELEASED",
+    "releasedDate": "2016-06-21T22:00.000Z",
+    "technology": [
+      "Illumina HiSeq 2000"
+    ],
+    "title": "WGS data of Atypical teratoid/rhabdoid tumors (ATRT)"
+  },
+  {
+    "accessType": "CONTROLLED",
+    "alias": "ena-DATASET-DKFZ-HIPO-02-06-2016-16:14:01:314-131",
+    "attributes": [],
+    "availableInBeacon": false,
+    "centerName": "DKFZ-HIPO",
+    "creationTime": "2016-06-07T13:11.000Z",
+    "dacs": [
+      "EGAC00001000452"
+    ],
+    "datasetLinks": [],
+    "datasetTypes": [
+      "Exome sequencing"
+    ],
+    "description": "Exome Seq for Study EGAS00001001844",
+    "egaStableId": "EGAD00001002159",
+    "files": null,
+    "numSamples": 2,
+    "policyStableId": "EGAP00001000441",
+    "published": true,
+    "released": "RELEASED",
+    "releasedDate": "2016-07-10T22:00.000Z",
+    "technology": [
+      "Illumina HiSeq 2000"
+    ],
+    "title": "Exome"
+  },
+  {
+    "accessType": "CONTROLLED",
+    "alias": "ena-DATASET-DKFZ-HIPO-02-06-2016-16:16:09:098-133",
+    "attributes": [],
+    "availableInBeacon": false,
+    "centerName": "DKFZ-HIPO",
+    "creationTime": "2016-06-07T13:11.000Z",
+    "dacs": [
+      "EGAC00001000452"
+    ],
+    "datasetLinks": [],
+    "datasetTypes": [
+      "Exome sequencing"
+    ],
+    "description": "Exome Seq for EGAS00001001845",
+    "egaStableId": "EGAD00001002160",
+    "files": null,
+    "numSamples": 2,
+    "policyStableId": "EGAP00001000441",
+    "published": true,
+    "released": "RELEASED",
+    "releasedDate": "2016-07-10T22:00.000Z",
+    "technology": [
+      "Illumina HiSeq 2500"
+    ],
+    "title": "Exome"
+  },
+  {
+    "accessType": "CONTROLLED",
+    "alias": "ena-DATASET-DKFZ-HIPO-02-06-2016-16:17:30:684-137",
+    "attributes": [],
+    "availableInBeacon": false,
+    "centerName": "DKFZ-HIPO",
+    "creationTime": "2016-06-07T13:11.000Z",
+    "dacs": [
+      "EGAC00001000452"
+    ],
+    "datasetLinks": [],
+    "datasetTypes": [
+      "Transcriptome profiling by high-throughput sequencing"
+    ],
+    "description": "Transcriptome from EGAS00001001845",
+    "egaStableId": "EGAD00001002161",
+    "files": null,
+    "numSamples": 1,
+    "policyStableId": "EGAP00001000441",
+    "published": true,
+    "released": "RELEASED",
+    "releasedDate": "2016-07-10T22:00.000Z",
+    "technology": [
+      "Illumina HiSeq 2500"
+    ],
+    "title": "Transcriptome"
+  },
+  {
+    "accessType": "CONTROLLED",
+    "alias": "ena-DATASET-DKFZ-HIPO-02-06-2016-16:18:51:312-138",
+    "attributes": [],
+    "availableInBeacon": false,
+    "centerName": "DKFZ-HIPO",
+    "creationTime": "2016-06-07T13:11.000Z",
+    "dacs": [
+      "EGAC00001000452"
+    ],
+    "datasetLinks": [],
+    "datasetTypes": [
+      "Exome sequencing"
+    ],
+    "description": "Exome Seq from EGAS00001001846",
+    "egaStableId": "EGAD00001002162",
+    "files": null,
+    "numSamples": 2,
+    "policyStableId": "EGAP00001000441",
+    "published": true,
+    "released": "RELEASED",
+    "releasedDate": "2016-07-10T22:00.000Z",
+    "technology": [
+      "Illumina HiSeq 2500"
+    ],
+    "title": "Exome"
+  },
+  {
+    "accessType": "CONTROLLED",
+    "alias": "ena-DATASET-DKFZ-HIPO-02-06-2016-16:19:57:504-139",
+    "attributes": [],
+    "availableInBeacon": false,
+    "centerName": "DKFZ-HIPO",
+    "creationTime": "2016-06-07T13:10.000Z",
+    "dacs": [
+      "EGAC00001000452"
+    ],
+    "datasetLinks": [],
+    "datasetTypes": [
+      "Transcriptome profiling by high-throughput sequencing"
+    ],
+    "description": "Transcriptome from EGAS00001001846",
+    "egaStableId": "EGAD00001002163",
+    "files": null,
+    "numSamples": 1,
+    "policyStableId": "EGAP00001000441",
+    "published": true,
+    "released": "RELEASED",
+    "releasedDate": "2016-07-10T22:00.000Z",
+    "technology": [
+      "Illumina HiSeq 2500"
+    ],
+    "title": "Transcriptome"
+  },
+  {
+    "accessType": "CONTROLLED",
+    "alias": "ena-DATASET-DKFZ-HIPO-02-06-2016-16:21:01:191-140",
+    "attributes": [],
+    "availableInBeacon": false,
+    "centerName": "DKFZ-HIPO",
+    "creationTime": "2016-06-07T13:10.000Z",
+    "dacs": [
+      "EGAC00001000452"
+    ],
+    "datasetLinks": [],
+    "datasetTypes": [
+      "Exome sequencing"
+    ],
+    "description": "Exome from EGA00001001848",
+    "egaStableId": "EGAD00001002164",
+    "files": null,
+    "numSamples": 2,
+    "policyStableId": "EGAP00001000441",
+    "published": true,
+    "released": "RELEASED",
+    "releasedDate": "2016-07-10T22:00.000Z",
+    "technology": [
+      "Illumina HiSeq 2000"
+    ],
+    "title": "Exome"
+  },
+  {
+    "accessType": "CONTROLLED",
+    "alias": "ena-DATASET-DKFZ-HIPO-06-06-2016-09:38:03:185-52",
+    "attributes": [],
+    "availableInBeacon": false,
+    "centerName": "DKFZ-HIPO",
+    "creationTime": "2016-06-06T07:05.000Z",
+    "dacs": [
+      "EGAC00001000452"
+    ],
+    "datasetLinks": [],
+    "datasetTypes": [
+      "Exome sequencing"
+    ],
+    "description": "Exome from EGAS00001001861",
+    "egaStableId": "EGAD00001002166",
+    "files": null,
+    "numSamples": 17,
+    "policyStableId": "EGAP00001000441",
+    "published": true,
+    "released": "RELEASED",
+    "releasedDate": "2016-06-11T22:00.000Z",
+    "technology": [
+      "Illumina HiSeq 2000"
+    ],
+    "title": "Clear cell renal cell carcinoma (HIPO-045)"
+  },
+  {
+    "accessType": "CONTROLLED",
+    "alias": "ena-DATASET-DKFZ-HIPO-16-08-2016-09:06:02:030-345",
+    "attributes": [],
+    "availableInBeacon": false,
+    "centerName": "DKFZ-HIPO",
+    "creationTime": "2016-08-16T07:07.000Z",
+    "dacs": [
+      "EGAC00001000452"
+    ],
+    "datasetLinks": [],
+    "datasetTypes": [
+      "Whole genome sequencing"
+    ],
+    "description": "WGS from EGAS00001001857",
+    "egaStableId": "EGAD00001002528",
+    "files": null,
+    "numSamples": 18,
+    "policyStableId": "EGAP00001000441",
+    "published": true,
+    "released": "RELEASED",
+    "releasedDate": "2017-05-28T22:00.000Z",
+    "technology": [
+      "Illumina HiSeq 2000"
+    ],
+    "title": "HIPO-P002 Whole genome"
+  },
+  {
+    "accessType": "CONTROLLED",
+    "alias": "ena-DATASET-Neuromics-22-09-2016-08:49:06:149-211",
+    "attributes": [],
+    "availableInBeacon": false,
+    "centerName": "Neuromics",
+    "creationTime": "2016-09-22T06:10.000Z",
+    "dacs": [
+      "EGAC00001000165"
+    ],
+    "datasetLinks": [],
+    "datasetTypes": [
+      "Exome sequencing"
+    ],
+    "description": "48 samples from the TRACK-HD cohort. All samples carry the Huntington’s disease expansion. The subjects were selected on the basis of rate of disease progression.",
+    "egaStableId": "EGAD00001002695",
+    "files": null,
+    "numSamples": 48,
+    "policyStableId": "EGAP00001000171",
+    "published": true,
+    "released": "RELEASED",
+    "releasedDate": "2000-12-31T23:00.000Z",
+    "technology": [
+      "Illumina HiSeq 2000"
+    ],
+    "title": "NeurOmics_HD_Modifier_V1"
+  },
+  {
+    "accessType": "CONTROLLED",
+    "alias": "ena-DATASET-Neuromics-22-09-2016-09:32:18:368-213",
+    "attributes": [],
+    "availableInBeacon": false,
+    "centerName": "Neuromics",
+    "creationTime": "2016-09-22T07:20.000Z",
+    "dacs": [
+      "EGAC00001000165"
+    ],
+    "datasetLinks": [],
+    "datasetTypes": [
+      "Transcriptome profiling by high-throughput sequencing"
+    ],
+    "description": "This data set includes RNAseq data from 136 samples from the TRACK-HD cohort including premanifest, manifest and control subjects. \nData can only be used for Huntington's disease related research.",
+    "egaStableId": "EGAD00001002699",
+    "files": null,
+    "numSamples": 136,
+    "policyStableId": "EGAP00001000171",
+    "published": true,
+    "released": "RELEASED",
+    "releasedDate": "2000-12-31T23:00.000Z",
+    "technology": [
+      "Illumina HiSeq 2500"
+    ],
+    "title": "NeurOmics_HD_Biomarker-1_V1"
+  },
+  {
+    "accessType": "CONTROLLED",
+    "alias": "Small RNA sequencing of blood plasma-derived exosomes from CLL",
+    "attributes": [],
+    "availableInBeacon": false,
+    "centerName": "DKFZ",
+    "creationTime": "2017-03-17T13:19.000Z",
+    "dacs": [
+      "EGAC00001000219"
+    ],
+    "datasetLinks": [],
+    "datasetTypes": [
+      "Whole genome sequencing"
+    ],
+    "description": "Small RNA expression profiles of the blood plasma-derived exosomes from B-cell chronic lymphocytic leukemia patients",
+    "egaStableId": "EGAD00001003230",
+    "files": null,
+    "numSamples": 3,
+    "policyStableId": "EGAP00001000221",
+    "published": true,
+    "released": "RELEASED",
+    "releasedDate": "2017-07-17T22:00.000Z",
+    "technology": [
+      "Illumina HiSeq 2000"
+    ],
+    "title": "Tumor-derived exosomes modulate PD-L1 expression in monocytes"
+  },
+  {
+    "accessType": "CONTROLLED",
+    "alias": "ena-DATASET-DKFZ-HIPO-09-05-2017-15:55:17:146-277",
+    "attributes": [],
+    "availableInBeacon": false,
+    "centerName": "DKFZ-HIPO",
+    "creationTime": "2017-05-09T13:19.000Z",
+    "dacs": [
+      "EGAC00001000452"
+    ],
+    "datasetLinks": [],
+    "datasetTypes": [
+      "Exome sequencing"
+    ],
+    "description": "Exome from EGAS00001002441",
+    "egaStableId": "EGAD00001003325",
+    "files": null,
+    "numSamples": 2,
+    "policyStableId": "EGAP00001000441",
+    "published": true,
+    "released": "RELEASED",
+    "releasedDate": "2000-12-31T23:00.000Z",
+    "technology": [
+      "Illumina HiSeq 2500"
+    ],
+    "title": "Exome"
+  },
+  {
+    "accessType": "CONTROLLED",
+    "alias": "ena-DATASET-DKFZ-06-07-2017-16:10:50:154-493",
+    "attributes": [],
+    "availableInBeacon": false,
+    "centerName": "DKFZ",
+    "creationTime": "2017-07-06T14:53.000Z",
+    "dacs": [
+      "EGAC00001000219"
+    ],
+    "datasetLinks": [],
+    "datasetTypes": [
+      "Whole genome sequencing"
+    ],
+    "description": "RNA analysis of two patients 11 and 15 with WGS done on Illumina HiSeq2000. For research purpose and authorised user only.",
+    "egaStableId": "EGAD00001003429",
+    "files": null,
+    "numSamples": 2,
+    "policyStableId": "EGAP00001000221",
+    "published": true,
+    "released": "RELEASED",
+    "releasedDate": "2017-08-29T22:00.000Z",
+    "technology": [
+      "Illumina HiSeq 2000"
+    ],
+    "title": "RNA-Seq Pair End"
+  },
+  {
+    "accessType": "CONTROLLED",
+    "alias": "ena-DATASET-DKFZ-06-07-2017-17:03:52:162-505",
+    "attributes": [],
+    "availableInBeacon": false,
+    "centerName": "DKFZ",
+    "creationTime": "2017-07-06T15:54.000Z",
+    "dacs": [
+      "EGAC00001000219"
+    ],
+    "datasetLinks": [],
+    "datasetTypes": [
+      "Whole genome sequencing"
+    ],
+    "description": "RNA analysis of six patients 34, 35, 36, 37, 38 and 39 with WGS done on Illumina HiSeq2500. For research purpose and authorised user only.",
+    "egaStableId": "EGAD00001003430",
+    "files": null,
+    "numSamples": 6,
+    "policyStableId": "EGAP00001000221",
+    "published": true,
+    "released": "RELEASED",
+    "releasedDate": "2017-08-29T22:00.000Z",
+    "technology": [
+      "Illumina HiSeq 2500"
+    ],
+    "title": "RNA-Seq Single End"
+  },
+  {
+    "accessType": "CONTROLLED",
+    "alias": "ena-DATASET-DKFZ-10-07-2017-14:51:26:287-19",
+    "attributes": [],
+    "availableInBeacon": false,
+    "centerName": "DKFZ",
+    "creationTime": "2017-07-10T12:29.000Z",
+    "dacs": [
+      "EGAC00001000219"
+    ],
+    "datasetLinks": [],
+    "datasetTypes": [
+      "Whole genome sequencing"
+    ],
+    "description": "Seven files of patients 3, 21, 29, 30, 31, 32 and 33 with WGS done on Illumina MiSeq with high coverage. For research purpose and authorised user only.",
+    "egaStableId": "EGAD00001003436",
+    "files": null,
+    "numSamples": 7,
+    "policyStableId": "EGAP00001000221",
+    "published": true,
+    "released": "RELEASED",
+    "releasedDate": "2017-08-29T22:00.000Z",
+    "technology": [
+      "Illumina MiSeq"
+    ],
+    "title": "MiSeq-High Coverage"
+  },
+  {
+    "accessType": "CONTROLLED",
+    "alias": "ena-DATASET-DKFZ-10-07-2017-14:56:28:042-20",
+    "attributes": [],
+    "availableInBeacon": false,
+    "centerName": "DKFZ",
+    "creationTime": "2017-07-10T12:30.000Z",
+    "dacs": [
+      "EGAC00001000219"
+    ],
+    "datasetLinks": [],
+    "datasetTypes": [
+      "Whole genome sequencing"
+    ],
+    "description": "Fourteen files of patients 1, 2, 4, 6, 7, 8, 9, 12, 14, 16, 17, 18, 19 and 27 with WGS done on Illumina MiSeq with low coverage. For research purpose and authorised user only.",
+    "egaStableId": "EGAD00001003437",
+    "files": null,
+    "numSamples": 14,
+    "policyStableId": "EGAP00001000221",
+    "published": true,
+    "released": "RELEASED",
+    "releasedDate": "2017-08-29T22:00.000Z",
+    "technology": [
+      "Illumina MiSeq"
+    ],
+    "title": "MiSeq-Low Coverage"
+  },
+  {
+    "accessType": "CONTROLLED",
+    "alias": "ena-DATASET-DKFZ-10-07-2017-15:00:31:755-21",
+    "attributes": [],
+    "availableInBeacon": false,
+    "centerName": "DKFZ",
+    "creationTime": "2017-07-10T13:33.000Z",
+    "dacs": [
+      "EGAC00001000219"
+    ],
+    "datasetLinks": [],
+    "datasetTypes": [
+      "Whole genome sequencing"
+    ],
+    "description": "Three files of patients 20, 23 and 25  with WGS done on Illumina HiSeq 2000. For research purpose and authorised user only.",
+    "egaStableId": "EGAD00001003438",
+    "files": null,
+    "numSamples": 3,
+    "policyStableId": "EGAP00001000221",
+    "published": true,
+    "released": "RELEASED",
+    "releasedDate": "2017-08-29T22:00.000Z",
+    "technology": [
+      "Illumina HiSeq 2000"
+    ],
+    "title": "Illumina HiSeq 2000"
+  },
+  {
+    "accessType": "CONTROLLED",
+    "alias": "ena-DATASET-DKFZ-10-07-2017-15:01:36:723-22",
+    "attributes": [],
+    "availableInBeacon": false,
+    "centerName": "DKFZ",
+    "creationTime": "2017-07-10T13:38.000Z",
+    "dacs": [
+      "EGAC00001000219"
+    ],
+    "datasetLinks": [],
+    "datasetTypes": [
+      "Whole genome sequencing"
+    ],
+    "description": "Three files of patients 10, 11 and 13 with WGS done on Illumina HiSeq X Ten. For research purpose and authorised user only.",
+    "egaStableId": "EGAD00001003439",
+    "files": null,
+    "numSamples": 3,
+    "policyStableId": "EGAP00001000221",
+    "published": true,
+    "released": "RELEASED",
+    "releasedDate": "2017-08-29T22:00.000Z",
+    "technology": [
+      "HiSeq X Ten"
+    ],
+    "title": "Illumina HiSeq X Ten"
+  },
+  {
+    "accessType": "CONTROLLED",
+    "alias": "ena-DATASET-DKFZ-10-07-2017-15:06:02:958-23",
+    "attributes": [],
+    "availableInBeacon": false,
+    "centerName": "DKFZ",
+    "creationTime": "2017-07-10T13:04.000Z",
+    "dacs": [
+      "EGAC00001000219"
+    ],
+    "datasetLinks": [],
+    "datasetTypes": [
+      "Whole genome sequencing"
+    ],
+    "description": "One file of patient 16 with WGS done on Illumina HiSeq X-Ten. For research purpose and authorised user only.",
+    "egaStableId": "EGAD00001003440",
+    "files": null,
+    "numSamples": 1,
+    "policyStableId": "EGAP00001000221",
+    "published": true,
+    "released": "RELEASED",
+    "releasedDate": "2017-08-29T22:00.000Z",
+    "technology": [
+      "HiSeq X Ten"
+    ],
+    "title": "Patient 16CH"
+  },
+  {
+    "accessType": "CONTROLLED",
+    "alias": "ena-DATASET-dkfz_b062-04-08-2017-13:47:34:208-1428",
+    "attributes": [],
+    "availableInBeacon": false,
+    "centerName": "dkfz_b062",
+    "creationTime": "2017-08-04T11:36.000Z",
+    "dacs": [
+      "EGAC00001000219"
+    ],
+    "datasetLinks": [],
+    "datasetTypes": [
+      "Exome sequencing"
+    ],
+    "description": "Whole exome sequencing data to 30 PDOX models (28 early passages, 3 late passages (1 overlap)), 3 cell lines, and 20 matching human tumors",
+    "egaStableId": "EGAD00001003544",
+    "files": null,
+    "numSamples": 53,
+    "policyStableId": "EGAP00001000687",
+    "published": true,
+    "released": "RELEASED",
+    "releasedDate": "2018-01-28T23:00.000Z",
+    "technology": [
+      "Illumina HiSeq 2000",
+      "Illumina HiSeq 4000"
+    ],
+    "title": "Whole exome genome sequencing data to study \"A biobank of patient-derived pediatric brain tumor models\""
+  },
+  {
+    "accessType": "CONTROLLED",
+    "alias": "ena-DATASET-dkfz_b062-04-08-2017-14:15:21:871-1439",
+    "attributes": [],
+    "availableInBeacon": false,
+    "centerName": "dkfz_b062",
+    "creationTime": "2017-08-04T12:23.000Z",
+    "dacs": [
+      "EGAC00001000219"
+    ],
+    "datasetLinks": [],
+    "datasetTypes": [
+      "Whole genome sequencing"
+    ],
+    "description": "Low-coverage whole genome sequencing data for 30 PDOX models (28 early passages, 4 late passages (2 overlaps)), 3 cell lines, and 21 matching human tumors",
+    "egaStableId": "EGAD00001003545",
+    "files": null,
+    "numSamples": 56,
+    "policyStableId": "EGAP00001000687",
+    "published": true,
+    "released": "RELEASED",
+    "releasedDate": "2018-01-28T23:00.000Z",
+    "technology": [
+      "Illumina HiSeq 2000"
+    ],
+    "title": "Low-coverage whole genome sequencing data to study \"A biobank of patient-derived pediatric brain tumor models\""
+  },
+  {
+    "accessType": "CONTROLLED",
+    "alias": "ena-DATASET-dkfz_b062-18-08-2017-15:54:03:183-161",
+    "attributes": [],
+    "availableInBeacon": false,
+    "centerName": "dkfz_b062",
+    "creationTime": "2017-08-18T13:04.000Z",
+    "dacs": [
+      "EGAC00001000219"
+    ],
+    "datasetLinks": [],
+    "datasetTypes": [
+      "Transcriptome profiling by high-throughput sequencing"
+    ],
+    "description": "RNA sequencing data for the PDOX model EPD-613FH",
+    "egaStableId": "EGAD00001003573",
+    "files": null,
+    "numSamples": 1,
+    "policyStableId": "EGAP00001000687",
+    "published": true,
+    "released": "RELEASED",
+    "releasedDate": "2018-01-28T23:00.000Z",
+    "technology": [
+      "Illumina HiSeq 2500"
+    ],
+    "title": "RNA sequencing data to study \"A biobank of patient-derived pediatric braintumor models\""
+  },
+  {
+    "accessType": "CONTROLLED",
+    "alias": "ena-DATASET-DKFZ-HIPO-01-12-2017-12:36:36:554-60",
+    "attributes": [],
+    "availableInBeacon": false,
+    "centerName": "DKFZ-HIPO",
+    "creationTime": "2017-12-01T11:38.000Z",
+    "dacs": [
+      "EGAC00001000452"
+    ],
+    "datasetLinks": [],
+    "datasetTypes": [
+      "Whole genome sequencing"
+    ],
+    "description": "The data set contains bam files aligned using bwa-0.7.8 mem -t 8 -R.",
+    "egaStableId": "EGAD00001003827",
+    "files": null,
+    "numSamples": 4,
+    "policyStableId": "EGAP00001000441",
+    "published": true,
+    "released": "RELEASED",
+    "releasedDate": "2017-12-12T23:00.000Z",
+    "technology": [
+      "HiSeq X Ten"
+    ],
+    "title": "whole genome sequencing data of LMS cell lines"
+  },
+  {
+    "accessType": "CONTROLLED",
+    "alias": "ena-DATASET-DKFZ-HIPO-01-12-2017-13:02:22:609-63",
+    "attributes": [],
+    "availableInBeacon": false,
+    "centerName": "DKFZ-HIPO",
+    "creationTime": "2017-12-01T12:24.000Z",
+    "dacs": [
+      "EGAC00001000452"
+    ],
+    "datasetLinks": [],
+    "datasetTypes": [
+      "Transcriptome profiling by high-throughput sequencing"
+    ],
+    "description": "This dataset contains paired fastq files for LMS tumor samples",
+    "egaStableId": "EGAD00001003828",
+    "files": null,
+    "numSamples": 37,
+    "policyStableId": "EGAP00001000441",
+    "published": true,
+    "released": "RELEASED",
+    "releasedDate": "2000-12-31T23:00.000Z",
+    "technology": [
+      "Illumina HiSeq 2000",
+      "Illumina HiSeq 2500"
+    ],
+    "title": "RNA-seq data of LMS tumors"
+  },
+  {
+    "accessType": "CONTROLLED",
+    "alias": "ena-DATASET-DKFZ-HIPO-01-12-2017-13:14:23:391-67",
+    "attributes": [],
+    "availableInBeacon": false,
+    "centerName": "DKFZ-HIPO",
+    "creationTime": "2017-12-01T12:25.000Z",
+    "dacs": [
+      "EGAC00001000452"
+    ],
+    "datasetLinks": [],
+    "datasetTypes": [
+      "Exome sequencing"
+    ],
+    "description": "The data set contains paired end fastq files for whole exome sequencing data for Leiomyosarcoma tumor and control samples",
+    "egaStableId": "EGAD00001003829",
+    "files": null,
+    "numSamples": 96,
+    "policyStableId": "EGAP00001000441",
+    "published": true,
+    "released": "RELEASED",
+    "releasedDate": "2017-12-12T23:00.000Z",
+    "technology": [
+      "Illumina HiSeq 2000",
+      "Illumina HiSeq 2500"
+    ],
+    "title": "Exome sequencing data for LMS tumor and control samples"
+  },
+  {
+    "accessType": "CONTROLLED",
+    "alias": "ena-DATASET-dkfz_b062-31-01-2018-17:04:38:652-360",
+    "attributes": [],
+    "availableInBeacon": false,
+    "centerName": "dkfz_b062",
+    "creationTime": "2018-01-31T16:44.000Z",
+    "dacs": [
+      "EGAC00001000219"
+    ],
+    "datasetLinks": [],
+    "datasetTypes": [
+      "Whole genome sequencing"
+    ],
+    "description": "This dataset contains whole genome sequencing data from 24 patients. For each patient a tumour and control sample has been sequenced on a Illumina HiSeq2000 instrument in paired-end mode. Up to three lanes per sample have been sequenced resulting in 112 Fastq files.",
+    "egaStableId": "EGAD00001003940",
+    "files": null,
+    "numSamples": 48,
+    "policyStableId": "EGAP00001000221",
+    "published": true,
+    "released": "RELEASED",
+    "releasedDate": "2000-12-31T23:00.000Z",
+    "technology": [
+      "Illumina HiSeq 2000"
+    ],
+    "title": "Whole genome sequencing data to study therapeutic targeting of ependymoma"
+  },
+  {
+    "accessType": "CONTROLLED",
+    "alias": "ena-DATASET-DKFZ-HIPO-16-02-2018-09:13:54:127-321",
+    "attributes": [],
+    "availableInBeacon": false,
+    "centerName": "DKFZ-HIPO",
+    "creationTime": "2018-02-16T08:00.000Z",
+    "dacs": [
+      "EGAC00001000452"
+    ],
+    "datasetLinks": [],
+    "datasetTypes": [
+      "Whole genome sequencing"
+    ],
+    "description": "Whole genome sequencing of Control (blood), Tumor and metastasis triplets for 12 samples.",
+    "egaStableId": "EGAD00001003965",
+    "files": null,
+    "numSamples": 36,
+    "policyStableId": "EGAP00001000441",
+    "published": true,
+    "released": "RELEASED",
+    "releasedDate": "2018-02-23T23:00.000Z",
+    "technology": [
+      "Illumina HiSeq 2000"
+    ],
+    "title": "Hipo-032 Metastasome of Colorectal Cancer"
+  },
+  {
+    "accessType": "CONTROLLED",
+    "alias": "ena-DATASET-dkfz_b062-16-02-2018-17:18:40:151-347",
+    "attributes": [],
+    "availableInBeacon": false,
+    "centerName": "dkfz_b062",
+    "creationTime": "2018-02-16T16:42.000Z",
+    "dacs": [
+      "EGAC00001000219"
+    ],
+    "datasetLinks": [],
+    "datasetTypes": [
+      "Transcriptome profiling by high-throughput sequencing"
+    ],
+    "description": "This dataset conatains RNA sequencing data from 24 patients. Up to two lanes per tumour sample have been seqeunced on a Illumina HiSeq2000 instrument in paired-end mode resulting in 58 Fastq files.",
+    "egaStableId": "EGAD00001003966",
+    "files": null,
+    "numSamples": 24,
+    "policyStableId": "EGAP00001000221",
+    "published": true,
+    "released": "RELEASED",
+    "releasedDate": "2000-12-31T23:00.000Z",
+    "technology": [
+      "Illumina HiSeq 2000"
+    ],
+    "title": "RNA sequencing data to study therapeutic targeting of ependymoma"
+  },
+  {
+    "accessType": "CONTROLLED",
+    "alias": "ena-DATASET-dkfz_b062-21-02-2018-14:40:33:479-591",
+    "attributes": [],
+    "availableInBeacon": false,
+    "centerName": "dkfz_b062",
+    "creationTime": "2018-02-21T13:35.000Z",
+    "dacs": [
+      "EGAC00001000219"
+    ],
+    "datasetLinks": [],
+    "datasetTypes": [
+      "Exome sequencing"
+    ],
+    "description": "This dataset contains whole exome sequencing data from 24 patients. The Agilent SureSelect Human All Exon 50-Mb target enrichment kit was used to capture all human exons for deep sequencing. For each patient a tumour and control sample has been sequenced on a Illumina HiSeq2000 instrument in paired-end mode. Up to three lanes per sample have been sequenced resulting in 118 Fastq files.",
+    "egaStableId": "EGAD00001003973",
+    "files": null,
+    "numSamples": 48,
+    "policyStableId": "EGAP00001000221",
+    "published": true,
+    "released": "RELEASED",
+    "releasedDate": "2000-12-31T23:00.000Z",
+    "technology": [
+      "Illumina HiSeq 2000"
+    ],
+    "title": "Exome sequencing data to study therapeutic targeting of ependymoma"
+  },
+  {
+    "accessType": "CONTROLLED",
+    "alias": "ena-DATASET-dkfz_b062-23-02-2018-16:41:10:412-192",
+    "attributes": [],
+    "availableInBeacon": false,
+    "centerName": "dkfz_b062",
+    "creationTime": "2018-02-23T15:12.000Z",
+    "dacs": [
+      "EGAC00001000219"
+    ],
+    "datasetLinks": [],
+    "datasetTypes": [
+      "Chip-Seq"
+    ],
+    "description": "This dataset contains ChIP sequencing data from 24 patients. ChIP of 5–10 mg flash-frozen primary ependymoma tumour was performed using 5 mg H3K27ac antibody per ChIP experiment. The enriched DNA has been sequenced on a Illumina HiSeq2000 instrument in paired-end mode. Up to two lanes per sample have been sequenced resulting in 70 Fastq files.",
+    "egaStableId": "EGAD00001003979",
+    "files": null,
+    "numSamples": 24,
+    "policyStableId": "EGAP00001000221",
+    "published": true,
+    "released": "RELEASED",
+    "releasedDate": "2000-12-31T23:00.000Z",
+    "technology": [
+      "Illumina HiSeq 2000"
+    ],
+    "title": "ChIP sequencing data to study therapeutic targeting of ependymoma"
+  },
+  {
+    "accessType": "CONTROLLED",
+    "alias": "ena-DATASET-DKFZ-HIPO-06-04-2018-11:32:22:895-1684",
+    "attributes": [],
+    "availableInBeacon": false,
+    "centerName": "DKFZ-HIPO",
+    "creationTime": "2018-04-06T09:24.000Z",
+    "dacs": [
+      "EGAC00001000452"
+    ],
+    "datasetLinks": [],
+    "datasetTypes": [
+      "Whole genome sequencing",
+      "Exome sequencing",
+      "Transcriptome profiling by high-throughput sequencing"
+    ],
+    "description": "Whole-genome, whole-exome and transcriptome sequencing of pancreatic ductal adenocarcinomas from young adults reveals recurrent NRG1-fusions in KRAS wild-type tumors.",
+    "egaStableId": "EGAD00001004068",
+    "files": null,
+    "numSamples": 36,
+    "policyStableId": "EGAP00001000441",
+    "published": true,
+    "released": "RELEASED",
+    "releasedDate": "2000-12-31T23:00.000Z",
+    "technology": [
+      "HiSeq X Ten",
+      "Illumina HiSeq 2500",
+      "Illumina HiSeq 4000"
+    ],
+    "title": "Whole-genome, whole-exome and transcriptome sequencing of pancreatic ductal adenocarcinomas from young adults (NCT MASTER)"
+  },
+  {
+    "accessType": "CONTROLLED",
+    "alias": "2177fcf0-fe86-4de1-8a7b-02b67f71c3d5",
+    "attributes": [],
+    "availableInBeacon": false,
+    "centerName": "CRG",
+    "creationTime": "2018-05-25T12:52.000Z",
+    "dacs": [
+      "EGAC00001000916"
+    ],
+    "datasetLinks": [],
+    "datasetTypes": [
+      "Exome sequencing",
+      "Genomic variant calling"
+    ],
+    "description": "This dataset has two Variants Files in VCF format used in ABB project (https://github.com/Francesc-Muyas/ABB). \nOne has the variants found in a Rare Variant Association Study performed in CLL patients. This has 1217 samples represented. \nThe other variant file has 209 SNPs predicted in 10 samples by GATK HaplotypeCaller and selected for Sanger Sequencing Validation.\nRaw reads were aligned against the Human Reference genome (Hg19) with BWA mem and variants were obtained using GATK HaplotypeCaller.",
+    "egaStableId": "EGAD00001004132",
+    "files": null,
+    "numSamples": 1217,
+    "policyStableId": "EGAP00001000889",
+    "published": true,
+    "released": "RELEASED",
+    "releasedDate": "2000-12-31T23:00.000Z",
+    "technology": [],
+    "title": "Variant Calling used in ABB project"
+  },
+  {
+    "accessType": "CONTROLLED",
+    "alias": "c4c9db5f-364e-46c3-8cce-015b4d9b26a6",
+    "attributes": [],
+    "availableInBeacon": false,
+    "centerName": "EGAB00000001489",
+    "creationTime": "2018-08-27T11:29.000Z",
+    "dacs": [
+      "EGAC00001000998"
+    ],
+    "datasetLinks": [],
+    "datasetTypes": [
+      "Amplicon sequencing"
+    ],
+    "description": "The dataset includes 19 bam files. Each bam file is a different colorectal cancer patient organoid.",
+    "egaStableId": "EGAD00001004313",
+    "files": null,
+    "numSamples": 19,
+    "policyStableId": "EGAP00001000962",
+    "published": true,
+    "released": "RELEASED",
+    "releasedDate": "2000-12-31T23:00.000Z",
+    "technology": [
+      "Illumina MiSeq"
+    ],
+    "title": "Amplicon sequencing data from organoids of colorectal cancer patients."
+  },
+  {
+    "accessType": "CONTROLLED",
+    "alias": "5cd543ac-f5b2-4d5f-b5db-e9357e087477",
+    "attributes": [],
+    "availableInBeacon": false,
+    "centerName": "EGAB00000001518",
+    "creationTime": "2018-11-14T12:21.000Z",
+    "dacs": [
+      "EGAC00001001033"
+    ],
+    "datasetLinks": [],
+    "datasetTypes": [
+      "Exome sequencing"
+    ],
+    "description": "Each dataset cosist of WES data from 5 samples (1 patient): original leukemia initial diagnosis T-ALL, original leukemia relapse T-ALL, PDX derived of initial diagnosis T-ALL, PDX derived of relapse T-ALL, remission (normal control)",
+    "egaStableId": "EGAD00001004459",
+    "files": null,
+    "numSamples": 60,
+    "policyStableId": "EGAP00001001035",
+    "published": true,
+    "released": "RELEASED",
+    "releasedDate": "2000-12-31T23:00.000Z",
+    "technology": [
+      "Illumina HiSeq 2000",
+      "Illumina HiSeq 2500"
+    ],
+    "title": "WES of matched primary pediatric T-cell leukemias and PDXs"
+  },
+  {
+    "accessType": "CONTROLLED",
+    "alias": "ena-DATASET-EMBL-06-12-2018-02:10:51:685-261",
+    "attributes": [],
+    "availableInBeacon": false,
+    "centerName": "EGAB00000001577",
+    "creationTime": "2018-12-06T01:56.000Z",
+    "dacs": [
+      "EGAC00001001091"
+    ],
+    "datasetLinks": [],
+    "datasetTypes": [
+      "Whole genome sequencing"
+    ],
+    "description": "In this study, we aimed to identify somatic structural variation of T-cell acute lymphoblastic leukemias (T-ALLs_ from patient-derived xenografts (PDX) at the single-cell level. For this purpose, we performed strand-specific single-cell sequencing of PDX-derived T-ALL relapse samples from two juvenile patients  (P1, P33). To validate structural variation detected via scTRIP, we profiled whole exome sequencing (WES) data from P33 (samples taken during initial disease, remission, relapse), and mate-pair sequencing data from P1 (relapse).",
+    "egaStableId": "EGAD00001004499",
+    "files": null,
+    "numSamples": 124,
+    "policyStableId": "EGAP00001001056",
+    "published": true,
+    "released": "RELEASED",
+    "releasedDate": "2000-12-31T23:00.000Z",
+    "technology": [
+      "Illumina HiSeq 2000",
+      "NextSeq 500"
+    ],
+    "title": "Finding structural variation from the patient-derived xenografts of pediatric T-cell leukemia at the single-cell level"
+  },
+  {
+    "accessType": "CONTROLLED",
+    "alias": "ena-DATASET-DKFZ-HIPO-16-01-2019-20:10:43:076-672",
+    "attributes": [],
+    "availableInBeacon": false,
+    "centerName": "DKFZ-HIPO",
+    "creationTime": "2019-01-16T19:45.000Z",
+    "dacs": [
+      "EGAC00001000452"
+    ],
+    "datasetLinks": [],
+    "datasetTypes": [
+      "Whole genome sequencing"
+    ],
+    "description": "This dataset contains whole genome sequencing data from 21 primary and relapsed IDH-wt glioblastomas and matched blood controls. Tumors were sequenced at a target coverage of 150x, blood controls at 80x.",
+    "egaStableId": "EGAD00001004563",
+    "files": null,
+    "numSamples": 63,
+    "policyStableId": "EGAP00001000441",
+    "published": true,
+    "released": "RELEASED",
+    "releasedDate": "2000-12-31T23:00.000Z",
+    "technology": [
+      "HiSeq X Ten"
+    ],
+    "title": "Whole genome sequencing of paired samples from primary and relapsed IDH-wt glioblastomas with matched blood controls"
+  },
+  {
+    "accessType": "CONTROLLED",
+    "alias": "ena-DATASET-DKFZ-HIPO-16-01-2019-20:19:26:486-673",
+    "attributes": [],
+    "availableInBeacon": false,
+    "centerName": "DKFZ-HIPO",
+    "creationTime": "2019-01-16T19:28.000Z",
+    "dacs": [
+      "EGAC00001000452"
+    ],
+    "datasetLinks": [],
+    "datasetTypes": [
+      "Transcriptome profiling by high-throughput sequencing"
+    ],
+    "description": "This dataset contains strand-specific RNA sequencing data from 16 primary/relapsed sample pairs of IDH-wt glioblastomas",
+    "egaStableId": "EGAD00001004564",
+    "files": null,
+    "numSamples": 32,
+    "policyStableId": "EGAP00001000441",
+    "published": true,
+    "released": "RELEASED",
+    "releasedDate": "2000-12-31T23:00.000Z",
+    "technology": [
+      "Illumina HiSeq 2000"
+    ],
+    "title": "Strand-specific RNA sequencing of 16 pairs of primary and relapsed IDH-wt glioblastomas"
+  },
+  {
+    "accessType": "CONTROLLED",
+    "alias": "ena-DATASET-DKFZ-HIPO-16-01-2019-20:40:34:034-676",
+    "attributes": [],
+    "availableInBeacon": false,
+    "centerName": "DKFZ-HIPO",
+    "creationTime": "2019-01-16T19:35.000Z",
+    "dacs": [
+      "EGAC00001000452"
+    ],
+    "datasetLinks": [],
+    "datasetTypes": [
+      "Amplicon sequencing"
+    ],
+    "description": "This dataset contains gene panel sequencing data from 43 sample pairs of primary and relapsed IDH-wt glioblastomas. The gene panel covers 50 glioma-associated genes. 14 of the sequenced sample pairs were sequenced with whole genome sequencing also and are accessible under EGAD00001004563.",
+    "egaStableId": "EGAD00001004565",
+    "files": null,
+    "numSamples": 86,
+    "policyStableId": "EGAP00001000441",
+    "published": true,
+    "released": "RELEASED",
+    "releasedDate": "2000-12-31T23:00.000Z",
+    "technology": [
+      "Ion Torrent Proton"
+    ],
+    "title": "Gene panel sequencing of paired samples from primary and relapsed IDH-wt glioblastomas"
+  },
+  {
+    "accessType": "CONTROLLED",
+    "alias": "7d1d07e0-94fe-49b9-8055-92660cffd053",
+    "attributes": [],
+    "availableInBeacon": false,
+    "centerName": "EGAB00000001581",
+    "creationTime": "2019-01-21T09:11.000Z",
+    "dacs": [
+      "EGAC00001001113"
+    ],
+    "datasetLinks": [],
+    "datasetTypes": [
+      "Amplicon sequencing"
+    ],
+    "description": "The dataset consists of sequenced cell free DNA (cfDNA) samples from colorectal cancer patients. The samples were sequenced on an Illumina MiSeq machine using a custom amplicon sequencing approach. These amplicons were designed to cover the most common mutation hotspots in colorectal cancer. The data include 138 cfDNA samples from 34 different patients. For each patient several samples are available derived from blood drawn at different time points during treatment. In addition the data include samples from 22 histology slides and 30 samples derived from HT29/HCT116 cell lines that were used as controls.",
+    "egaStableId": "EGAD00001004574",
+    "files": null,
+    "numSamples": 189,
+    "policyStableId": "EGAP00001001086",
+    "published": true,
+    "released": "RELEASED",
+    "releasedDate": "2000-12-31T23:00.000Z",
+    "technology": [
+      "Illumina MiSeq"
+    ],
+    "title": "Mannheim Liquid Biopsy Unit, Heidelberg University &amp; DKFZ"
+  },
+  {
+    "accessType": "CONTROLLED",
+    "alias": "7687436a-e704-42d8-b3c9-ab87e961e2e0",
+    "attributes": [],
+    "availableInBeacon": false,
+    "centerName": "DKFZ-HIPO",
+    "creationTime": "2019-03-06T11:09.000Z",
+    "dacs": [
+      "EGAC00001000452"
+    ],
+    "datasetLinks": [],
+    "datasetTypes": [
+      "Whole genome sequencing",
+      "Exome sequencing"
+    ],
+    "description": "Case series of the rare tumor entity chordoma. 9 cases sequenced with Whole Exome Sequencing (WES) and 2 cases sequenced with Whole Genome Sequencing (WGS) were recruited from the personalized oncology program NCT-MASTER/DKTK-MASTER at the German Cancer Research Center. One of the WES patients was re-sequenced at a later time point when he relapsed, this resequencing was done by WGS. Therefore there are 11 patients, one of which with two samples, all of which were sequenced with matched normal controls, amounting to a total number of 24 NGS samples.",
+    "egaStableId": "EGAD00001004825",
+    "files": null,
+    "numSamples": 24,
+    "policyStableId": "EGAP00001000441",
+    "published": true,
+    "released": "RELEASED",
+    "releasedDate": "2000-12-31T23:00.000Z",
+    "technology": [
+      "HiSeq X Ten",
+      "Illumina HiSeq 2500",
+      "Illumina HiSeq 4000"
+    ],
+    "title": "24 Chordoma samples (WES,WGS)"
+  },
+  {
+    "accessType": "CONTROLLED",
+    "alias": "faa1d2f2-265c-462c-aff3-94cc4b356a90",
+    "attributes": [],
+    "availableInBeacon": false,
+    "centerName": "MUO",
+    "creationTime": "2019-04-03T10:56.000Z",
+    "dacs": [
+      "EGAC00001000470"
+    ],
+    "datasetLinks": [],
+    "datasetTypes": [
+      "Exome sequencing"
+    ],
+    "description": "We performed multiregion whole exome sequencing of a total of 37 samples from five consecutive patients (normal tissue, n=5; primary tumors, n=16; tumor thrombi, n=16) to &gt;35-fold target coverage. Matching primary tumor and venous tumor thrombus samples were analyzed. Four patients had a clear cell RCC, one patient had a poorly differentiated type II papillary RCC (RCC-VTT-04). The latter patient had a friable thrombus, the others were of solid consistency.",
+    "egaStableId": "EGAD00001004887",
+    "files": null,
+    "numSamples": 37,
+    "policyStableId": "EGAP00001000456",
+    "published": true,
+    "released": "RELEASED",
+    "releasedDate": "2000-12-31T23:00.000Z",
+    "technology": [
+      "Illumina HiSeq 2500"
+    ],
+    "title": "Exome sequencing of matching primary tumor and venous tumor thrombus (VTT) renal cell carcinoma (RCC) samples"
+  },
+  {
+    "accessType": "CONTROLLED",
+    "alias": "bc246e56-19ea-4c30-9e33-160ac12c3050",
+    "attributes": [],
+    "availableInBeacon": false,
+    "centerName": "dkfz_b062",
+    "creationTime": "2019-05-15T11:35.000Z",
+    "dacs": [
+      "EGAC00001000219"
+    ],
+    "datasetLinks": [],
+    "datasetTypes": [
+      "Chip-Seq"
+    ],
+    "description": "Bam files for 16 meningioma tumor samples; ChIPseq performed on Illumina HiSeq 2000",
+    "egaStableId": "EGAD00001005021",
+    "files": null,
+    "numSamples": 16,
+    "policyStableId": "EGAP00001000687",
+    "published": true,
+    "released": "RELEASED",
+    "releasedDate": "2019-05-16T22:00.000Z",
+    "technology": [
+      "Illumina HiSeq 2000"
+    ],
+    "title": "ChIPseq Sequencing data for epigenetic subgroups of meningioma"
+  },
+  {
+    "accessType": "CONTROLLED",
+    "alias": "be40ebac-acee-4026-a661-4330bb0f657b",
+    "attributes": [],
+    "availableInBeacon": false,
+    "centerName": "DKFZ-HIPO",
+    "creationTime": "2019-06-04T09:40.000Z",
+    "dacs": [
+      "EGAC00001000452"
+    ],
+    "datasetLinks": [],
+    "datasetTypes": [
+      "Whole genome sequencing"
+    ],
+    "description": "Bam files for 124 samples (62 tumor vs blood pairs); Whole Genome Sequencing performed on Illumina HiSeq X Ten",
+    "egaStableId": "EGAD00001005061",
+    "files": null,
+    "numSamples": 124,
+    "policyStableId": "EGAP00001000441",
+    "published": true,
+    "released": "RELEASED",
+    "releasedDate": "2000-12-31T23:00.000Z",
+    "technology": [
+      "HiSeq X Ten"
+    ],
+    "title": "Whole Genome Sequencing data for epigenetic subgroups of meningioma"
+  },
+  {
+    "accessType": "CONTROLLED",
+    "alias": "69ab3410-fe23-42b3-a34e-a7f83ab902d8",
+    "attributes": [],
+    "availableInBeacon": false,
+    "centerName": "DKFZ-HIPO",
+    "creationTime": "2019-06-27T11:29.000Z",
+    "dacs": [
+      "EGAC00001000452"
+    ],
+    "datasetLinks": [],
+    "datasetTypes": [
+      "Whole genome sequencing",
+      "Exome sequencing",
+      "Transcriptome profiling by high-throughput sequencing"
+    ],
+    "description": "50 samples of 16 individuals with Gastrointestinal Tumor. Patients were sequenced in various combinations of WGS, Exome and RNA sequencing.",
+    "egaStableId": "EGAD00001005113",
+    "files": null,
+    "numSamples": 50,
+    "policyStableId": "EGAP00001000441",
+    "published": true,
+    "released": "RELEASED",
+    "releasedDate": "2000-12-31T23:00.000Z",
+    "technology": [
+      "HiSeq X Ten",
+      "Illumina HiSeq 2500",
+      "Illumina HiSeq 4000"
+    ],
+    "title": "EGAS00001003405 combined RNA, WES, WGS data of 16 gastrointestinal tumor patients"
+  },
+  {
+    "accessType": "CONTROLLED",
+    "alias": "c8abf99f-5f5a-46f4-b0a5-ba5d5dcf72ad",
+    "attributes": [],
+    "availableInBeacon": false,
+    "centerName": "DKFZ-HIPO",
+    "creationTime": "2019-08-13T13:48.000Z",
+    "dacs": [
+      "EGAC00001000452"
+    ],
+    "datasetLinks": [],
+    "datasetTypes": [
+      "Exome sequencing",
+      "Transcriptome profiling by high-throughput sequencing"
+    ],
+    "description": "Exome and RNA sequencing data for EGAS00001003776 - one female patient with neurofibroma/schwannoma hybrid nerve sheath tumor (N/S HNST)",
+    "egaStableId": "EGAD00001005249",
+    "files": null,
+    "numSamples": 2,
+    "policyStableId": "EGAP00001000441",
+    "published": true,
+    "released": "RELEASED",
+    "releasedDate": "2000-12-31T23:00.000Z",
+    "technology": [
+      "Illumina HiSeq 2500"
+    ],
+    "title": "Exome and RNA seq data for female patient"
+  },
+  {
+    "accessType": "CONTROLLED",
+    "alias": "164a2fdc-6bef-418c-82a7-2f24fd2a1bbf",
+    "attributes": [],
+    "availableInBeacon": false,
+    "centerName": "EGAB00000001768",
+    "creationTime": "2019-10-02T05:23.000Z",
+    "dacs": [
+      "EGAC00001001337"
+    ],
+    "datasetLinks": [],
+    "datasetTypes": [
+      "Exome sequencing"
+    ],
+    "description": "WES from two human osteosarcoma with two samples each from the corresponding cell line, BAM files",
+    "egaStableId": "EGAD00001005370",
+    "files": null,
+    "numSamples": 6,
+    "policyStableId": "EGAP00001001314",
+    "published": true,
+    "released": "RELEASED",
+    "releasedDate": "2000-12-31T23:00.000Z",
+    "technology": [
+      "NextSeq 500"
+    ],
+    "title": "WES from two human osteosarcoma with two samples each from the corresponding cell line"
+  },
+  {
+    "accessType": "CONTROLLED",
+    "alias": "Gencode_15K",
+    "attributes": [],
+    "availableInBeacon": false,
+    "centerName": null,
+    "creationTime": "2016-07-08T12:55.000Z",
+    "dacs": [
+      "EGAC00001000452"
+    ],
+    "datasetLinks": [],
+    "datasetTypes": [
+      "sample"
+    ],
+    "description": "Lymphoma samples using CytoSNP",
+    "egaStableId": "EGAD00010000947",
+    "files": null,
+    "numSamples": 35,
+    "policyStableId": "EGAP00001000441",
+    "published": true,
+    "released": "RELEASED",
+    "releasedDate": "2018-04-28T22:00.000Z",
+    "technology": [
+      "Illumina CytoSNP"
+    ],
+    "title": "Gencode_15K"
+  },
+  {
+    "accessType": "CONTROLLED",
+    "alias": "Gencode_500K",
+    "attributes": [],
+    "availableInBeacon": false,
+    "centerName": null,
+    "creationTime": "2016-07-08T12:55.000Z",
+    "dacs": [
+      "EGAC00001000452"
+    ],
+    "datasetLinks": [],
+    "datasetTypes": [
+      "sample"
+    ],
+    "description": "Lymphoma samples using 450k",
+    "egaStableId": "EGAD00010000948",
+    "files": null,
+    "numSamples": 95,
+    "policyStableId": "EGAP00001000441",
+    "published": true,
+    "released": "RELEASED",
+    "releasedDate": "2018-04-28T22:00.000Z",
+    "technology": [
+      "Illumina 450k"
+    ],
+    "title": "Gencode_500K"
+  },
+  {
+    "accessType": "CONTROLLED",
+    "alias": "Gencode_550K",
+    "attributes": [],
+    "availableInBeacon": false,
+    "centerName": null,
+    "creationTime": "2016-07-08T12:55.000Z",
+    "dacs": [
+      "EGAC00001000452"
+    ],
+    "datasetLinks": [],
+    "datasetTypes": [
+      "sample"
+    ],
+    "description": "Lymphoma samples using HumanOmni",
+    "egaStableId": "EGAD00010000949",
+    "files": null,
+    "numSamples": 104,
+    "policyStableId": "EGAP00001000441",
+    "published": true,
+    "released": "RELEASED",
+    "releasedDate": "2018-04-28T22:00.000Z",
+    "technology": [
+      "Illumina HumanOmni2.5"
+    ],
+    "title": "Gencode_550K"
+  },
+  {
+    "accessType": "CONTROLLED",
+    "alias": "Illumina_450K",
+    "attributes": [],
+    "availableInBeacon": false,
+    "centerName": null,
+    "creationTime": "2016-08-19T07:41.000Z",
+    "dacs": [
+      "EGAC00001000317"
+    ],
+    "datasetLinks": [],
+    "datasetTypes": [
+      "sample"
+    ],
+    "description": "Primary renal cell carcinoma (RCC), RCC metastases and cell lines by Illumina 450K",
+    "egaStableId": "EGAD00010001001",
+    "files": null,
+    "numSamples": 62,
+    "policyStableId": "EGAP00001000506",
+    "published": true,
+    "released": "RELEASED",
+    "releasedDate": "2016-08-18T22:00.000Z",
+    "technology": [
+      "Illumina 450K"
+    ],
+    "title": "Illumina_450K"
+  },
+  {
+    "accessType": "CONTROLLED",
+    "alias": "Affymetrix_miRNA4.0",
+    "attributes": [],
+    "availableInBeacon": false,
+    "centerName": null,
+    "creationTime": "2018-05-16T13:51.000Z",
+    "dacs": [
+      "EGAC00001000317"
+    ],
+    "datasetLinks": [],
+    "datasetTypes": [
+      "sample"
+    ],
+    "description": "Primary renal cell carcinoma (RCC) by Affymetrix GeneChip miRNA 4.0",
+    "egaStableId": "EGAD00010001564",
+    "files": null,
+    "numSamples": 56,
+    "policyStableId": "EGAP00001000506",
+    "published": true,
+    "released": "RELEASED",
+    "releasedDate": "2018-05-16T22:00.000Z",
+    "technology": [
+      "Affymetrix GeneChip miRNA 4.0"
+    ],
+    "title": "Affymetrix_miRNA4.0"
+  },
+  {
+    "accessType": "CONTROLLED",
+    "alias": "Affymetrix_HTA2.0",
+    "attributes": [],
+    "availableInBeacon": false,
+    "centerName": null,
+    "creationTime": "2018-07-28T14:00.000Z",
+    "dacs": [
+      "EGAC00001000317"
+    ],
+    "datasetLinks": [],
+    "datasetTypes": [
+      "sample"
+    ],
+    "description": "Primary renal cell carcinoma (RCC) and RCC metastases by Affymetrix GeneChip HTA 2.0",
+    "egaStableId": "EGAD00010001589",
+    "files": null,
+    "numSamples": 112,
+    "policyStableId": "EGAP00001000506",
+    "published": true,
+    "released": "RELEASED",
+    "releasedDate": "2018-07-29T22:00.000Z",
+    "technology": [
+      "Affymetrix Human Transcriptome Array 2.0"
+    ],
+    "title": "Affymetrix_HTA2.0"
+  },
+  {
+    "accessType": "CONTROLLED",
+    "alias": "EPIC DNA Methylation Array",
+    "attributes": [],
+    "availableInBeacon": false,
+    "centerName": null,
+    "creationTime": "2018-12-12T13:26.000Z",
+    "dacs": [
+      "EGAC00001000452"
+    ],
+    "datasetLinks": [],
+    "datasetTypes": [
+      "sample"
+    ],
+    "description": "",
+    "egaStableId": "EGAD00010001642",
+    "files": null,
+    "numSamples": 25,
+    "policyStableId": "EGAP00001000441",
+    "published": true,
+    "released": "RELEASED",
+    "releasedDate": "2019-01-17T23:00.000Z",
+    "technology": [
+      "Illumina EPIC methylation bead array"
+    ],
+    "title": "EPIC DNA Methylation Array"
+  },
+  {
+    "accessType": "CONTROLLED",
+    "alias": "450k DNA Methylation Array",
+    "attributes": [],
+    "availableInBeacon": false,
+    "centerName": null,
+    "creationTime": "2018-12-12T13:26.000Z",
+    "dacs": [
+      "EGAC00001000452"
+    ],
+    "datasetLinks": [],
+    "datasetTypes": [
+      "sample"
+    ],
+    "description": "",
+    "egaStableId": "EGAD00010001643",
+    "files": null,
+    "numSamples": 73,
+    "policyStableId": "EGAP00001000441",
+    "published": true,
+    "released": "RELEASED",
+    "releasedDate": "2019-01-17T23:00.000Z",
+    "technology": [
+      "Illumina 450k methylation bead array"
+    ],
+    "title": "450k DNA Methylation Array"
+  }
+]

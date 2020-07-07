@@ -5,7 +5,7 @@
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
                     <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">
+                <a class="navbar-brand" href="{{ site.url }}#page-top">
                     <i class="fas fa-dna"></i>  <span class="light">GHGA</span>
                 </a>
             </div>
@@ -15,26 +15,26 @@
                 <ul class="nav navbar-nav">
                     <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
                     <li class="hidden">
-                        <a href="#page-top"></a>
+                        <a href="{{ site.url }}#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#about">About</a>
+                        <a href="{{ site.url }}#about">About</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#news">News</a>
+                        <a href="{{ site.url }}#news">News</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#consortium">Consortium</a>
+                        <a href="{{ site.url }}#consortium">Consortium</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#communities">Communities</a>
+                        <a href="{{ site.url }}#communities">Communities</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
+                        <a href="{{ site.url }}#contact">Contact</a>
                     </li>
 
                     <li>
-                        <a href="{{ site.url }}/data">Data</a>
+                        <a class="page-scroll" href="{{ site.url }}/{{ page.url }}">Data</a>
                     </li>
 
                 </ul>
