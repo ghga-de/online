@@ -4,11 +4,14 @@
 
 The site uses Jekyll. To test the website locally, follow the instructions in the Github <a href="https://help.github.com/en/github/working-with-github-pages/testing-your-github-pages-site-locally-with-jekyll" target="_blank">Help</a>.
 
-If you have `gem` installed you can do 
+Essentially, you need an installation of Jekyll. If you use Bundler you can start the website locally with
 
 ```bash
-gem install jekyll-theme-slate
+cd ghga-de_online    # or however you called the repository dir
+bundle exec jekyll serve
 ```
+
+Then point your browser to the local address displayed in the output of the command. That's it!
  
 ## Licence
 
