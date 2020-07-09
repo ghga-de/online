@@ -1,14 +1,22 @@
 <!-- jQuery Version 1.11.0 -->
-<script src="{{ "/js/jquery.js" | prepend: site.baseurl }}"></script>
+<script src="{{ "/js/jquery.js" | prepend: site.url }}"></script>
 
 <!-- Bootstrap Core JavaScript -->
-<script src="{{ "/js/bootstrap.min.js" | prepend: site.baseurl }}"></script>
+<script src="{{ "/js/bootstrap.min.js" | prepend: site.url }}"></script>
 
 <!-- Plugin JavaScript -->
-<script src="{{ "/js/jquery.easing.min.js" | prepend: site.baseurl }}"></script>
+<script src="{{ "/js/jquery.easing.min.js" | prepend: site.url }}"></script>
 
 <!-- Custom Theme JavaScript -->
-<script src="{{ "/js/grayscale.js" | prepend: site.baseurl }}"></script>
+<script src="{{ "/js/grayscale.js" | prepend: site.url }}"></script>
+
+<script src="https://kit.fontawesome.com/40b4c8332e.js"></script>
+
+<!-- Internationalization -->
+<script src="{{ "/js/i18next.min.js" | prepend: site.url }}"/></script>
+<script src="{{ "/js/i18nextBrowserLanguageDetector.min.js" | prepend: site.url }}"/></script>
+<script src="{{ "/js/i18nextHttpBackend.min.js" | prepend: site.url }}"/></script>
+<script src="{{ "/js/jquery-i18next.min.js" | prepend: site.url }}"/></script>
 
 <script type="text/javascript">
     function toggleVisibility(id, displayValue) {
@@ -19,6 +27,28 @@
             e.style.display = displayValue;
         }
     }
-</script>
 
-<script src="https://kit.fontawesome.com/40b4c8332e.js"></script>
+    i18next
+        .use(i18nextHttpBackend)
+        .use(i18nextBrowserLanguageDetector)
+        .init({
+            fallbackLng: 'en',
+<!--            debug: true,-->
+            backend: {
+<!-- The location of the translation files! -->
+<!-- The raw block prevents Jekyll/Liquid from substituting the {{lng}} by nothing. -->
+{% raw %}
+                loadPath: '/assets/locales/{{lng}}/translation.json'
+{% endraw %}
+            }
+        }, function(err, t) {
+            jqueryI18next.init(i18next, $);
+            $('[data-i18n]').localize();
+
+            $('.lang-select').click(function() {
+                i18next.changeLanguage(this.innerHTML, () => {
+                    $('[data-i18n]').localize();
+                });
+            });
+        });
+</script>

@@ -2,50 +2,47 @@
 <section id="data-access" class="content-section text-center">
 	<div class="container">
 		<div class="col-lg-11 col-lg-offset-0">
-			<h2>Request Access</h2>
-			<div>
-				You have selected datasets from the following data access committees:
-
+			<h2 data-i18n="data.access.header"></h2>
+			<div data-i18n="data.access.text">
 				<div id="DacTable"></div>
 			</div>
 			<form name="accessForm" id="accessForm" onsubmit="requestAccess(this);return false;" method="POST">
 				<div class="form-group hidden">
-					<label for="applicationDate">Date:</label>
+					<label for="applicationDate" data-i18n="data.access.applicationDate"></label>
 					<input type="date" name="applicationDate" class="form-control" id="applicationDate">
 				</div>
 				<div class="form-group">
-					<label for="applicant">Applicant:</label>
+					<label for="applicant" data-i18n="data.access.applicant"></label>
 					<input type="textfield" name="applicant" class="form-control" id="applicant" placeholder="Dr. rer. nat. Benjamin Button" required="true">
 				</div>
 				<div class="form-group">
-					<label for="applicantPosition">Position of the Applicant:</label>
+					<label for="applicantPosition" data-i18n="applicantPosition"></label>
 					<input type="textfield" name="applicantPosition" class="form-control" id="applicantPosition" placeholder="Head of the core facility for age-related research." required=true>
 				</div>
 				<div class="form-group">
-					<label for="principalInvestigator">Principal Investigator (PI):</label>
+					<label for="principalInvestigator" data-i18n="principalInvestigator"></label>
 					<input type="textfield" name="principalInvestigator" class="form-control" id="principalInvestigator" placeholder="Mr. Gateau" required=true>
 				</div>
 				<div class="form-group">
-					<label for="institution">Institution:</label>
+					<label for="institution" data-i18n="institution"></label>
 					<input type="textfield" name="institution" class="form-control" id="institution" placeholder="University of New Orleans" required=true>
 				</div>
 				<!--
 				<div class="form-group hidden">
-					<label for="datasets">Dataset(s):</label>
+					<label for="datasets" data-i18n="datasets"></label>
 					<input type="textfield" name="datasets", class="form-control" id="datasets" placeholder="EGAD00000000001,EGAD00000000002" required=true>
 				</div>
 				-->
 				<div class="form-group">
-					<label for="projectOutline">Outline your planned project on the selected data:</label>
+					<label for="projectOutline" data-i18n="projectOutline"></label>
 					<textarea rows="4" name="projectOutline" class="form-control" id="projectOutline" required=true></textarea>
 				</div>
 				<div class="form-group">
-					<label for="hypothesis">Hypothesis/Rationale for the project:</label>
+					<label for="hypothesis" data-i18n="hypothesis"></label>
 					<textarea rows="2" name="hypothesis" class="form-control" id="hypothesis" required=true></textarea>
 				</div>
 				<div class="form-group">
-					<label for="ethicalVoteInPlace">Is there an ethical vote in place to use next generation sequencing data?
-					</label>
+					<label for="ethicalVoteInPlace" data-i18n="ethicalVoteInPlace"></label>
 					<div class="input-group">
 						<input type="radio" id="ethicalNo" name="ethicalVoteRadio" checked>
 						<label class="custom-control-label" for="ethicalNo">No</label>

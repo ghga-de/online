@@ -1,0 +1,102 @@
+{
+  "about": {
+    "title": "About",
+    "paragraph1": "Human genome sequencing and other omics data modalities are of critical importance for biomedical research and the future development of healthcare. GHGA will provide the infrastructure to meet both the desire to handle omics data in an open and <a href=\"https://www.go-fair.org/fair-principles/\" target=\"_blank\">FAIR</a> manner and the need to keep personal data safe and secure. Other than other European infrastructures, as a National consortium, GHGA will have the ability to address the legal requirements specific to Germany, enabling German researchers to help shape future international standards for data exchange and take on leading roles in international research consortia.<br>\n                    <br>\n                    Applicant Institution:<b> The German Cancer Research Center DKFZ, Heidelberg</b><br>Spokesperson: <b>Dr. Oliver Stegle</b><br><br><a href=\"documents/Letter_of_Intent_GHGA.pdf\">GHGA Letter of Intent</a>",
+    "objectives": {
+      "title": "Core Objectives of GHGA",
+      "obj1": "Provide a national secure and trustworthy <b>long-term archive of human omics data</b> federated with the EGA",
+      "obj2": "<b>Streamline data deposition</b> by direct data and metadata transfer from major national omics centers",
+      "obj3": "Provide central <b>infrastructure for distributed data access committees</b>, thereby facilitating data access and reuse for research",
+      "obj4": "<b>Engage communities</b> to encourage responsible data sharing of omics data and train members of the communities to leverage the scientific potential of data infrastructures and community reference datasets.",
+      "obj5": "Address <b>legal and ethical barriers to data sharing</b> through a unified ethico-legal framework",
+      "obj6": "Reach out to communities and <b>train the next generation of scientists</b> on efficient and responsible use and management of omics data in research",
+      "obj7": "Increase FAIRness of omics data</b> and facilitate embedding with national and international data resources and infrastructures",
+      "obj8": "Provide <b>community-specific data portals</b> to meet their specific needs for datasets and analytical tools.",
+      "obj9": "Democratize access to and analysis/reprocessing of large-scale omics data</b> for research through a cloud-based analytics platform",
+      "obj10": "Increase the value of research data</b> by integrating multiple omics modalities and connecting omics data to phenotype data"
+    }
+  },
+  "news": {
+    "title": "News",
+    "item1": {
+      "title": "12. Feb. 2020 - GHGA.de Website Goes Online",
+      "content": "The German Human Genome-Phenome Archive (GHGA), which will be federated with the European Genome-Phenome Archive (EGA), and which is designed to archive and facilitate analysis of human access controlled research data from Germany, has gone live with a pilot version, distributing research data from Heidelberg and Tübingen. We look forward to its use by human biology, genetics and disease research communities."
+    }
+  },
+  "jobs": {
+    "title": "Jobs",
+    "introduction": "Currently available jobs at GHGA sites:",
+    "jobTitle": "Job title",
+    "location": "Location"
+  },
+  "consortium": {
+    "title": "Consortium",
+    "structure": {
+      "title": "The Structure of the consortium",
+      "text": "GHGA is tightly embedded and connected to international infrastructures and initiatives. It will be operated as a local node within the <a href=\"https://ega-archive.org/\">European Genome-Phenome Archive (EGA)</a> federation framework.<br>"
+    },
+    "withinNfdi": {
+      "title": "The Consortium within the NFDI",
+      "paragraph1": "GHGA has a unique role within the network of federated research data infrastructure consortia (NDFI, Nationale Forschungsdateninfrastruktur) as it is the only consortium managing controlled/access omics data. It aims at linking this data to other consortia, especially in the biomedical field, and thereby become a central component of a long-term research data management strategy within the NFDI. In particular the coordination with <b>NFDI4MED</b> and <b>NFDI4Health</b>\n                will provide complementary expertise on the management and record\n                linkage of medical records and other non-omics data types.<br>\n                GHGA is in full support of the <a href=\"https://zenodo.org/record/3457213#.XcwcPNUxkUE\">Berlin Declaration on NFDI Cross-Cutting Topics</a>.",
+      "paragraph2": "Several contributors or participants of GHGA are also involved in the NFDI proposals for <b>NFDI4Microbiota</b>, <b>BERD@NDFI</b>, <b>FAIRmat</b>, <b>NFDI4Earth</b>, <b>NFDI4Ing</b>, <b>NFDI4Text+</b>, <b>NFDI-Astro</b>, <b>NFDI4MED</b>, <b>NFDI4HEALTH</b>, <b>DataPlant</b>, <b>NFDI4Chem</b> <br> <img src=\"img/GHGAStructure.png\" class=\"img-responsive\" alt=\"Responsive image\" style=\"padding-top:20px; padding-bottom:30px;\"/>"
+    },
+    "board": {
+      "title": "The Board of Directors",
+      "initial": "Initially, the board of directors will be formed by:",
+      "election": "Once GHGA starts its operations, the board will consist of elected members."
+    },
+    "governance": {
+      "title": "The Governance Structure of GHGA"
+    },
+    "applicants": {
+      "title": "(Co-)Applicant Institutions and Principal Investigators"
+    },
+    "partners": {
+      "title": "Partner Institutions and Principal Investigators"
+    }
+  },
+  "communities": {
+    "title": "Communities",
+    "paragraph1": "Initially, the focus of GHGA will be on the cancer and rare disease communities. Major data generators will be encouraged to deposit their data in GHGA, and community reference datasets (i.e. data likely to be used regularly in downstream analyses) will be developed. Interactions with the communities will take place in targeted workshops, and via talks and/or panel discussions at general conferences and meetings.",
+    "paragraph2": "On a broader scale, interactions will also take place with other GHGA users, including human omics data researchers, data scientists, clinical researchers, physicians, and citizen scientists.",
+    "paragraph3": "An important aim of GHGA is to reach out to patient representatives and the general public, to raise awareness for the value of omics research and data sharing, while addressing general concerns and questions about the safety, privacy and data ownership when using such large scale human data.",
+    "letterOfSupport": "GHGA received Letters of Support from the following Institutions and Societies"
+  },
+  "contact": {
+    "title": "Contact",
+    "noscript": "Email address protected by JavaScript.<br>Please enable JavaScript."
+  },
+  "legal": {
+    "title": "Legal Notice",
+    "tmg": "Informationspflicht laut § 5 TMG.",
+    "address": "Address",
+    "representatives": {
+      "title": "Persons authorised to represent",
+      "text": "Chairman and Scientific Director: Prof. Dr. Michael Baumann<br>Administrative Director: Ursula Weyrich<br><br>(address like above)"
+    },
+    "projectLeads": "Project Leads",
+    "disclaimer": {
+      "title": "Disclaimer",
+      "text": "By using the GHGA Website, you consent to our <a href=\"https://www.dkfz.de/de/datenschutzerklaerung.html?m=1541343170\" target=\"_blank\">Privacy Policy</a>"
+    }
+  },
+  "data": {
+    "title": "Data",
+    "paragraph1": "We intend to optimize the procedures and processes involved with the deposition and access to human datasets. These procedures should be simplified from a technical and organisational perspective while ensuring full compliance to data protection and safety standards.",
+    "paragraph2": "To this aim, a diverse and distributed data infrastructure, involving major data generators and using scalable cloud technologies, will have to be integrated and exposed to researchers via a simple data access portal. Additionally, the communication with data access committees and the technical details of regulating distributed data access need to be streamlined.",
+    "paragraph3": "If you are interested in obtaining access to a specific dataset from the table below you can select datasets from the table and <b><a href=\"#data-access\">request access here</a></b>.",
+    "access": {
+      "header": "Request Access",
+      "text": "You have selected datasets from the following data access committees:",
+      "applicationDate": "Date:",
+      "applicant": "Applicant:",
+      "applicantPosition": "Position of the Applicant:",
+      "principalInvestigator": "Principal Investigator (PI):",
+      "institution": "Institution:",
+      "datasets": "Dataset(s):",
+      "projectOutline": "Outline your planned project on the selected data:",
+      "hypothesis": "Hypothesis/Rationale for the project:",
+      "ethicalVoteInPlace": "Is there an ethical vote in place to use next generation sequencing data?"
+    }
+  }
+}

@@ -23,4 +23,8 @@ The repository includes the following libraries:
   * [MithrilJS](https://github.com/MithrilJS/mithril.js) (MIT)
   * [Lodash](https://github.com/lodash/lodash) (MIT)
   * [jQuery](https://github.com/jquery/jquery) (MIT)
+  * [i18next](https://github.com/i18next/i18next) (MIT)
+  * [i18next-http-backend](https://github.com/i18next/i18next-http-backend) (MIT)
+  * [i18next-browser-languageDetector](https://github.com/i18next/i18next-browser-languageDetector) (MIT)
+  * [jquery-i18next](https://github.com/i18next/jquery-i18next) (MIT)
 
