@@ -17,7 +17,7 @@ footer: http://ghga.dkfz.de
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
   - title: github
-    url: https://github.com/DKFZ-ODCF/GHGA-online
+    url: https://github.com/ghga-de/online
 
 # Build settings
 markdown: kramdown
