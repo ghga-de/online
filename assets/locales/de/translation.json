@@ -1,4 +1,8 @@
 {
+  "language": {
+    "title": "Sprache",
+    "current": "Deutsch"
+  },
   "about": {
     "title": "Über",
     "paragraph1": "Human genome sequencing and other omics data modalities are of critical importance for biomedical research and the future development of healthcare. GHGA will provide the infrastructure to meet both the desire to handle omics data in an open and <a href=\"https://www.go-fair.org/fair-principles/\" target=\"_blank\">FAIR</a> manner and the need to keep personal data safe and secure. Other than other European infrastructures, as a National consortium, GHGA will have the ability to address the legal requirements specific to Germany, enabling German researchers to help shape future international standards for data exchange and take on leading roles in international research consortia.<br>\n                    <br>\n                    Applicant Institution:<b> The German Cancer Research Center DKFZ, Heidelberg</b><br>Spokesperson: <b>Dr. Oliver Stegle</b><br><br><a href=\"documents/Letter_of_Intent_GHGA.pdf\">GHGA Letter of Intent</a>",
