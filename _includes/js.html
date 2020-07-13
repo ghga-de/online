@@ -46,7 +46,7 @@
             $('[data-i18n]').localize();
 
             $('.lang-select').click(function() {
-                i18next.changeLanguage(this.innerHTML, () => {
+                i18next.changeLanguage(this.getAttribute("lang-i18n"), () => {
                     $('[data-i18n]').localize();
                 });
             });

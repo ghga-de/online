@@ -38,12 +38,16 @@
                     <li>
                         <a href="{{ site.url }}/data" data-i18n="data.title"></a>
                     </li>
-
+                    <li class="dropdown-submenu nav-item">
+                        <a class="dropdown-item dropdown-toogle" id="languageDropdown"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-i18n="language.title"></a>
+                        <div class="dropdown-menu" aria-labelledby="languageDropdown">
+                            <a class="dropdown-item lang-select" lang-i18n="de">German</a>
+                            <a class="dropdown-item lang-select" lang-i18n="en">English</a>
+                        </div>
+                    </li>
                 </ul>
             </div>
-
-            <a href="#" class="lang-select">en</a>
-            <a href="#" class="lang-select">de</a>
 
             <!-- /.navbar-collapse -->
         </div>
