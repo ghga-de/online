@@ -1,9 +1,13 @@
 {
+  "No": "No",
+  "Yes": "Yes",
   "language": {
+    "navTitle": "Language",
     "title": "Language",
     "current": "English"
   },
   "about": {
+    "navTitle": "About",
     "title": "About",
     "paragraph1": "Human genome sequencing and other omics data modalities are of critical importance for biomedical research and the future development of healthcare. GHGA will provide the infrastructure to meet both the desire to handle omics data in an open and <a href=\"https://www.go-fair.org/fair-principles/\" target=\"_blank\">FAIR</a> manner and the need to keep personal data safe and secure. Other than other European infrastructures, as a National consortium, GHGA will have the ability to address the legal requirements specific to Germany, enabling German researchers to help shape future international standards for data exchange and take on leading roles in international research consortia.<br>\n                    <br>\n                    Applicant Institution:<b> The German Cancer Research Center DKFZ, Heidelberg</b><br>Spokesperson: <b>Dr. Oliver Stegle</b><br><br><a href=\"documents/Letter_of_Intent_GHGA.pdf\">GHGA Letter of Intent</a>",
     "objectives": {
@@ -21,6 +25,7 @@
     }
   },
   "news": {
+    "navTitle": "News",
     "title": "News",
     "item1": {
       "title": "12. Feb. 2020 - GHGA.de Website Goes Online",
@@ -28,12 +33,14 @@
     }
   },
   "jobs": {
+    "navTitle": "Jobs",
     "title": "Jobs",
     "introduction": "Currently available jobs at GHGA sites:",
     "jobTitle": "Job title",
     "location": "Location"
   },
   "consortium": {
+    "navTitle": "Consortium",
     "title": "Consortium",
     "structure": {
       "title": "The Structure of the consortium",
@@ -60,6 +67,7 @@
     }
   },
   "communities": {
+    "navTitle": "Communities",
     "title": "Communities",
     "paragraph1": "Initially, the focus of GHGA will be on the cancer and rare disease communities. Major data generators will be encouraged to deposit their data in GHGA, and community reference datasets (i.e. data likely to be used regularly in downstream analyses) will be developed. Interactions with the communities will take place in targeted workshops, and via talks and/or panel discussions at general conferences and meetings.",
     "paragraph2": "On a broader scale, interactions will also take place with other GHGA users, including human omics data researchers, data scientists, clinical researchers, physicians, and citizen scientists.",
@@ -67,6 +75,7 @@
     "letterOfSupport": "GHGA received Letters of Support from the following Institutions and Societies"
   },
   "contact": {
+    "navTitle": "Contact",
     "title": "Contact",
     "noscript": "Email address protected by JavaScript.<br>Please enable JavaScript."
   },
@@ -85,6 +94,7 @@
     }
   },
   "data": {
+    "navTitle": "Data",
     "title": "Data",
     "paragraph1": "We intend to optimize the procedures and processes involved with the deposition and access to human datasets. These procedures should be simplified from a technical and organisational perspective while ensuring full compliance to data protection and safety standards.",
     "paragraph2": "To this aim, a diverse and distributed data infrastructure, involving major data generators and using scalable cloud technologies, will have to be integrated and exposed to researchers via a simple data access portal. Additionally, the communication with data access committees and the technical details of regulating distributed data access need to be streamlined.",

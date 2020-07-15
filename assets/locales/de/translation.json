@@ -1,9 +1,13 @@
 {
+  "No": "Nein",
+  "Yes": "Ja",
   "language": {
+    "navTitle": "Sprache",
     "title": "Sprache",
     "current": "Deutsch"
   },
   "about": {
+    "navTitle": "Über",
     "title": "Über",
     "paragraph1": "Humangenomsequenzierung und andere Omics Datenmodalitäten sind für die biomedizinische Forschung und die Weiterentwicklung des Gesundheitswesens von entscheidender Bedeutung. GHGA wird die Infrastruktur bereitstellen, um sowohl den Wunsch nach einem offenem und <a href=\"https://www.go-fair.org/fair-principles/\" target=\"_blank\">FAIRen</a> Umgang mit Omics-Daten zu erfüllen, und der Notwendigkeit, persönliche Daten sicher zu verwahren. Im Gegensatz zu anderen europäischen Infrastrukturen wird GHGA als nationales Konsortium in der Lage sein, die für Deutschland spezifischen gesetzlichen Anforderungen zu erfüllen, um es deutschen Forschern zu ermöglichen, bei der Mitgestaltung künftiger internationaler Standards für den Datenaustausch mitzuwirken und eine führende Rolle in internationalen Forschungskonsortien zu übernehmen. <br>\n <br>Antragstellende Institution:<b> Deutsches Krebsforschungszentrum DKFZ, Heidelberg </b><br>Sprecher: <b>Dr. Oliver Stegle</b><br><br><a href=\"documents/Letter_of_Intent_GHGA.pdf\">GHGA Letter of Intent</a>",
     "objectives": {
@@ -21,6 +25,7 @@
     }
   },
   "news": {
+    "navTitle": "Neues",
     "title": "Neuigkeiten",
     "item1": {
       "title": "12. Feb. 2020  die GHGA.de Webseite geht online",
@@ -28,12 +33,14 @@
     }
   },
   "jobs": {
+    "navTitle": "Stellen",
     "title": "Stellenausschreibungen",
     "introduction": "Derzeit offene Stellen an den verschiedenen GHGA Standorten:",
     "jobTitle": "Stellenbezeichnung",
     "location": "Ort"
   },
   "consortium": {
+    "navTitle": "Konsortium",
     "title": "Konsortium",
     "structure": {
       "title": "Die Struktur des Konsortiums",
@@ -60,6 +67,7 @@
     }
   },
   "communities": {
+    "navTitle": "Gruppen",
     "title": "Nutzergruppen",
     "paragraph1": "Die initialen Schwerpunkte von GHGA werden auf Krebs und seltene Erkrankungen liegen. Wichtige Datenerzeuger werden aufgefordert, ihre Daten in GHGA abzulegen und Referenzdatensätze verschiedener Nutzergruppen (also Daten, die wahrscheinlich regelmäßig in nachgelagerten Analysen verwendet werden) zu entwickeln. Der Austausch verschiedener Nutzergruppen wird in gezielten Workshops und über Vorträge und/oder Podiumsdiskussionen auf allgemeinen Konferenzen und Tagungen stattfinden.",
     "paragraph2": "In einem breiteren Rahmen wird auch ein Austausch mit anderen Nutzern von GHGA stattfinden, wie etwa Omics-Humandatenforscher, Datenwissenschaftler, klinische Forscher, Ärzte und Bürgerwissenschaftler.",
@@ -67,6 +75,7 @@
     "letterOfSupport": "GHGA hat von den folgenden Institutionen und Vereinigungen Letters of Support erhalten:"
   },
   "contact": {
+    "navTitle": "Kontakt",
     "title": "Kontakt",
     "noscript": "Email address protected by JavaScript.<br>Please enable JavaScript."
   },
@@ -85,6 +94,7 @@
     }
   },
   "data": {
+    "navTitle": "Daten",
     "title": "Daten",
     "paragraph1": "Wir beabsichtigen, die Verfahren und Prozesse für die Hinterlegung und den Zugriff auf menschliche Datensätze zu optimieren. Diese Verfahren sollten in technischer und organisatorischer Hinsicht vereinfacht werden unter gleichzeitiger Gewährleistung der vollständigen Einhaltung der Datenschutz- und Sicherheitsstandards.",
     "paragraph2": "Zu diesem Zweck muss eine vielfältige und verteilte Dateninfrastruktur mit großen Datenerzeugern und skalierbaren Cloud-Technologien integriert und den Forschern über ein einfaches Datenzugriffsportal zugänglich gemacht werden. Darüber hinaus müssen die Kommunikation mit Datenzugriffsausschüssen und die technischen Details zur Regulierung des verteilten Datenzugriffs optimiert werden.",
