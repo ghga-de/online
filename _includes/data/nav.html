@@ -18,30 +18,39 @@
                         <a href="{{ site.url }}#page-top"></a>
                     </li>
                     <li>
-                        <a href="{{ site.url }}#about">About</a>
+                        <a href="{{ site.url }}#about" data-i18n="about.navTitle"></a>
                     </li>
                     <li>
-                        <a href="{{ site.url }}#news">News</a>
+                        <a href="{{ site.url }}#news" data-i18n="news.navTitle"></a>
                     </li>
                     <li>
-                        <a href="{{ site.url }}#jobs">Jobs</a>
+                        <a href="{{ site.url }}#jobs" data-i18n="jobs.navTitle"></a>
                     </li>
                     <li>
-                        <a href="{{ site.url }}#consortium">Consortium</a>
+                        <a href="{{ site.url }}#consortium" data-i18n="consortium.navTitle"></a>
                     </li>
                     <li>
-                        <a href="{{ site.url }}#communities">Communities</a>
+                        <a href="{{ site.url }}#communities" data-i18n="communities.navTitle"></a>
                     </li>
                     <li>
-                        <a href="{{ site.url }}#contact">Contact</a>
+                        <a href="{{ site.url }}#contact" data-i18n="contact.navTitle"></a>
                     </li>
 
                     <li>
-                        <a class="page-scroll" href="{{ site.url }}/{{ page.url }}">Data</a>
+                        <a class="page-scroll" href="{{ site.url }}/{{ page.url }}" data-i18n="data.navTitle"></a>
                     </li>
-
+                    <li class="nav-item dropdown-submenu">
+                        <a class="nav-link dropdown-toggle" id="languageDropdown"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-i18n="language.navTitle"></a>
+                        <div class="dropdown-menu" aria-labelledby="languageDropdown">
+                            <a class="dropdown-item lang-select" lang-i18n="de">German</a>
+                            <a class="dropdown-item lang-select" lang-i18n="en">English</a>
+                        </div>
+                    </li>
                 </ul>
+
             </div>
+
             <!-- /.navbar-collapse -->
         </div>
         <!-- /.container -->

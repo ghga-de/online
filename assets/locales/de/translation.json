@@ -1,0 +1,116 @@
+{
+  "No": "Nein",
+  "Yes": "Ja",
+  "language": {
+    "navTitle": "Sprache",
+    "title": "Sprache",
+    "current": "Deutsch"
+  },
+  "about": {
+    "navTitle": "Über",
+    "title": "Über",
+    "paragraph1": "Humangenomsequenzierung und andere Omics Datenmodalitäten sind für die biomedizinische Forschung und die Weiterentwicklung des Gesundheitswesens von entscheidender Bedeutung. GHGA wird die Infrastruktur bereitstellen, um sowohl den Wunsch nach einem offenem und <a href=\"https://www.go-fair.org/fair-principles/\" target=\"_blank\">FAIRen</a> Umgang mit Omics-Daten zu erfüllen, und der Notwendigkeit, persönliche Daten sicher zu verwahren. Im Gegensatz zu anderen europäischen Infrastrukturen wird GHGA als nationales Konsortium in der Lage sein, die für Deutschland spezifischen gesetzlichen Anforderungen zu erfüllen, um es deutschen Forschern zu ermöglichen, bei der Mitgestaltung künftiger internationaler Standards für den Datenaustausch mitzuwirken und eine führende Rolle in internationalen Forschungskonsortien zu übernehmen. <br>\n <br>Antragstellende Institution:<b> Deutsches Krebsforschungszentrum DKFZ, Heidelberg </b><br>Sprecher: <b>Dr. Oliver Stegle</b><br><br><a href=\"documents/Letter_of_Intent_GHGA.pdf\">GHGA Letter of Intent</a>",
+    "objectives": {
+      "title": "Kernziele von GHGA",
+      "obj1": "Bereitstellung eines nationalen, sicheren und vertrauenswürdigen <b>Langzeitarchivs menschlicher Omics-Daten </ b>, die in der EGA-Infrastruktur eingebunden ist",
+      "obj2": "<b>Optimierung der Datenablage</b> durch direkte Daten-und Metadatenübertragung von wichtigen nationalen Omics-Zentren",
+      "obj3": "Bereitstellung einer zentralen <b>Infrastruktur für bestimmte Nutzergruppen</b>, wodurch Datenzugriff und Wiederverwendung für Forschungszwecke erleichtert werden",
+      "obj4": "<b>Einbindung verschiedener Nutzergruppen</b>, um einen verantwortungsvollen Omics-Datenaustausch zu fördern und sie dahingehend zu schulen, das wissenschaftliche Potenzial von Dateninfrastrukturen und Referenzdatensätze zu nutzen",
+      "obj5": "Beseitigung <b>rechtlicher und ethischer Hindernisse für den Datenaustausch</b> durch die Schaffung eines einheitlichen ethisch-rechtlichen Rahmens",
+      "obj6": "<b>Schulung der nächsten Generation von Wissenschaftlern</b> in der effizienten und verantwortungsvollen Nutzung und Verwaltung von Omics-Daten in der Forschung",
+      "obj7": "<b>Erhöhung der FAIRness von Omics-Daten</b> und Erleichterung der Einbettung in nationale und internationale Datenressourcen und - infrastrukturen",
+      "obj8": "Bereitstellung <b>Maßgeschneiderter Datenportale für bestimmte Nutzergruppen</b>, um deren spezifischen Anforderungen an Datensätzen und Analysetools gerecht zu werden",
+      "obj9": "<b>Demokratisierung des Zugriffs und der Analyse / Anwendungen auf umfangreicher Omics-daten </b> für die Forschung über eine Cloud-basierte Analyseplattform",
+      "obj10": "<b>Steigerung des Wertes von Forschungsdaten </b> durch die Integration mehrerer Omics-Modalitäten und die Verbindung von Omics-Daten mit Phänotypdaten"
+    }
+  },
+  "news": {
+    "navTitle": "Neues",
+    "title": "Neuigkeiten",
+    "item1": {
+      "title": "12. Feb. 2020  die GHGA.de Webseite geht online",
+      "content": "Das mit dem Europäischen Genom-Phenom-Archiv (EGA) föderierte deutsche Humangenom-Phenomarchiv (GHGA), das zur Archivierung und erleichterten Analyse von geschützten menschlichen Forschungsdaten aus Deutschland aufgebaut wird, ist mit einer Pilotversion live gegangen und verteilt Forschungsdaten aus Heidelberg und Tübingen. Wir freuen uns auf die Verwendung des Archivs von Nutzern aus der Humanbiologie, Genetik und Krankheitsforschung."
+    }
+  },
+  "jobs": {
+    "navTitle": "Stellen",
+    "title": "Stellenausschreibungen",
+    "introduction": "Derzeit offene Stellen an den verschiedenen GHGA Standorten:",
+    "jobTitle": "Stellenbezeichnung",
+    "location": "Ort"
+  },
+  "consortium": {
+    "navTitle": "Konsortium",
+    "title": "Konsortium",
+    "structure": {
+      "title": "Die Struktur des Konsortiums",
+      "text": "GHGA ist fest in internationale Infrastrukturen und Initiativen eingebettet und mit diesen verbunden. Das Archiv wird als lokaler Knoten innerhalb der <a href=\"https://ega-archive.org/\">European Genome-Phenome Archive (EGA)</a>Föderation betrieben."
+    },
+    "withinNfdi": {
+      "title": "Das Konsortium innerhalb der NFDI",
+      "paragraph1": "GHGA nimmt innerhalb des Netzwerkes der föderierten Forschungsdateninfrastrukturkonsortien (NDFI, Nationale Forschungsdateninfrastruktur) eine einzigartige Rolle ein, da es als einziges Konsortium geschützte Omics-Daten verwaltet. Ziel ist es, diese Daten mit anderen Konsortien insbesondere im biomedizinischen Feld zu vernetzen, um dadurch zu einer zentralen Komponente in einer langfristigen Strategie zur Verwaltung von Forschungsdaten innerhalb der NFDI zu werden. Insbesondere die Abstimmung mit <b>NFDI4MED</b> und <b>NFDI4Health</b> wird ergänzendes Fachwissen im Bereich der Verwaltung und Verknüpfung medizinischer Daten und anderer nicht-Omics-Datentypen generieren.<br> GHGA unterstützt in vollem Umfang die <a href=\"https://zenodo.org/record/3457213#.XcwcPNUxkUE\">Berlin Declaration on NFDI Cross-Cutting Topics</a>.",
+      "paragraph2": "Mehrere Mitglieder des Konsortiums oder weitere am GHGA beteiligte Institutionen sind zusätzlich an weiteren NFDI Initiativen beteiligt, etwa in <b>NFDI4Microbiota</b>, <b>BERD@NDFI</b>, <b>FAIRmat</b>, <b>NFDI4Earth</b>, <b>NFDI4Ing</b>, <b>NFDI4Text+</b>, <b>NFDI-Astro</b>, <b>NFDI4MED</b>, <b>NFDI4HEALTH</b>, <b>DataPlant</b>, <b>NFDI4Chem</b> <br> <img src=\"img/GHGAStructure.png\" class=\"img-responsive\" alt=\"Responsive image\" style=\"padding-top:20px; padding-bottom:30px;\"/>"
+    },
+    "board": {
+      "title": "Der Aufsichtsrat",
+      "initial": "In der Anfangsphase wird der Aufsichtsrat aus folgenden Personen bestehen:",
+      "election": "Sobald GHGA seine Tätigkeit aufnimmt, wird der Aufsichtsrat aus gewählten Vertretern bestehen."
+    },
+    "governance": {
+      "title": "Die Führungsgsstruktur von GHGA"
+    },
+    "applicants": {
+      "title": "Mitbewerbende Institutionen des Konsortiums und wissenschaftliche Projektleiter"
+    },
+    "partners": {
+      "title": "Weitere beteiligte Institutionen und deren wissenschaftliche Projektleiter"
+    }
+  },
+  "communities": {
+    "navTitle": "Gruppen",
+    "title": "Nutzergruppen",
+    "paragraph1": "Die initialen Schwerpunkte von GHGA werden auf Krebs und seltene Erkrankungen liegen. Wichtige Datenerzeuger werden aufgefordert, ihre Daten in GHGA abzulegen und Referenzdatensätze verschiedener Nutzergruppen (also Daten, die wahrscheinlich regelmäßig in nachgelagerten Analysen verwendet werden) zu entwickeln. Der Austausch verschiedener Nutzergruppen wird in gezielten Workshops und über Vorträge und/oder Podiumsdiskussionen auf allgemeinen Konferenzen und Tagungen stattfinden.",
+    "paragraph2": "In einem breiteren Rahmen wird auch ein Austausch mit anderen Nutzern von GHGA stattfinden, wie etwa Omics-Humandatenforscher, Datenwissenschaftler, klinische Forscher, Ärzte und Bürgerwissenschaftler.",
+    "paragraph3": "Ein wichtiges Ziel von GHGA ist das Zugehen auf Patientenvertretern und der allgemeinen Öffentlichkeit, um ein Bewusstsein für den Wert der Omics-Forschung und des Datenaustausches zu schaffen und gleichzeitig allgemeine Bedenken und Fragen zur Sicherheit, Vertraulichkeit und des Eigentums bei der Nutzung solch großer Humandatenmengen zu adressieren.",
+    "letterOfSupport": "GHGA hat von den folgenden Institutionen und Vereinigungen Letters of Support erhalten:"
+  },
+  "contact": {
+    "navTitle": "Kontakt",
+    "title": "Kontakt",
+    "noscript": "Email address protected by JavaScript.<br>Please enable JavaScript."
+  },
+  "legal": {
+    "title": "Legal Notice",
+    "tmg": "Informationspflicht laut § 5 TMG.",
+    "address": "Address",
+    "representatives": {
+      "title": "Vertretungsberechtigte",
+      "text": "Vorstandsvorsitzender und wissenschaftlicher Vorstand: Prof. Dr. Michael Baumann <br>\nKaufmännischer Vorstand: Ursula Weyrich<br><br>(Adresse wie oben)"
+    },
+    "projectLeads": "Projektleiter",
+    "disclaimer": {
+      "title": "Haftungsausschluss",
+      "text": "Durch das Nutzen der GHGA Webseite stimmen Sie unseren <a href=\"https://www.dkfz.de/de/datenschutzerklaerung.html?m=1541343170\" target=\"_blank\">Datenschutzbestimmungen </a> zu."
+    }
+  },
+  "data": {
+    "navTitle": "Daten",
+    "title": "Daten",
+    "paragraph1": "Wir beabsichtigen, die Verfahren und Prozesse für die Hinterlegung und den Zugriff auf menschliche Datensätze zu optimieren. Diese Verfahren sollten in technischer und organisatorischer Hinsicht vereinfacht werden unter gleichzeitiger Gewährleistung der vollständigen Einhaltung der Datenschutz- und Sicherheitsstandards.",
+    "paragraph2": "Zu diesem Zweck muss eine vielfältige und verteilte Dateninfrastruktur mit großen Datenerzeugern und skalierbaren Cloud-Technologien integriert und den Forschern über ein einfaches Datenzugriffsportal zugänglich gemacht werden. Darüber hinaus müssen die Kommunikation mit Datenzugriffsausschüssen und die technischen Details zur Regulierung des verteilten Datenzugriffs optimiert werden.",
+    "paragraph3": "Wenn Sie Zugriff auf einen bestimmten Datensatz aus der folgenden Tabelle erhalten möchten, können Sie Datensätze aus der Tabelle auswählen und\n <b><a href=\"#data-access\">hier den Zufriff anfordern </a></b>.",
+    "access": {
+      "header": "Zugriffsanfrage",
+      "text": "Sie haben Datensätze aus folgenden Data Access Committees ausgewählt:",
+      "applicationDate": "Datum:",
+      "applicant": "Antragssteller:",
+      "applicantPosition": "Berufliche Stellung des Antragstellers:",
+      "principalInvestigator": "Wissenschaftlicher Projektleiter:",
+      "institution": "Institution:",
+      "datasets": "Datensatz/Datensätze:",
+      "projectOutline": "Skizzieren Sie bitte das geplante Projekt, für das Sie die Daten benötigen:",
+      "hypothesis": "Begründung für das geplante Projekt:",
+      "ethicalVoteInPlace": "Gibt es eine ethische Abstimmung zur Verwendung NGS Daten?"
+    }
+  }
+}

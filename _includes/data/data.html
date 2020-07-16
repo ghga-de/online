@@ -3,29 +3,18 @@
         <div class="container">
             <div class="col-lg-11 col-lg-offset-0">
 
-                <h2>Data</h2>
+                <h2 data-i18n="data.title"></h2>
 
-                <p>
-                    We intend to optimize the procedures and processes involved with the deposition and access to
-                    human datasets. These procedures should be simplified from a technical and organisational
-                    perspective while ensuring full compliance to data protection and safety standards.
-                </p>
+                <p data-i18n="[html]data.paragraph1"></p>
 
-                <p>
-                    To this aim, a diverse and distributed data infrastructure, involving major data generators
-                    and using scalable cloud technologies, will have to be integrated and exposed to researchers
-                    via a simple data access portal. Additionally, the communication with data access committees
-                    and the technical details of regulating distributed data access need to be streamlined.
-                </p>
+                <p data-i18n="[html]data.paragraph2"></p>
 
-                <p>
-                    If you are interested in obtaining access to a specific dataset from the table below you can select datasets from the table and <b><a href="#data-access">request access here</a></b>.
-                </p>
+                <p data-i18n="[html]data.paragraph3"></p>
 
                 <div class="StudiesTable"></div>
 
                 <script src="{{ "/js/lodash@4(lodash.min.js+lodash.fp.min.js).js" | prepend: site.url }}"></script>
-                <script src="{{ "/js/mithril.js" | prepend: site.url }}"></script>
+                <script src="{{ "/js/mithril.min.js" | prepend: site.url }}"></script>
                 <script src="{{ "/js/data.js" | prepend: site.url }}"></script>
                 <script type="text/javascript">
 
@@ -46,8 +35,8 @@
 
                         m.mount(document.getElementsByClassName("StudiesTable")[0], studyTableView);
 
-                        // /* Insert a table of the selected datasets and DACs. Note that the m.mount() takes care to
-                        //    automatically update the DOM upon data changes! */
+                        /* Insert a table of the selected datasets and DACs. Note that the m.mount() takes care to
+                           automatically update the DOM upon data changes! */
                         // m.mount(document.getElementById("SelectionTable"), selectionTableView);
 
 
