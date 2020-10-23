@@ -28,6 +28,10 @@
     "navTitle": "Neues",
     "title": "Neuigkeiten",
     "item1": {
+      "title": "1. Oktober 2020 - Offizieller Startschuss für GHGA",
+      "content": "Zum ersten Oktober 2020 hat die Förderperiode von GHGA als Teil der <a href=\"https://www.nfdi.de/\" target=\"_blank\">NFDI </a>begonnen. In der Nationalen Forschungsdateninfrastruktur (NFDI) sollen die wertvollen Datenbestände von Wissenschaft und Forschung für das gesamte deutsche Wissenschaftssystem systematisch erschlossen, vernetzt und nachhaltig sowie qualitativ nutzbar gemacht werden."
+    },
+    "item2": {
       "title": "12. Feb. 2020  die GHGA.de Webseite geht online",
       "content": "Das mit dem Europäischen Genom-Phenom-Archiv (EGA) föderierte deutsche Humangenom-Phenomarchiv (GHGA), das zur Archivierung und erleichterten Analyse von geschützten menschlichen Forschungsdaten aus Deutschland aufgebaut wird, ist mit einer Pilotversion live gegangen und verteilt Forschungsdaten aus Heidelberg und Tübingen. Wir freuen uns auf die Verwendung des Archivs von Nutzern aus der Humanbiologie, Genetik und Krankheitsforschung."
     }

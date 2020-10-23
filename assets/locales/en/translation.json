@@ -28,7 +28,11 @@
     "navTitle": "News",
     "title": "News",
     "item1": {
-      "title": "12. Feb. 2020 - GHGA.de Website Goes Online",
+      "title": "October 1, 2020 - GHGA has officially started",
+      "content": "With the beginning of October 2020, GHGA has officially started as part of the German <a href=\"https://www.nfdi.de/\" target=\"_blank\">NFDI initiative</a>."
+    },
+    "item2": {
+      "title": "February 12, 2020 - GHGA.de Website Goes Online",
       "content": "The German Human Genome-Phenome Archive (GHGA), which will be federated with the European Genome-Phenome Archive (EGA), and which is designed to archive and facilitate analysis of human access controlled research data from Germany, has gone live with a pilot version, distributing research data from Heidelberg and Tübingen. We look forward to its use by human biology, genetics and disease research communities."
     }
   },
