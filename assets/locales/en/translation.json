@@ -27,14 +27,38 @@
   "news": {
     "navTitle": "News",
     "title": "News",
-    "item1": {
+    "item5": {
+      "title": "November 19, 2020 - Join the GHGA Team",
+      "content": "We are constantly looking for talents to reinforce our GHGA team. Please find current job offers under <a href=\"#jobs\">jobs</a>."
+    },
+    "item4": {
       "title": "October 1, 2020 - GHGA has officially started",
       "content": "With the beginning of October 2020, GHGA has officially started as part of the German <a href=\"https://www.nfdi.de/\" target=\"_blank\">NFDI initiative</a>."
     },
+    "item3": {
+      "title": "July 30, 2020 - Interview with Oliver Kohlbacher and Oliver Stegle on the aims of GHGA",
+      "content": "Oliver Stegle and Oliver Kohlbacher have talked to the <a href=\"https://www.bbmri.de/news-events/article/?tx_news_pi1%5Bnews%5D=366&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Baction%5D=detail&cHash=43adadb762a27952c1b46b4081f0ca4e\" target=\"_blank\">German Biobank Node (GBN)</a> on the aims of GHGA (in German only)"
+    },
     "item2": {
+      "title": "June 29, 2020 - Press Release about GHGA",
+      "content": "GHGA was selected for funding as part of the German NFDI initiative. Please see the press releases by <a href=\"https://www.dkfz.de/de/presse/pressemitteilungen/2020/dkfz-pm-20-41c-Genomdaten-besser-nutzen-Konsortium-entwickelt-die-notwendige-Dateninfrastruktur.php\" target=\"_blank\">DKFZ</a>, <a href=\"https://uni-tuebingen.de/universitaet/aktuelles-und-publikationen/attempto-online/forschung/newsfullview-attempto-forschung/article/konsortium-entwickelt-infrastruktur-fuer-genomdaten/\" target=\"_blank\">Tuebingen University</a> and <a href=\"https://www.embl.org/news/lab-matters/human-genome-phenome-archive/\" target=\"_blank\">EMBL</a>"
+    },
+    "item1": {
       "title": "February 12, 2020 - GHGA.de Website Goes Online",
       "content": "The German Human Genome-Phenome Archive (GHGA), which will be federated with the European Genome-Phenome Archive (EGA), and which is designed to archive and facilitate analysis of human access controlled research data from Germany, has gone live with a pilot version, distributing research data from Heidelberg and Tübingen. We look forward to its use by human biology, genetics and disease research communities."
     }
+  },
+  "events": {
+    "navTitle": "Events",
+    "title": "Events",
+    "item1": {
+      "title": "December 10, 2020 - GHGA Virtual Kick-Off Event",
+      "content": "On December 10, 2020 all GHGA participants will meet virtually to discuss the initiation and first steps of the consortium. Further information and registration is available via this <a href=\"https://indico.dkfz.de/e/ghga-kickoff\" target=\"_blank\">link</a>."
+    },
+	"item2": {
+	"title": "GHGA Events Calendar",
+	"content": "An overview of all GHGA events can found at this <a href=\"https://calendar.google.com/calendar/embed?src=cu680i1cppr6446qk50059fs78%40group.calendar.google.com&ctz=Europe%2FBerlin\" target=\"_blank\">link</a>."
+	}
   },
   "jobs": {
     "navTitle": "Jobs",
