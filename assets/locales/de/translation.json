@@ -27,12 +27,24 @@
   "news": {
     "navTitle": "Neues",
     "title": "Neuigkeiten",
-    "item1": {
-      "title": "1. Oktober 2020 - Offizieller Startschuss für GHGA",
+    "item5": {
+      "title": "18.11.2020 - Positionen für IT-Spezialisten bei GHGA",
+      "content": "Wir sind permanent auf der Suche nach neuen Talenten zur Verstärkung unseres Teams. Aktuelle Stellenausschreibungen im Rahmen von GHGA siehe <a href=\"#jobs\">Jobs</a>."
+    },
+    "item4": {
+      "title": "1.10.2020 - Offizieller Startschuss für GHGA",
       "content": "Zum ersten Oktober 2020 hat die Förderperiode von GHGA als Teil der <a href=\"https://www.nfdi.de/\" target=\"_blank\">NFDI </a>begonnen. In der Nationalen Forschungsdateninfrastruktur (NFDI) sollen die wertvollen Datenbestände von Wissenschaft und Forschung für das gesamte deutsche Wissenschaftssystem systematisch erschlossen, vernetzt und nachhaltig sowie qualitativ nutzbar gemacht werden."
     },
+    "item3": {
+      "title": "30.7.2020 - Interview mit Oliver Kohlbacher und Oliver Stegle zu den Zielen von GHGA",
+      "content": "Im <a href=\"https://www.bbmri.de/news-events/article/?tx_news_pi1%5Bnews%5D=366&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Baction%5D=detail&cHash=43adadb762a27952c1b46b4081f0ca4e\" target=\"_blank\">Gespräch mit dem German Biobank Node (GBN)</a> berichten Prof. Dr. Oliver Kohlbacher von der Universität Tübingen und Dr. Oliver Stegle vom Deutschen Krebsforschungszentrum Heidelberg (DKFZ) und dem Europäischen Molekularbiologie-Laboratorium (EMBL) über ihre Motivationen, GHGA zu gründen, wie sie künftige NutzerInnen schon früh in die Entwicklung einbinden wollen und welche Verbindung sie zum Biobanking haben."
+    },
     "item2": {
-      "title": "12. Feb. 2020  die GHGA.de Webseite geht online",
+      "title": "29.6.2020 - Pressemitteilungen zu GHGA",
+      "content": "GHGA wurde im Rahmen des NFDI-Verfahrens zur Förderung vorgeschlagen. Bitte lesen Sie mehr in den Pressemitteilungen des <a href=\"https://www.dkfz.de/de/presse/pressemitteilungen/2020/dkfz-pm-20-41c-Genomdaten-besser-nutzen-Konsortium-entwickelt-die-notwendige-Dateninfrastruktur.php\" target=\"_blank\">DKFZ</a>, der <a href=\"https://uni-tuebingen.de/universitaet/aktuelles-und-publikationen/attempto-online/forschung/newsfullview-attempto-forschung/article/konsortium-entwickelt-infrastruktur-fuer-genomdaten/\" target=\"_blank\">Universität Tübingen</a> und des <a href=\"https://www.embl.org/news/lab-matters/human-genome-phenome-archive/\" target=\"_blank\">EMBL</a>."
+    },
+    "item1": {
+      "title": "12.2.2020 - Die GHGA.de Webseite geht online",
       "content": "Das mit dem Europäischen Genom-Phenom-Archiv (EGA) föderierte deutsche Humangenom-Phenomarchiv (GHGA), das zur Archivierung und erleichterten Analyse von geschützten menschlichen Forschungsdaten aus Deutschland aufgebaut wird, ist mit einer Pilotversion live gegangen und verteilt Forschungsdaten aus Heidelberg und Tübingen. Wir freuen uns auf die Verwendung des Archivs von Nutzern aus der Humanbiologie, Genetik und Krankheitsforschung."
     }
   },
