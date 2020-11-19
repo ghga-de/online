@@ -36,6 +36,18 @@
       "content": "The German Human Genome-Phenome Archive (GHGA), which will be federated with the European Genome-Phenome Archive (EGA), and which is designed to archive and facilitate analysis of human access controlled research data from Germany, has gone live with a pilot version, distributing research data from Heidelberg and Tübingen. We look forward to its use by human biology, genetics and disease research communities."
     }
   },
+  "events": {
+    "navTitle": "Events",
+    "title": "Events",
+    "item1": {
+      "title": "December 10, 2020 - GHGA Virtual Kick-Off Event",
+      "content": "On December 10, 2020 all GHGA Participant will meet virtually to discuss the initiation and first steps of the consortium. Further information and registration is available via this <a href=\"https://indico.dkfz.de/e/ghga-kickoff\" target=\"_blank\">link</a>."
+    },
+	"item2": {
+	"title": "GHGA Events Calendar",
+	"content": "An overview of all GHGA Events can found at this <a href=\"https://calendar.google.com/calendar/embed?src=cu680i1cppr6446qk50059fs78%40group.calendar.google.com&ctz=Europe%2FBerlin\" target=\"_blank\">link</a>."
+	}
+  },
   "jobs": {
     "navTitle": "Jobs",
     "title": "Jobs",
