@@ -14,7 +14,7 @@ class DeploymentError(Exception):
 
 
 def github_branch_head_commit(repo_owner: str, repo_name: str, branch_name: str, error_handler) -> str:
-    '''Get the full commit hash of the HEAD of the given branch in the repository on Github.'''
+    """Get the full commit hash of the HEAD of the given branch in the repository on Github."""
     request = Request("https://api.github.com/repos/{}/{}/branches/{}".format(repo_owner, repo_name, branch_name),
                       headers={ "Accept": "application/vnd.github.v3+json" })
     try:
@@ -30,16 +30,16 @@ def list_branch_commits(repo: git.Repo, branch: str) -> list:
 
 
 def update_branch_from_remote(repo: git.Repo, branch: str, remote: str) -> None:
-    '''Update the given branch in the repository to the remote HEAD. This will do a forced checkout thus deleting
-    all repo-local changes. The autodeploy clone should not be modified!'''
+    """Update the given branch in the repository to the remote HEAD. This will do a forced checkout thus deleting
+    all repo-local changes. The autodeploy clone should not be modified!"""
     repo.branches[branch].checkout(force=True)
     repo.remote(remote).pull()
 
 
 def run_proc(command):
     proc = subprocess.Popen(command,
-                            stdout = subprocess.PIPE,
-                            stderr = subprocess.PIPE)
+                            stdout=subprocess.PIPE,
+                            stderr=subprocess.PIPE)
     stdout, stderr = proc.communicate()
     return proc.returncode, stdout, stderr
 
@@ -53,7 +53,7 @@ def safe_run_proc(command, error_message = "Execution failed"):
 
 
 def build_jekyll_site(repo_dir: str) -> None:
-    '''Run Jekyll to build the site.'''
+    """Run Jekyll to build the site."""
     # Bundler needs to be executed in a login shell.
     jekyll_command = ["bash", "-l", "-c", "cd '%s' && bundle exec jekyll build" % repo_dir]
     safe_run_proc(jekyll_command)
@@ -61,8 +61,8 @@ def build_jekyll_site(repo_dir: str) -> None:
 
 
 def deploy_jekyll_site(repo_dir: str, served_dir: str) -> None:
-    '''Deploy the built site to the directories served by the HTTP server. Ensure correct access rights. Note that
-    all served directory changes are overwritten!'''
+    """Deploy the built site to the directories served by the HTTP server. Ensure correct access rights. Note that
+    all served directory changes are overwritten!"""
     safe_run_proc(["rsync", "-rLv", "--delete", "%s/_site/" % repo_dir, "%s/" % served_dir])
     logger.info("Successfully synced '%s/_site' to '%s/'" % (repo_dir, served_dir))
     safe_run_proc(["chmod", "-R", "u=rwX,go=rX", "%s" % served_dir])
