@@ -15,9 +15,8 @@ class DeploymentError(Exception):
 
 def github_branch_head_commit(repo_owner: str, repo_name: str, branch_name: str, error_handler) -> str:
     '''Get the full commit hash of the HEAD of the given branch in the repository on Github.'''
-    request = Request("https://api.github.com/repos/{}/{}/branches/{}".format(repo_owner, repo_name, branch_name), headers={
-        "Accept": "application/vnd.github.v3+json"
-    })
+    request = Request("https://api.github.com/repos/{}/{}/branches/{}".format(repo_owner, repo_name, branch_name),
+                      headers={ "Accept": "application/vnd.github.v3+json" })
     try:
         response = urlopen(request)
         return json.loads(response.read())["commit"]["sha"]
@@ -33,7 +32,7 @@ def list_branch_commits(repo: git.Repo, branch: str) -> list:
 def update_branch_from_remote(repo: git.Repo, branch: str, remote: str) -> None:
     '''Update the given branch in the repository to the remote HEAD. This will do a forced checkout thus deleting
     all repo-local changes. The autodeploy clone should not be modified!'''
-    repo.branches[branch].checkout()
+    repo.branches[branch].checkout(force=True)
     repo.remote(remote).pull()
 
 
@@ -49,6 +48,7 @@ def safe_run_proc(command, error_message = "Execution failed"):
     logger.debug("Executing: %s" % str(command))
     exit_code, stdout, stderr = run_proc(command)
     if exit_code != 0:
+        # TODO: streams are not string, but binary. Convert!
         raise DeploymentError("%s: %s" % (error_message, str(command)), exit_code, str(stdout), str(stderr))
 
 
