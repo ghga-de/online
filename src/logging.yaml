@@ -2,18 +2,25 @@ version: 1
 formatters:
   simple:
     format: '%(asctime)s - %(name)s - %(levelname)7s - %(message)s'
+
 handlers:
   console:
     class: logging.StreamHandler
     level: DEBUG
     formatter: simple
     stream: ext://sys.stdout
+  syslog:
+    class: logging.handlers.SysLogHandler
+    level: INFO
+    formatter: simple
+    address: /dev/log
+  slack: # If present, messages are formatted for submission to Slack webhook. Don't set the formatter.
+    "()": __main__.getSlackWebhookHandler
+    level: WARNING
+    host: hooks.slack.com
+    url: /services/x/y/z
 loggers:
-  simpleExample:
+  ghga_updater: # Don't change this.
     level: DEBUG
-    handlers: [console]
-    propagate: no
-root:
-  level: DEBUG
-  handlers: [console]
+    handlers: [console, syslog, slack]
 

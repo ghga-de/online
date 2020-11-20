@@ -1,19 +1,55 @@
 #!/usr/bin/env python3
-
+from logging import LogRecord
 from urllib.request import Request, urlopen
 import json
 import yaml
 import git
+from logging.handlers import HTTPHandler
 import logging.config
 import subprocess
-from sys import argv
+from sys import argv, stderr
+import getpass
+import os
 
 
 class DeploymentError(Exception):
     pass
 
 
-def github_branch_head_commit(repo_owner: str, repo_name: str, branch_name: str, error_handler) -> str:
+class SlackWebhookHandler(HTTPHandler):
+    """A logging handler that produces a dictionary suitable for the webhooks add-in for Slack."""
+    def mapLogRecord(self, record):
+        if record.levelno <= 2:
+            color = "good"
+        else:
+            color = "danger"
+        return {"text": record.message, "color": color}
+
+    def emit(self, record: LogRecord) -> None:
+        """Code adapted from from HTTPRequest.emit."""
+        try:
+            import http.client
+            host = self.host
+            h = http.client.HTTPSConnection(host, context=self.context)
+            url = self.url
+            data = json.dumps(self.mapLogRecord(record))
+            h.putrequest("POST", url)
+            h.putheader("Content-type",
+                        "application/json")
+            h.putheader("Content-length", str(len(data)))
+            h.endheaders()
+            h.send(data.encode('utf-8'))
+            h.getresponse()
+        except Exception:
+            self.handleError(record)
+
+
+def getSlackWebhookHandler(**kwargs):
+    """Define this factory method with __main__.getSlacWebhookHandler in the logging config file."""
+    return SlackWebhookHandler(**kwargs)
+
+
+def github_branch_head_commit(repo_owner: str, repo_name: str, branch_name: str) -> str:
     """Get the full commit hash of the HEAD of the given branch in the repository on Github."""
     request = Request("https://api.github.com/repos/{}/{}/branches/{}".format(repo_owner, repo_name, branch_name),
                       headers={ "Accept": "application/vnd.github.v3+json" })
@@ -74,11 +110,9 @@ def deployment_message(repo_url: str, remote_master_head_commit: str, repo_dir: 
            (remote_master_head_commit, repo_dir, repo_url)
 
 
-def handle_error(code: int, reason: str) -> None:
-    print(code)
-    print(reason)
-    ## TODO Message to Slack
-
+def rwx_dir(dir):
+    return os.path.isdir(dir) \
+            and os.access(dir, os.R_OK | os.X_OK | os.W_OK)
 
 
 # Requirements
@@ -88,18 +122,21 @@ def handle_error(code: int, reason: str) -> None:
 #   gitpython
 #   pyyaml
 #   The target directory, to which the deployment is done must be writable and owned by the user doing the deployment.
-#   Check `chmod go=rX -R $deploymentDir`
+#   Check `chmod go=rX -R $deploymentDir`. The rwx-permissions are checked on the auto-deployment repo-clone and
+#   the target deployment directory.
 #
 # Notes
-# - never modify the auto-deployment clone; changes will be overwritten (with warning log)
-# - changes in the deployment directory will be overwritten (with warning log)
+# - never modify the auto-deployment clone; changes will be overwritten without warning
+# - changes in the deployment directory will be overwritten without warning
 # - checking out something else then the master HEAD will be ignored, this just checks the master head (checkout out or
 #   not), an update only happens if the local master is older than the remote master
+# - For Slack, add the webhook app, configure it, and copy the URL to the logging.yaml
+# TODO Make a CLI for easier configuration. Maybe config-file.
 
-# TODO Test deployment to some arbitrary directory
-# TODO Daemon mode. Use some scheduler, to schedule this task once every quarter of an hour, or so.
-# TODO Write systemd script
-# TODO Log events to Slack
+logger_conf = argv[1]
+repo_dir = argv[2]
+served_dir = argv[3]
+force_redeployment = True
 
 branch = "master"
 remote = "origin"
@@ -107,29 +144,41 @@ github_owner = "ghga-de"
 github_name = "online"
 github_url = "https://github.com/%s/%s" % (github_owner, github_name)
 server_url = "https://ghga.de"
-logger_conf = argv[1]
-repo_dir = argv[2]
-served_dir = argv[3]
 
-# TODO Test whether server_dir exists
-# TODO Test whether repo_dir exists
+
+if not rwx_dir(repo_dir):
+    raise DeploymentError("Repository directory '%s' needs to be readable, writable & executable for '%s'" %
+                          (repo_dir, getpass.getuser()))
+
+if not rwx_dir(served_dir):
+    raise DeploymentError("Repository directory '%s' needs to be readable, writable & executable for '%s'" %
+                          (repo_dir, getpass.getuser()))
+
 with open(logger_conf) as logger_conf_stream:
     logging.config.dictConfig(yaml.load(logger_conf_stream, Loader=yaml.FullLoader))
 
-logger = logging.getLogger("root")
+
+logger = logging.getLogger("ghga_updater")
+# slackHandlers = list(filter(lambda h: h.get_name() == "slack", logger.handlers))
+# if len(slackHandlers) == 0:
+#     print("Omitting logging to Slack", file=stderr)
+# else:
+#     print("Logging to Slack", file=stderr)
+#     slackFormatter = jsonlogger.JsonFormatter(rename_fields={'message': 'text'})
+#     slackHandlers[0].setFormatter(slackFormatter)
 
 try:
     repo = git.Repo(repo_dir)
-    remote_master_head_commit = github_branch_head_commit(github_owner, github_name, branch, handle_error)
-    logger.debug("Remote %s/%s branch %s HEAD commit sha: %s" %
+    remote_master_head_commit = github_branch_head_commit(github_owner, github_name, branch)
+    logger.debug("Remote %s/%s branch %s HEAD commit SHA: %s" %
                  (github_owner, github_name, branch, remote_master_head_commit))
     current_commits_in_ref = list_branch_commits(repo, branch)
-    if True or remote_master_head_commit not in current_commits_in_ref:
+    if force_redeployment or remote_master_head_commit not in current_commits_in_ref:
         logger.info(deployment_message(github_url, remote_master_head_commit, repo_dir))
         update_branch_from_remote(repo, branch, remote)
         build_jekyll_site(repo_dir)
         deploy_jekyll_site(repo_dir, served_dir)
-        logger.warning("Successfully deployed %s to %s" % (github_url, server_url))
+        logger.warning("Successfully deployed <%s|GitHub master> to the <%s|GHGA website>" % (github_url, server_url))
     else:
         logger.info("No remote updates.")
 except Exception as ex:
