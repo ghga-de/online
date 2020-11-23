@@ -7,7 +7,7 @@ import git
 from logging.handlers import HTTPHandler
 import logging.config
 import subprocess
-from sys import argv, stderr
+from sys import argv
 import getpass
 import os
 
@@ -115,23 +115,6 @@ def rwx_dir(dir):
             and os.access(dir, os.R_OK | os.X_OK | os.W_OK)
 
 
-# Requirements
-#   ruby, bundler, jekyll, bash
-#   git
-#   systemd (centos)
-#   gitpython
-#   pyyaml
-#   The target directory, to which the deployment is done must be writable and owned by the user doing the deployment.
-#   Check `chmod go=rX -R $deploymentDir`. The rwx-permissions are checked on the auto-deployment repo-clone and
-#   the target deployment directory.
-#
-# Notes
-# - never modify the auto-deployment clone; changes will be overwritten without warning
-# - changes in the deployment directory will be overwritten without warning
-# - checking out something else then the master HEAD will be ignored, this just checks the master head (checkout out or
-#   not), an update only happens if the local master is older than the remote master
-# - For Slack, add the webhook app, configure it, and copy the URL to the logging.yaml
-# TODO Make a CLI for easier configuration. Maybe config-file.
 
 logger_conf = argv[1]
 repo_dir = argv[2]
@@ -159,13 +142,6 @@ with open(logger_conf) as logger_conf_stream:
 
 
 logger = logging.getLogger("ghga_updater")
-# slackHandlers = list(filter(lambda h: h.get_name() == "slack", logger.handlers))
-# if len(slackHandlers) == 0:
-#     print("Omitting logging to Slack", file=stderr)
-# else:
-#     print("Logging to Slack", file=stderr)
-#     slackFormatter = jsonlogger.JsonFormatter(rename_fields={'message': 'text'})
-#     slackHandlers[0].setFormatter(slackFormatter)
 
 try:
     repo = git.Repo(repo_dir)
