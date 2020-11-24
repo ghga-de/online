@@ -2,12 +2,19 @@
 
 ## Developers & Testers
 
-The site uses Jekyll. To test the website locally, follow the instructions in the Github <a href="https://help.github.com/en/github/working-with-github-pages/testing-your-github-pages-site-locally-with-jekyll" target="_blank">Help</a>.
-
-Essentially, you need an installation of Jekyll. If you use Bundler you can start the website locally with
+The repo is delivered with a [Conda](https://docs.conda.io/en/latest/miniconda.html) environment YAML that contains all dependencies. You can set everything by installing Conda, and then do
 
 ```bash
-cd ghga-de_online    # or however you called the repository dir
+git clone https://github.com/ghga-de/online.git ghga-de/
+conda env create -n ghga-de -f ghga-de/environment.yaml
+```
+
+The site uses Jekyll. You can also install Jekyll manually as described in the <a href="https://help.github.com/en/github/working-with-github-pages/testing-your-github-pages-site-locally-with-jekyll" target="_blank">Jekyll documentation</a>. 
+
+If you use Bundler you can start the website locally with
+
+```bash
+cd ghga-de    # or however you called the repository dir
 bundle exec jekyll serve
 ```
 
@@ -15,16 +22,11 @@ Then point your browser to the local address displayed in the output of the comm
  
 ## Website Deployment
 
-The auto-deployment script `src/deploy-site.py` can be called via a cron-job on the website server. It will then regularly check the Github repo for changes, deploy the site if necessary, and optionally send a message to Slack.
-
-  * Webserver (Apache, NGINX)
-  * Python, virtualenv, pyyaml, gitpython
-  * Ruby, Jekyll, jekyll-theme-slate
+The auto-deployment script `ghga-de/src/deploy-site.py` can be called manually or via a cron-job on the website server. It will check the Github repo for changes, deploy the site if necessary, and optionally send a message to Slack.
 
 For setting up the site
 
   1. Install a web-server of your choice.
-  2. Install `curl`, `git`, `python3`, and `rsync` with your OS package system
   2. Create a user without root permissions
       
      ```bash
@@ -36,39 +38,28 @@ For setting up the site
     
      `chmod g+rwX -R /var/www/html`
     
-  4. Install software. 
-
-     1. Follow the [instructions](http://rvm.io/rvm/install) for installing RVM
-     2. Install
-     
-        ```bash
-        rvm install ruby-2.7.0
-        gem install bundler
-        ```
-
-    * Ruby, Bundler, Jekyll, Bash
-     * pip
-    * gitpython
-    * pyyaml
-
-     E.g. for a native installation on CentOS
-
-     ```bash
-     # Install RVM.
-     curl -sSL https://get.rvm.io | bash -s stable
-
-     ```
-  
-  3. Clone the repository
+  4. As deployment-user clone the repository
 
      `git clone ... /home/ghga/ghga-de`
+     
+  5. Install [Miniconda](https://docs.conda.io/en/latest/miniconda.html)
   
-  4. Create `logging.yaml` and `config.yaml` from the templates in the `src/` directory.
+  6. Install the Conda environment
+          
+     ```bash
+     conda env create -n ghga-de -f ghga-de/environment.yaml
+     ```  
+  
+  4. Create `logging.yaml` and `config.yaml` from the templates in the `src/` directory. Please make copies outside the repository, because all changes in the deployment-repository will be overwritten!
     
-  5. Test the deployment script
-     > TODO Add test call; use force-redeploy
+  5. For manual deployment you can run the deployment script with your `config.yaml` as only parameter.
   
-  6. Set up a cron-job
+     ```bash
+     python ghga/src/deploy-site.py config.yaml
+     ```
+  
+  6. \[Optional] Set up a cron-job for automatic deployment
+  
      > TODO Add cron example
 
 ### Notes
