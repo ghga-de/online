@@ -67,9 +67,9 @@ def list_branch_commits(repo: git.Repo, branch: str) -> list:
 
 def update_branch_from_remote(repo: git.Repo, branch: str, remote: str) -> None:
     """Update the given branch in the repository to the remote HEAD. This will do a forced checkout thus deleting
-    all repo-local changes. The autodeploy clone should not be modified!"""
-    repo.branches[branch].checkout(force=True)
-    repo.remote(remote).pull()
+    all repo-local changes. The auto-deploy clone should not be modified!"""
+    repo.git.fetch(remote)
+    repo.git.checkout(branch, force=True)
 
 
 def run_proc(command):
@@ -88,14 +88,10 @@ def safe_run_proc(command, error_message = "Execution failed"):
         raise DeploymentError("%s: %s" % (error_message, str(command)), exit_code, str(stdout), str(stderr))
 
 
-def build_jekyll_site(repo_dir: str, jekyll_build_template: list) -> None:
-    """Run Jekyll to build the site. The template should be a list of command components and one of them should
-    contain the '{repo_dir}'. Examples are
-
-
-    """
+def build_jekyll_site(repo_dir: str) -> None:
+    """Run Jekyll to build the site. This will call "bundle install" to unsure the Jekyll stack is up to date."""
     # Bundler needs to be executed in a login shell.
-    jekyll_command = list(map(lambda v: v.format(repo_dir=repo_dir), jekyll_build_template))
+    jekyll_command = ["bash", "-c", "cd '%s' && bundle install && bundle exec jekyll build" % repo_dir]
     safe_run_proc(jekyll_command)
     logger.info("Successfully built site with Jekyll in %s" % repo_dir)
 
@@ -109,14 +105,29 @@ def deploy_jekyll_site(repo_dir: str, served_dir: str) -> None:
     logger.info("Successfully set served directory '%s' permissions" % served_dir)
 
 
-def deployment_message(repo_url: str, remote_master_head_commit: str, repo_dir: str) -> str:
-    return "Remote master HEAD commit %s not among currently pulled commits on master in %s. Deploying from %s!" % \
-           (remote_master_head_commit, repo_dir, repo_url)
-
-
 def rwx_dir(dir: str) -> bool:
     return os.path.isdir(dir) \
             and os.access(dir, os.R_OK | os.X_OK | os.W_OK)
+
+
+def decide_deployment(repo, branch, github_owner, github_name, force_redeployment):
+    deploy = False
+    if force_redeployment:
+        logger.warning("Forced re-deployment")
+        deploy = True
+    elif repo.active_branch.name != branch:
+        logger.warning("Deployment branch was changed from '%s' to '%s'" % (repo.active_branch.name, branch))
+        deploy = True
+    else:
+        remote_head_commit = github_branch_head_commit(github_owner, github_name, branch)
+        logger.debug("Remote %s/%s branch %s HEAD commit SHA: %s" %
+                     (github_owner, github_name, branch, remote_head_commit))
+        commits_in_local_ref = list_branch_commits(repo, branch)
+        if remote_head_commit not in commits_in_local_ref:
+            logger.warning("Remote %s HEAD commit %s not among currently checked-out commits in %s" % \
+                           (branch, remote_head_commit, repo.working_dir))
+            deploy = True
+    return deploy
 
 
 def deploy_site(config_yaml: str) -> None:
@@ -132,7 +143,6 @@ def deploy_site(config_yaml: str) -> None:
     github_owner = config["github_owner"]
     github_name = config["github_name"]
     site_url = config["site_url"]
-    jekyll_build_template = config["jekyll_build_template"]
 
     github_url = "https://github.com/%s/%s" % (github_owner, github_name)
 
@@ -141,21 +151,17 @@ def deploy_site(config_yaml: str) -> None:
                               (repository_dir, getpass.getuser()))
 
     if not rwx_dir(deployment_dir):
-        raise DeploymentError("Repository directory '%s' needs to be readable, writable & executable for '%s'" %
-                              (repository_dir, getpass.getuser()))
+        raise DeploymentError("Deployment directory '%s' needs to be readable, writable & executable for '%s'" %
+                              (deployment_dir, getpass.getuser()))
 
     with open(logger_conf) as logger_conf_stream:
         logging.config.dictConfig(yaml.load(logger_conf_stream, Loader=yaml.FullLoader))
 
     repo = git.Repo(repository_dir)
-    remote_master_head_commit = github_branch_head_commit(github_owner, github_name, branch)
-    logger.debug("Remote %s/%s branch %s HEAD commit SHA: %s" %
-                 (github_owner, github_name, branch, remote_master_head_commit))
-    current_commits_in_ref = list_branch_commits(repo, branch)
-    if force_redeployment or remote_master_head_commit not in current_commits_in_ref:
-        logger.info(deployment_message(github_url, remote_master_head_commit, repository_dir))
+
+    if decide_deployment(repo, branch, github_owner, github_name, force_redeployment):
         update_branch_from_remote(repo, branch, remote)
-        build_jekyll_site(repository_dir, jekyll_build_template)
+        build_jekyll_site(repository_dir)
         deploy_jekyll_site(repository_dir, deployment_dir)
         logger.warning("Successfully deployed <%s|GitHub master> to the <%s|GHGA website>" % (github_url, site_url))
     else:
