@@ -10,6 +10,7 @@ import subprocess
 from sys import argv
 import getpass
 import os
+import re
 
 
 class DeploymentError(Exception):
@@ -88,9 +89,19 @@ def safe_run_proc(command, error_message = "Execution failed"):
         raise DeploymentError("%s: %s" % (error_message, str(command)), exit_code, str(stdout), str(stderr))
 
 
-def build_jekyll_site(repo_dir: str) -> None:
+def set_url_in_jekyll_config(repo_dir: str, site_url: str):
+    """In the _config.yml of the Jekyll project, fill in the site_url as "url" tag."""
+    config_file = repo_dir + "/_config.yml"
+    with open(config_file, "r") as ifh:
+        mod_lines = map(lambda l: re.sub('^url:\\s.*$', "url: %s" % site_url, l), ifh.readlines())
+    with open(config_file, "w") as ofh:
+        ofh.writelines(list(mod_lines))
+
+
+def build_jekyll_site(repo_dir: str, site_url: str) -> None:
     """Run Jekyll to build the site. This will call "bundle install" to unsure the Jekyll stack is up to date."""
     # Bundler needs to be executed in a login shell.
+    set_url_in_jekyll_config(repo_dir, site_url)
     jekyll_command = ["bash", "-c", "cd '%s' && bundle install && bundle exec jekyll build" % repo_dir]
     safe_run_proc(jekyll_command)
     logger.info("Successfully built site with Jekyll in %s" % repo_dir)
@@ -161,7 +172,7 @@ def deploy_site(config_yaml: str) -> None:
 
     if decide_deployment(repo, branch, github_owner, github_name, force_redeployment):
         update_branch_from_remote(repo, branch, remote)
-        build_jekyll_site(repository_dir)
+        build_jekyll_site(repository_dir, site_url)
         deploy_jekyll_site(repository_dir, deployment_dir)
         logger.warning("Successfully deployed <%s|GitHub master> to the <%s|GHGA website>" % (github_url, site_url))
     else:
