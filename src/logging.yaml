@@ -14,7 +14,7 @@ handlers:
     level: INFO
     formatter: simple
     address: /dev/log
-  slack: # If present, messages are formatted for submission to Slack webhook. Don't set the formatter.
+  slack: # To turn this on or off add "slack" to `loggers.handlers` below.
     "()": __main__.getSlackWebhookHandler
     level: WARNING
     host: hooks.slack.com
