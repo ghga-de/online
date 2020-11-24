@@ -1,0 +1,18 @@
+repository_dir: /path/to/clone/of/ghga-de/online
+deployment_dir: /var/www/html
+site_url: http://path/to/deployment/url
+
+github_owner: ghga-de
+github_name: online
+branch: master
+github_url: "https://github.com/ghga-de/online/tree/server-deployment"
+remote: origin
+
+logging_yaml: logging.yaml
+
+# Whether a re-deployment should be done forced.
+force_redeployment: True
+
+# The final deployment message. You can use the keys from this file and the markdown format of Slack.
+deployment_message: >
+  Successfully deployed <{github_url}|GitHub {branch}> to the <{site_url}|GHGA website>.

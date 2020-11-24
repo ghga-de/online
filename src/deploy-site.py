@@ -24,7 +24,7 @@ class SlackWebhookHandler(HTTPHandler):
             color = "good"
         else:
             color = "danger"
-        return {"text": record.message, "color": color}
+        return {"text": record.message, "color": color, "type": "mrkdwn"}
 
     def emit(self, record: LogRecord) -> None:
         """Code adapted from from HTTPRequest.emit."""
@@ -124,7 +124,7 @@ def rwx_dir(dir: str) -> bool:
 def decide_deployment(repo, branch, github_owner, github_name, force_redeployment):
     deploy = False
     if force_redeployment:
-        logger.warning("Forced re-deployment")
+        logger.warning("Forced re-deployment!")
         deploy = True
     elif repo.active_branch.name != branch:
         logger.warning("Deployment branch was changed from '%s' to '%s'" % (repo.active_branch.name, branch))
@@ -135,7 +135,7 @@ def decide_deployment(repo, branch, github_owner, github_name, force_redeploymen
                      (github_owner, github_name, branch, remote_head_commit))
         commits_in_local_ref = list_branch_commits(repo, branch)
         if remote_head_commit not in commits_in_local_ref:
-            logger.warning("Remote %s HEAD commit %s not among currently checked-out commits in %s" % \
+            logger.info("Remote %s HEAD commit %s not among currently checked-out commits in %s" % \
                            (branch, remote_head_commit, repo.working_dir))
             deploy = True
     return deploy
@@ -154,8 +154,7 @@ def deploy_site(config_yaml: str) -> None:
     github_owner = config["github_owner"]
     github_name = config["github_name"]
     site_url = config["site_url"]
-
-    github_url = "https://github.com/%s/%s" % (github_owner, github_name)
+    deployment_message = config["deployment_message"]
 
     if not rwx_dir(repository_dir):
         raise DeploymentError("Repository directory '%s' needs to be readable, writable & executable for '%s'" %
@@ -174,7 +173,7 @@ def deploy_site(config_yaml: str) -> None:
         update_branch_from_remote(repo, branch, remote)
         build_jekyll_site(repository_dir, site_url)
         deploy_jekyll_site(repository_dir, deployment_dir)
-        logger.warning("Successfully deployed <%s|GitHub master> to the <%s|GHGA website>" % (github_url, site_url))
+        logger.warning(deployment_message.format(**config))
     else:
         logger.info("No remote updates.")
 
