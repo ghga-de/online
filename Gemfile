@@ -20,5 +20,6 @@ gem 'webrick'
 # If you have any plugins, put them here!
 group :jekyll_plugins do
   gem "jekyll-theme-slate", "~> 0.1.1"
+  gem 'jekyll-twitter-plugin'
 end
 
