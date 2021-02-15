@@ -61,9 +61,9 @@
 	}
   },
   "jobs": {
-    "navTitle": "Jobs",
-    "title": "Jobs",
-    "introduction": "Currently available jobs at GHGA sites:",
+    "navTitle": "Careers",
+    "title": "Careers",
+    "introduction": "Currently available job opportunities at GHGA sites:",
     "jobTitle": "Job title",
     "location": "Location"
   },
