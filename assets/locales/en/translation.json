@@ -24,6 +24,26 @@
       "obj10": "Increase the value of research data</b> by integrating multiple omics modalities and connecting omics data to phenotype data"
     }
   },
+  "team_members": {
+    "navTitle": "Team Members",
+    "title": "Team Members",
+    "member1": "<b>Jan Eufinger</b>, Administrative Coordinator - GHGA Office, DKFZ Heidelberg",
+    "member2": "<b>Koray Kirli</b>, Technical Coordinator - GHGA Office, DKFZ Heidelberg",
+    "member3": "<b>Sabine Blum</b>, General Assistance - GHGA Office, DKFZ Heidelberg",
+    "member4": "<b>Ryan Hutchins</b>, Software Developer - GHGA Office, DKFZ Heidelberg",
+    "member5": "<b>Simon Parker</b>, Data Steward - GHGA Office, DKFZ Heidelberg",
+    "member6": "<b>Kersten Breuer</b>, Scientific Software Developer - GHGA Office, DKFZ Heidelberg",
+    "member7": "<b>Deepak Unni</b>, Software Developer - EMBL Heidelberg",
+    "member8": "<b>Moritz Hahn</b>, Software Developer - Uni Tübingen",
+    "member9": "<b>Armin Roth</b>, Data Steward - Uni Tübingen",
+    "member10": "<b>Florian Kraus</b>, Bioinformatician - Uni Tübingen",
+    "member11": "<b>Christian Mertes</b>, Bioinformatician - TUM, Münich",
+    "member12": "<b>Nick Smith</b>, Bioinformatician - TUM, Münich",
+    "memberx": "<b>name</b>, title - location",
+    "memberx": "<b>name</b>, title - location",
+    "memberx": "<b>name</b>, title - location",
+    "memberx": "<b>name</b>, title - location"
+  },
   "news": {
     "navTitle": "News",
     "title": "News",
@@ -61,9 +81,9 @@
 	}
   },
   "jobs": {
-    "navTitle": "Jobs",
-    "title": "Jobs",
-    "introduction": "Currently available jobs at GHGA sites:",
+    "navTitle": "Careers",
+    "title": "Careers",
+    "introduction": "Currently available job opportunities at GHGA sites:",
     "jobTitle": "Job title",
     "location": "Location"
   },
