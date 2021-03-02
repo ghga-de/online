@@ -27,6 +27,10 @@
   "news": {
     "navTitle": "Neues",
     "title": "Neuigkeiten",
+    "item6": {
+      "title": "12.02.2021 - Neue DFG-Ausschreibung für Sequenzierkosten in Projekten",
+      "content": "Die DFG ermöglicht schreibt erneut Mittel für die Finanzierung von Sequenzierkosten in Forschungsprojekten aus.  Im Rahmen der Ausschreibung können Sequenzierungen beantragt werden, die dann an einem der vier DFG-Sequenzierzentren durchgeführt werden. Alle vier Sequenzierzentren sind Mitglied in GHGA, somit ist eine Integration von humanen Genomdaten in die GHGA-Infrastruktur sicher gestellt. Bis zum 21. April 2021 muss eine \"Declaration of Intent\" eingereicht werden. Weitere Informationen <a href=\"https://www.dfg.de/foerderung/info_wissenschaft/2021/info_wissenschaft_21_14/index.html\" target=\"_blank\">unter diesem Link</a>."
+    },
     "item5": {
       "title": "18.11.2020 - Positionen für IT-Spezialisten bei GHGA",
       "content": "Wir sind permanent auf der Suche nach neuen Talenten zur Verstärkung unseres Teams. Aktuelle Stellenausschreibungen im Rahmen von GHGA siehe <a href=\"#jobs\">Jobs</a>."
