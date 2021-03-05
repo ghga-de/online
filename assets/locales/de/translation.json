@@ -27,9 +27,13 @@
   "news": {
     "navTitle": "Neues",
     "title": "Neuigkeiten",
+    "item7": {
+      "title": "01.03.2021 - Publikation zu GHGA im Bunsen-Magazin",
+      "content": "Unter dem Titel \"Das Deutsche Humangenom-Phenomarchiv​​​​\" beschreiben Fruzsina Molnár-Gábor und Jan Korbel die Arbeitsweise des GHGA-Konsortium und die besonderen legalen und ethischen Herausforderungen bei der Arbeit mit humanen Genomdaten. <br>Molnár-Gábor, Fruzsina, Korbel, Jan, GHGA-Konsortium (2021): Das Deutsche Humangenom-Phenomarchiv. Bunsen-Magazin 2021, 2: 102-104. Frankfurt am Main: Deutsche Bunsen-Gesellschaft für physikalische Chemie e.V. DOI: <a href=\"https://dx.doi.org/10.26125/7k2x-dp05\" target=\"_blank\">10.26125/7k2x-dp05</a>."
+    },
     "item6": {
       "title": "12.02.2021 - Neue DFG-Ausschreibung für Sequenzierkosten in Projekten",
-      "content": "Die DFG ermöglicht schreibt erneut Mittel für die Finanzierung von Sequenzierkosten in Forschungsprojekten aus.  Im Rahmen der Ausschreibung können Sequenzierungen beantragt werden, die dann an einem der vier DFG-Sequenzierzentren durchgeführt werden. Alle vier Sequenzierzentren sind Mitglied in GHGA, somit ist eine Integration von humanen Genomdaten in die GHGA-Infrastruktur sicher gestellt. Bis zum 21. April 2021 muss eine \"Declaration of Intent\" eingereicht werden. Weitere Informationen <a href=\"https://www.dfg.de/foerderung/info_wissenschaft/2021/info_wissenschaft_21_14/index.html\" target=\"_blank\">unter diesem Link</a>."
+      "content": "Die DFG schreibt erneut Mittel für die Finanzierung von Sequenzierkosten in Forschungsprojekten aus.  Im Rahmen der Ausschreibung können Sequenzierungen beantragt werden, die dann an einem der vier DFG-Sequenzierzentren bearbeitet werden. Alle vier Sequenzierzentren sind Mitglied in GHGA, somit ist eine Integration von humanen Genomdaten in die GHGA-Infrastruktur sicher gestellt. Bis zum 21. April 2021 muss eine \"Declaration of Intent\" eingereicht werden. Weitere Informationen <a href=\"https://www.dfg.de/foerderung/info_wissenschaft/2021/info_wissenschaft_21_14/index.html\" target=\"_blank\">unter diesem Link</a>."
     },
     "item5": {
       "title": "18.11.2020 - Positionen für IT-Spezialisten bei GHGA",

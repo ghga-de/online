@@ -47,8 +47,12 @@
   "news": {
     "navTitle": "News",
     "title": "News",
+    "item7": {
+      "title": "March 1, 2021 - Publication on GHGA in Bunsen-Magazin (in German)",
+      "content": "In the publication Fruzsina Molnár-Gábor and Jan Korbel describe the work of GHGA and the legal aspects when working with humann genome data. <br>Molnár-Gábor, Fruzsina, Korbel, Jan, GHGA-Konsortium (2021): Das Deutsche Humangenom-Phenomarchiv. Bunsen-Magazin 2021, 2: 102-104. Frankfurt am Main: Deutsche Bunsen-Gesellschaft für physikalische Chemie e.V. DOI: <a href=\"https://dx.doi.org/10.26125/7k2x-dp05\" target=\"_blank\">10.26125/7k2x-dp05</a>."
+    },
     "item6": {
-      "title": "12.02.2021 - New Call for Sequencing Costs in Projects released by DFG",
+      "title": "February 12, 2021 - New Call for Sequencing Costs in Projects released by DFG",
       "content": "The DFG has released the fourth call for sequencing costs within projects. Via the call, researchers can apply for funding to carry out sequencings at one of the four DFG-funded competence centres for next generation sequencing. All four centers are part of GHGA so a swift transfer of human omics-data is ensured. Interested researchers are asked to submit a  \"Declaration of Intent\"  by April 21, 2021. Further Informationen <a href=\"https://www.dfg.de/foerderung/info_wissenschaft/2021/info_wissenschaft_21_14/index.html\" target=\"_blank\">at this link</a>."
     },
     "item5": {
@@ -75,11 +79,15 @@
   "events": {
     "navTitle": "Events",
     "title": "Events",
-    "item1": {
+    "item3": {
+      "title": "March 05, 2021 - NFDI Workshop at the eScience Days",
+      "content": "GHGA participates in a workhop with all NFDI-consortia during the <a href=\"https://e-science-tage.de/de/startseite\" target=\"_blank\">eScience Days</a>."
+    },
+    "item2": {
       "title": "December 10, 2020 - GHGA Virtual Kick-Off Event",
       "content": "On December 10, 2020 all GHGA participants will meet virtually to discuss the initiation and first steps of the consortium. Further information and registration is available via this <a href=\"https://indico.dkfz.de/e/ghga-kickoff\" target=\"_blank\">link</a>."
     },
-	"item2": {
+	"item1": {
 	"title": "GHGA Events Calendar",
 	"content": "An overview of all GHGA events can found at this <a href=\"https://calendar.google.com/calendar/embed?src=cu680i1cppr6446qk50059fs78%40group.calendar.google.com&ctz=Europe%2FBerlin\" target=\"_blank\">link</a>."
 	}
